@@ -1,8 +1,8 @@
-# Capello Sales & Budget Agent — Progetto Finale
+# TBR Sales & Budget Agent — Progetto Finale
 
-Agente AI ibrido e multi-tool per il reparto **Sales & Budget** di Capello Srl
-(azienda reale, produttore di testate per la raccolta di mais, cereali,
-girasole e foraggio — dati commerciali **fittizi** ai fini del progetto).
+Agente AI ibrido e multi-tool per il reparto **Sales & Budget** di TBR Budget Group
+(azienda fittizia, produttore di testate per la raccolta di mais, cereali,
+girasole e foraggio — scenario e dati commerciali **fittizi** ai fini del progetto).
 
 L'agente decide autonomamente se:
 - interrogare la **knowledge base documentale** (RAG su ChromaDB) per domande
@@ -13,7 +13,7 @@ L'agente decide autonomamente se:
 ## Architettura
 
 ```
-capello-hybrid-agent/
+tbr-budget-agent/
 ├── data/                    # dataset CSV di consuntivo vendite (+ script di generazione)
 ├── knowledge_base/          # documento markdown usato come knowledge base RAG
 ├── frontend/                # interfaccia chat in React (Vite)
@@ -64,7 +64,7 @@ i servizi.
 
 ## 2. Generazione del dataset (già incluso, rigenerabile)
 
-Il CSV `data/capello_sales.csv` è già presente nel repository. Per rigenerarlo:
+Il CSV `data/tbr_sales.csv` è già presente nel repository. Per rigenerarlo:
 
 ```bash
 cd data
@@ -86,7 +86,7 @@ Lascia questo terminale aperto: è il server vettoriale usato dal back end.
 ```bash
 cd backend
 npm install
-npm run ingest   # indicizza knowledge_base/capello_kb.md in ChromaDB (da rifare se il documento cambia)
+npm run ingest   # indicizza knowledge_base/tbr_kb.md in ChromaDB (da rifare se il documento cambia)
 npm run dev      # avvia il server su http://localhost:4000
 ```
 
@@ -127,10 +127,10 @@ end chiama il data_agent sulla 8000; il back end interroga ChromaDB sulla 8001).
 ## Esempi di domande da provare
 
 **Descrittive/analitiche** (RAG e/o data agent, sola lettura):
-- *"Qual è la garanzia standard sulle testate Capello?"* → RAG
+- *"Qual è la garanzia standard sulle testate TBR?"* → RAG
 - *"Quali prodotti dovrei proporre in Brasile e in che periodo?"* → RAG
-- *"Qual è il trend di fatturato di Diamant in Italia negli ultimi 3 anni?"* → data agent (tabella + grafico)
-- *"Confrontami le vendite di Helianthus Pro tra Argentina e Sud Africa"* → data agent
+- *"Qual è il trend di fatturato di AltaResa in Italia negli ultimi 3 anni?"* → data agent (tabella + grafico)
+- *"Confrontami le vendite di SolePieno tra Argentina e Sud Africa"* → data agent
 - *"Basandoti sul calendario agricolo e sullo storico vendite, che budget consiglieresti per la Romania nel prossimo trimestre?"* → RAG + data agent combinati
 
 **Esecutive** (creano/modificano dati — l'assistente chiede i parametri mancanti e conferma prima di agire):
@@ -138,14 +138,14 @@ end chiama il data_agent sulla 8000; il back end interroga ChromaDB sulla 8001).
 - *"Crea un budget chiamato Export2027, anno 2027, periodo 01/01/2025-31/12/2025, fattore fisso prezzo"*
 - *"Configuralo con le dimensioni paese e prodotto"*
 - *"Genera la base budget con un importo target di 3 milioni di euro"*
-- *"Spalma il budget di Quasar in Polonia in base alla stagionalità"*
+- *"Spalma il budget di GranCampo in Polonia in base alla stagionalità"*
 - *"In base ai periodi di raccolto per ogni macroarea, come distribuiresti il budget nei mesi?"*
 
 ## Modulo Budget (creazione, configurazione, modifica)
 
 Il front end ha una **navbar scura** in alto e una **sidebar** con cinque sezioni:
 Overview, Gestione Budget, Budget dei Ricavi, Report, Assistente. Tema colori:
-nero/antracite con il **rosso Capello** come accento.
+nero/antracite con il **rosso TBR** come accento.
 
 ### Configurazione di un nuovo budget (3 step sequenziali)
 
@@ -210,15 +210,54 @@ Le API REST sono in `backend/src/routes/budgets.js`. La lettura/pulizia del
 CSV di consuntivo (per dimensioni, analisi valuta e generazione base budget)
 è in `backend/src/services/salesDataService.js`.
 
+## Report, Storico Attività e Impostazioni
+
+- **Report**: per il budget selezionato mostra una barra informativa (nome,
+  anno, valuta, stato, fattore fisso, dimensioni attive), KPI (totale
+  budget/quantità/prezzo medio/totale consuntivo con delta %), grafici a
+  barre per dimensione (con etichette valore), un grafico a torta (donut)
+  di distribuzione sulla prima dimensione attiva, un confronto Consuntivo
+  vs Budget raggruppato per dimensione, la distribuzione mensile, e una
+  tabella di dettaglio riga per riga.
+- **Storico Attività**: log di tutte le operazioni sui budget (creazione,
+  configurazione, scrittura valori, cambio stato, eliminazione), con
+  utente, data/ora e dettaglio. Scritto direttamente da
+  `backend/src/services/budgetStore.js` ad ogni mutazione — copre quindi
+  automaticamente sia le azioni da interfaccia sia quelle eseguite
+  dall'assistente in chat. Persistenza: `backend/src/data/history-log.json`.
+- **Impostazioni** (visibile solo agli amministratori): gestione utenti con
+  tre ruoli — **Amministratore** (accesso completo), **Collaboratore** (vede
+  e modifica solo i budget assegnati), **Visualizzatore** (solo visualizza i
+  budget assegnati) — e assegnazione esplicita di quali budget ciascun
+  utente può vedere. Persistenza: `backend/src/data/users-store.json`.
+
+Un selettore utente nella navbar permette di cambiare "utente attivo"
+(nessun vero login/autenticazione: è un meccanismo dimostrativo). L'utente
+selezionato viene inviato ad ogni richiesta tramite l'header `x-user-id`, e
+i permessi sono applicati realmente lato back end (`userStore.js`) sia per
+le richieste dall'interfaccia sia per quelle dell'assistente in chat — non
+è quindi solo un filtro visivo.
+
+**Limite noto**: essendo un modello "a client fidato" (nessuna sessione
+autenticata reale), un utente potrebbe in teoria selezionare un altro
+utente dal menu. Adeguato allo scopo dimostrativo del progetto, ma da
+menzionare in sede di discussione.
+
 ## Note su sicurezza
 
 Nessuna API key è hardcodata: sia il back end sia il data_agent leggono
 `OPENAI_API_KEY` da variabili d'ambiente tramite `.env` (escluso da Git,
 vedi `.gitignore`).
 
-## Possibili estensioni (non incluse in questa prima versione)
+## Possibili estensioni (non incluse in questa versione)
 
-- Persistenza della cronologia chat su database invece che in memoria
-- Autenticazione utenti e multi-tenant (più aziende/reparti)
+- Autenticazione utenti reale (login, sessioni server-side) al posto del
+  selettore "utente attivo" dimostrativo
+- Persistenza della cronologia chat su file/DB invece che in memoria
+  (si perde ancora al riavvio del back end)
+- Gating dei pulsanti di modifica anche nelle pagine "Gestione Budget" e
+  "Configura" per il ruolo Visualizzatore (oggi il permesso è comunque
+  applicato ed enforced dal back end, ma l'interfaccia in quelle due pagine
+  non nasconde ancora proattivamente i pulsanti non permessi)
 - Cache delle risposte RAG più frequenti
 - Dockerizzazione dei tre servizi con `docker-compose`

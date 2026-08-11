@@ -1,0 +1,19 @@
+{
+  "name": "tbr-agent-backend",
+  "version": "1.0.0",
+  "description": "Back end orchestratore per l'agente ibrido TBR Budget Group (RAG + data agent)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "ingest": "node src/ingest.js"
+  },
+  "dependencies": {
+    "chromadb": "^1.9.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.56.0"
+  }
+}

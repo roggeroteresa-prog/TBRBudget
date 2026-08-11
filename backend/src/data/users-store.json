@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "demo-admin",
+      "name": "Utente Demo",
+      "email": "demo@tbrbudget.it",
+      "role": "admin",
+      "allowedBudgetIds": null
+    },
+    {
+      "id": "e4ba3b05-1b36-4968-a780-e2a693697b43",
+      "name": "viewer",
+      "email": "viewer@tbrbudget.it",
+      "role": "viewer",
+      "allowedBudgetIds": [
+        "c0c7c8a2-6972-4754-8935-7867e6befb5e"
+      ]
+    }
+  ]
+}

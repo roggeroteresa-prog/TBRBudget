@@ -1,0 +1,1276 @@
+order_id,order_date,country,region,customer,product,crop,quantity,unit_price_eur,revenue_eur,sales_channel,currency,fx_rate_used,unit_price_local,revenue_local
+101180,2025-07-03,Canada,Nord America,AgriFarm SC,GranCampo,Mais,1.0,36280.57,36280.57,Dealer,CAD,1.548326,56174.15,56174.15
+100343,06-21-2025,Brasile,Sud America,GrainAgro Ltd,TaglioFlex,Cereali (grano/orzo),3.0,27329.94,81989.82,Dealer,BRL,5.599012,153020.66,459061.99
+100650,2022-11-15,Sud Africa,Africa,AgriFarm SA,FienoFacile,Foraggio,4.0,32329.06,129316.24,Dealer,ZAR,19.66632,635793.64,2543174.56
+100773,2022-07-18,Argentina,Sud America,FarmFarm Srl,TaglioFlex,Cereali (grano/orzo),3.0,30900.81,92702.43,Vendita diretta,ARS,1034.3626,31962642.17,95887926.52
+100804,2021-07-02,Brasile,Sud America,FarmTerra Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,28467.86,85403.58,Vendita diretta,BRL,5.788014,164772.37,494317.12
+100359,13-Mar-2025,Canada,Nord America,AgroAgro LLC,TaglioFlex,Cereali (grano/orzo),4.0,28588.61,114354.44,Dealer,CAD,1.366467,39065.39,156261.57
+100045,08-15-2025,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,4.0,,139232.8,Dealer,RSD,113.388066,3946834.48,15787337.92
+100232,2024-11-03,Brasile,Sud America,GrainAgro Ltd,PrimaRaccolta,Mais,1.0,20227.07,20227.07,Dealer,BRL,5.738153,116066.02,116066.02
+100619,2023-06-12,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,3.0,36977.93,110933.79,Dealer,RSD,107.208938,3964364.6,11893093.81
+100044,2021-03-25,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),3.0,28982.21,86946.63,Dealer,MXN,19.438608,563373.82,1690121.46
+100589,2021-05-27,Canada,Nord America,AgriFarm SC,PrimaRaccolta,Mais,3.0,19312.05,57936.15,Vendita diretta,CAD,1.508549,29133.17,87399.52
+100064,2021-03-10,Ungheria,Est Europa,FarmAgro Sp. z o.o.,PrimaRaccolta,Mais,3.0,24119.57,72358.71,Dealer,HUF,411.312951,9920691.51,29762074.54
+101016,2024-04-04,Italia,Sud Europa,AgroAgro SC,GranCampo,Mais,2.0,36856.09,73712.18,Dealer,EUR,1.0,36856.09,73712.18
+100271,07-Nov-2022,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,2.0,25428.37,50856.74,Dealer,RUB,96.739191,2459919.94,4919839.88
+101141,2022-07-16,Serbia,Est Europa,CerealFarm GmbH,FienoFacile,Foraggio,2.0,30443.87,60887.74,Dealer,RSD,115.895911,3528320.05,7056640.1
+100077,2024-04-09,Argentina,Sud America,FarmFarm Srl,PrimaRaccolta,Mais,4.0,21897.24,87588.96,Dealer,ARS,1072.97809,23495258.75,93981035.01
+100082,2024-10-04,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,4.0,29482.85,117931.4,Dealer,PLN,4.298483,126731.53,506926.12
+100644,2022-09-22,USA,Nord America,CampoGrain Srl,  PrimaRaccolta ,Mais,,22246.82,44493.64,Vendita diretta,USD,1.026755,22842.03,45684.07
+100671,2025-02-20,Australia,Oceania,FarmTerra LLC,AltaResa,Mais,1.0,41321.12,41321.12,Vendita diretta,AUD,1.613297,66663.24,66663.24
+100487,2022-04-24,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,2.0,21758.78,43517.56,Dealer,RUB,101.137605,2200630.9,4401261.79
+100156,2024-12-14,Italia,Sud Europa,AgroAgri S.L.,AltaResa,Mais,2.0,47239.56,94479.12,Dealer,EUR,1.0,47239.56,94479.12
+100719,07/05/2025,USA,Nord America,CerealAgri SC,AltaResa,Mais,5.0,42310.92,211554.6,Vendita diretta,USD,1.162487,49185.89,245929.47
+100868,2022-02-06,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,6.0,30098.99,180593.94,Dealer,CAD,1.412035,42500.83,255004.96
+100772,2024-10-04,Sud Africa,Africa,AgriFarm SA,PrimaRaccolta,Mais,4.0,22639.69,90558.76,Dealer,ZAR,19.4224,439717.12,1758868.46
+101182,2025-02-10,Polonia,Centro Europa,GrainAgro Sp. z o.o.,SolePieno,Girasole,6.0,23368.94,140213.64,Dealer,PLN,4.586162,107173.74,643042.47
+100782,2025-02-27,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,,58878.66,Dealer,RUB,93.080703,2740233.53,5480467.06
+101031,03-07-2022,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,3.0,28569.2,85707.6,Vendita diretta,PLN,4.130639,118009.05,354027.16
+100859,2021-09-09,Ucraina,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,6.0,29758.34,178550.04,Dealer,UAH,41.641178,1239172.33,7435034.0
+100733,2023-05-14,Serbia,Est Europa,FarmCampo Srl,AltaResa,Mais,2.0,40064.75,80129.5,Dealer,RSD,117.276046,4698635.46,9397270.93
+100295,2025-05-17,Russia,,AgroCereal GmbH,PrimaRaccolta,Mais,4.0,23046.24,92184.96,Vendita diretta,RUB,94.148649,2169772.36,8679089.44
+100222,2025-07-18,Brasile,Sud America,HarvestFarm Kft.,SolePieno,Girasole,8.0,24513.33,196106.64,Dealer,BRL,5.259775,128934.6,1031476.8
+101193,22/08/2025,Ucraina,Est Europa,CerealFarm Kft.,FienoFacile,Foraggio,3.0,30106.56,90319.68,Dealer,UAH,45.629446,1373745.65,4121236.96
+100185,17/05/2021,Ungheria,Est Europa,FarmAgro Sp. z o.o.,AltaResa,Mais,4.0,,187057.48,Dealer,HUF,419.813815,19632328.58,78529314.3
+100102,2023-06-09,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,5.0,41680.63,208403.15,Dealer,ARS,1047.669632,43667530.29,218337651.47
+100276,06-19-2024,Turchia,Medio Oriente,TerraAgri SA,PrimaRaccolta,Mais,4.0,19719.43,78877.72,Dealer,TRY,35.564746,701316.52,2805266.08
+100024,2022-04-22,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,3.0,20423.6,61270.8,Dealer,EUR,1.0,20423.6,61270.8
+100486,2021-10-12,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,1.0,25218.16,25218.16,Dealer,EUR,1.0,25218.16,25218.16
+100079,2025-07-20,Messico,Nord America,CerealTerra Kft.,PrimaRaccolta,Mais,4.0,20648.34,82593.36,Vendita diretta,MXN,19.131941,395042.82,1580171.29
+101044,2024-12-08,Ucraina,Est Europa,HarvestCampo Ltd,FienoFacile,Foraggio,4.0,30765.65,123062.6,Dealer,UAH,44.11702,1357288.8,5429155.19
+101214,2025-02-20,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),3.0,28673.34,86020.02,Dealer,ZAR,19.224594,551233.32,1653699.96
+100129,2023-04-01,Turchia,Medio Oriente,TerraCampo SA,SolePieno,Girasole,2.0,23230.38,46460.76,Dealer,TRY,34.12361,792704.43,1585408.85
+100998,05/04/2023,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,1.0,29689.56,29689.56,Dealer,EUR,1.0,29689.56,29689.56
+100622,13/11/2021,Russia,Est Europa,AgroCereal GmbH,TaglioFlex,Cereali (grano/orzo),1.0,25735.0,25735.0,Dealer,RUB,94.490242,2431706.38,2431706.38
+100669,2022-05-13,Canada,Nord America,,SolePieno,Girasole,5.0,22880.64,114403.2,Dealer,CAD,1.459552,33395.48,166977.42
+100052,2022-06-27,Argentina,Sud America,FarmFarm Srl,TaglioFlex,Cereali (grano/orzo),,28241.74,56483.48,Dealer,ARS,1052.444766,29722871.45,59445742.89
+100480,2024-06-12,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,7.0,39101.63,273711.41,Dealer,EUR,1.0,39101.63,273711.41
+100964,2024-01-05,Sud Africa,Africa,AgriFarm SA,TaglioFlex,Cereali (grano/orzo),1.0,27882.46,27882.46,Vendita diretta,ZAR,21.465587,598513.37,598513.37
+100583,2024-09-28,Ungheria,Est Europa,FarmAgro Srl,  SolePieno ,Girasole,3.0,21768.43,65305.29,Dealer,HUF,396.224085,8625176.26,25875528.78
+100731,2025-05-20,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,4.0,29994.94,119979.76,Dealer,PLN,4.332753,129960.67,519842.67
+100266,2021-04-10,Romania,Est Europa,CampoCampo Ltd,SolePieno,Girasole,3.0,25970.18,77910.54,Dealer,RON,4.525796,117535.74,352607.21
+100240,04-Jun-2022,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,5.0,22836.33,114181.65,Dealer,KZT,489.434968,11176898.44,55884492.21
+100347,26-Nov-2023,Brasile,Sud America,GrainAgro Ltd,PrimaRaccolta,Mais,4.0,19571.73,78286.92,Dealer,BRL,5.656112,110699.9,442799.59
+100307,2025-01-17,Sud Africa,Africa,AgriFarm SA,AltaResa,Mais,3.0,40429.6,121288.8,Dealer,ZAR,20.023022,809522.77,2428568.31
+101029,2025-08-17,Turchia,Medio Oriente,TerraAgri SA,GranCampo,Mais,3.0,39000.43,117001.29,Dealer,TRY,34.80533,1357422.84,4072268.51
+100364,20/05/2025,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,2.0,20103.62,40207.24,Vendita diretta,EUR,1.0,20103.62,40207.24
+101073,2025-09-26,Spagna,Sud Europa,TerraAgri GmbH,FienoFacile,Foraggio,4.0,34034.94,136139.76,Dealer,EUR,1.0,34034.94,136139.76
+101007,2022-04-23,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,2.0,32311.97,64623.94,Dealer,EUR,1.0,32311.97,64623.94
+100209,2022-05-27,Kazakhstan,Asia Centrale,HarvestCereal LLC,SolePieno,Girasole,2.0,23941.73,47883.46,Vendita diretta,KZT,484.496923,11599694.52,23199389.03
+100426,24-Feb-2023,Australia,Oceania,FarmCereal SC,FienoFacile,Foraggio,3.0,31425.27,94275.81,Dealer,AUD,1.650667,51872.66,155617.97
+100844,2022-03-20,USA,Nord America,FarmCereal SRL,SolePieno,Girasole,4.0,21140.41,84561.64,Dealer,USD,1.056065,22325.65,89302.59
+100977,2023-08-21,Kazakhstan,Asia Centrale,AgriTerra Kft.,GranCampo,Mais,3.0,37521.4,112564.2,Dealer,KZT,441.456828,16564078.23,49692234.68
+100221,2021-04-17,Serbia,Est Europa,FarmCampo Srl,SolePieno,Girasole,3.0,25754.19,77262.57,Dealer,RSD,118.123306,3042170.07,9126510.2
+100906,2023-03-10,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),,29271.02,58542.04,Dealer,RUB,96.818657,2833980.85,5667961.69
+101236,2024-02-27,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,2.0,26810.05,53620.1,Dealer,CAD,1.430352,38347.81,76695.62
+100840,2025-06-22,Ungheria,Est Europa,FarmAgro Sp. z o.o.,GranCampo,Mais,3.0,37618.69,112856.07,Dealer,HUF,391.627383,14732509.12,44197527.35
+100033,2021-12-13,USA,Nord America,CerealAgri SC,SolePieno,Girasole,4.0,22335.9,89343.6,Dealer,USD,1.055536,23576.35,94305.39
+100241,2025-04-04,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,2.0,24629.96,49259.92,Dealer,MXN,17.939524,441849.76,883699.52
+100244,2021-04-18,Russia,Est Europa,AgroCereal GmbH,FienoFacile,Foraggio,1.0,30624.51,30624.51,Vendita diretta,RUB,95.302414,2918589.73,2918589.73
+101042,23/02/2023,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,2.0,21341.94,42683.88,Dealer,EUR,1.0,21341.94,42683.88
+100760,2021-08-20,Brasile,Sud America,CampoGrain Kft.,TaglioFlex,Cereali (grano/orzo),3.0,26982.14,80946.42,Dealer,BRL,5.376096,145058.57,435175.72
+100941,2021-01-11,Canada,Nord America,AgriFarm SC,AltaResa,Mais,2.0,39515.87,79031.74,Dealer,CAD,1.464859,57885.18,115770.36
+100169,2025-10-01,Australia,Oceania,GrainFarm LLC,SolePieno,Girasole,2.0,23571.64,47143.28,Dealer,AUD,1.72806,40733.21,81466.42
+100835,2024-05-18,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,2.0,42153.64,84307.28,Dealer,BGN,1.876849,79116.02,158232.03
+100199,2023-02-10,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,3.0,30874.35,92623.05,Dealer,ZAR,20.852287,643800.81,1931402.42
+100368,2022-04-24,Spagna,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,3.0,22370.91,67112.73,Dealer,EUR,1.0,22370.91,67112.73
+101003,2025-01-27,Germania,Centro Europa,FarmCampo SA,PrimaRaccolta,Mais,3.0,21581.82,64745.46,Dealer,EUR,1.0,21581.82,64745.46
+101048,2024-04-04,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,2.0,20197.32,40394.64,Vendita diretta,RON,5.167696,104373.61,208747.22
+100707,2024-01-16,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,3.0,40842.37,122527.11,Dealer,ZAR,20.126458,822012.24,2466036.73
+101211,2025-02-18,Argentina,Sud America,AgroCampo Srl,AltaResa,Mais,4.0,44763.54,179054.16,Vendita diretta,ARS,1033.639203,46269349.81,185077399.24
+100860,2023-05-07,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,2.0,21768.17,43536.34,Dealer,RSD,108.413098,2359954.75,4719909.49
+100708,2024-08-04,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,5.0,33151.03,165755.15,Dealer,KZT,499.936851,16573421.55,82867107.73
+100375,27-Mar-2023,Canada,Nord America,AgriFarm SC,FienoFacile,Foraggio,2.0,32041.73,64083.46,Vendita diretta,CAD,1.389711,44528.74,89057.49
+100562,2024-06-15,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,2.0,47298.36,94596.72,Dealer,EUR,1.0,47298.36,94596.72
+100550,2025-05-15,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,5.0,19816.49,99082.45,Dealer,RON,5.160427,102261.55,511307.75
+100778,2021-09-25,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,3.0,40167.21,120501.63,Vendita diretta,RSD,110.839856,4452127.77,13356383.32
+100059,2024-03-09,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),1.0,27916.68,27916.68,Dealer,RUB,107.365021,2997274.93,2997274.93
+101241,2025-05-22,Messico,Nord America,CerealCereal LLC,GranCampo,Mais,3.0,39739.85,119219.55,Dealer,MXN,18.667614,741848.18,2225544.54
+101136,21-Oct-2023,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),4.0,25486.22,101944.88,Dealer,HUF,402.479837,10257689.67,41030758.69
+100680,2024-12-25,Australia,Oceania,FarmCereal SC,PrimaRaccolta,Mais,2.0,20421.11,40842.22,Dealer,AUD,1.552682,31707.49,63414.98
+100591,2022-07-01,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,2.0,43001.33,86002.66,Dealer,EUR,1.0,43001.33,86002.66
+100514,2024-12-07,USA,Nord America,,AltaResa,Mais,2.0,42120.3,84240.6,Vendita diretta,USD,1.036706,43666.37,87332.74
+100576,2022-09-04,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),3.0,31224.31,93672.93,Dealer,MXN,18.226735,569117.22,1707351.67
+100050,2025-04-03,Serbia,Est Europa,GrainHarvest S.L.,PrimaRaccolta,Mais,5.0,22088.3,110441.5,Dealer,RSD,114.91031,2538173.4,12690867.0
+100329,15-Apr-2021,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,3.0,35895.24,107685.72,Dealer,BGN,1.992708,71528.73,214586.2
+100963,2022-07-13,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,3.0,35845.44,107536.32,Dealer,EUR,1.0,35845.44,107536.32
+100193,02-16-2025,Sud Africa,Africa,AgriFarm SA,FienoFacile,Foraggio,3.0,30791.55,92374.65,Vendita diretta,ZAR,20.647473,635767.7,1907303.09
+100087,2023-11-28,Kazakhstan,Asia Centrale,,TaglioFlex,Cereali (grano/orzo),1.0,29722.13,29722.13,Vendita diretta,KZT,470.834271,13994197.41,13994197.41
+100555,03-21-2021,Russia,Est Europa,GrainAgro Srl,SolePieno,Girasole,2.0,25244.19,50488.38,Dealer,RUB,98.429125,2484763.53,4969527.07
+100744,2023-08-03,Canada,Nord America,AgriFarm SC,FienoFacile,Foraggio,2.0,32200.1,64400.2,Dealer,CAD,1.540591,49607.18,99214.37
+101183,10-12-2023,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,3.0,21448.71,64346.13,Vendita diretta,ARS,1077.418603,23109239.16,69327717.49
+100842,04-27-2024,Spagna,Sud Europa,FarmGrain SC,PrimaRaccolta,Mais,2.0,19680.69,39361.38,Dealer,EUR,1.0,19680.69,39361.38
+100814,2023-03-05,USA,Nord America,CerealAgri SC,TaglioFlex,Cereali (grano/orzo),2.0,25643.26,51286.52,Dealer,USD,1.17353,30093.13,60186.27
+100978,2023-02-17,Italia,Sud Europa,AgroAgri S.L.,FienoFacile,Foraggio,3.0,30370.62,91111.86,Dealer,EUR,1.0,30370.62,91111.86
+101235,2021-11-18,Argentina,Sud America,AgroCampo Srl,AltaResa,Mais,4.0,42351.8,169407.2,Vendita diretta,ARS,1014.826343,42979722.31,171918889.25
+101142,2024-10-10,USA,Nord America,CerealAgri SC,AltaResa,Mais,2.0,40803.76,81607.52,Vendita diretta,USD,1.056899,43125.45,86250.91
+100423,09-03-2024,Germania,Centro Europa,FarmCampo SA,TaglioFlex,Cereali (grano/orzo),2.0,24218.11,48436.22,Dealer,EUR,1.0,24218.11,48436.22
+100051,2022-03-03,Kazakhstan,Asia Centrale,AgriTerra Kft.,FienoFacile,Foraggio,2.0,32858.39,65716.78,Dealer,KZT,483.325074,15881283.78,31762567.56
+100454,2025-07-25,Messico,Nord America,CerealCereal LLC,GranCampo,Mais,1.0,33926.32,33926.32,Dealer,MXN,18.022279,611429.6,611429.6
+100124,2025-10-22,Spagna,Sud Europa,,SolePieno,Girasole,1.0,21610.61,21610.61,Dealer,EUR,1.0,21610.61,21610.61
+100936,05-03-2023,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,4.0,22248.93,88995.72,Dealer,EUR,1.0,22248.93,88995.72
+100899,2022-03-14,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),2.0,27091.07,54182.14,Dealer,CAD,1.558448,42220.02,84440.05
+101196,2024-11-07,Francia,Sud Europa,AgriFarm Kft.,TaglioFlex,Cereali (grano/orzo),5.0,25651.75,128258.75,Dealer,EUR,1.0,25651.75,128258.75
+100706,09/07/2025,Sud Africa,Africa,AgriCampo SA,PrimaRaccolta,Mais,2.0,21742.94,43485.88,Dealer,ZAR,20.660593,449222.03,898444.07
+100309,2025-02-15,Sud Africa,Africa,AgriFarm SA,TaglioFlex,Cereali (grano/orzo),1.0,26017.8,26017.8,Dealer,ZAR,19.990109,520098.66,520098.66
+100197,2023-11-03,Australia,Oceania,GrainFarm LLC,AltaResa,Mais,2.0,43824.78,87649.56,Dealer,AUD,1.654789,72520.76,145041.53
+100334,2023-04-13,Serbia,Est Europa,,SolePieno,Girasole,4.0,24005.12,96020.48,Dealer,RSD,105.047649,2521681.42,10086725.68
+100421,01-Sep-2021,Serbia,Est Europa,GrainHarvest S.L.,TaglioFlex,Cereali (grano/orzo),1.0,29480.21,29480.21,Dealer,RSD,110.837615,3267516.17,3267516.17
+101036,11-12-2025,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,1.0,33447.56,33447.56,Dealer,PLN,4.003958,133922.63,133922.63
+100255,2023-11-27,Australia,Oceania,FarmTerra LLC,FienoFacile,Foraggio,4.0,33061.82,132247.28,Vendita diretta,AUD,1.605907,53094.21,212376.83
+100524,06-15-2022,USA,Nord America,CerealAgri SC,SolePieno,Girasole,3.0,24902.31,74706.93,Vendita diretta,USD,1.08223,26950.03,80850.08
+100911,2022-05-09,Polonia,Centro Europa,AgroTerra SC,FienoFacile,Foraggio,2.0,31478.16,62956.32,Dealer,PLN,4.570017,143855.73,287711.45
+100606,2022-01-02,Brasile,Sud America,HarvestFarm Kft.,AltaResa,Mais,1.0,44331.92,44331.92,Dealer,BRL,5.396428,239234.01,239234.01
+100290,2024-05-16,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,3.0,34369.12,103107.36,Dealer,ARS,1108.139458,38085778.01,114257334.03
+100297,01-Apr-2022,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,2.0,28105.16,56210.32,Dealer,CAD,1.376332,38682.03,77364.06
+100988,2021-04-04,Kazakhstan,Asia Centrale,HarvestCereal LLC,GranCampo,Mais,2.0,37636.09,75272.18,Dealer,KZT,457.760909,17228330.77,34456661.54
+100742,2021-05-08,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,6.0,31039.93,186239.58,Dealer,PLN,4.081675,126694.91,760169.44
+100713,2021-03-24,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,7.0,28940.85,202585.95,Vendita diretta,ZAR,21.932838,634754.97,4443284.82
+101224,2023-11-19,Argentina,Sud America,FarmFarm Srl,FienoFacile,Foraggio,2.0,36510.46,73020.92,Dealer,ARS,1048.324436,38274807.39,76549614.78
+100030,13-May-2025,Spagna,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,1.0,24620.97,24620.97,Vendita diretta,EUR,1.0,24620.97,24620.97
+100635,05-05-2025,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,AltaResa,Mais,2.0,43344.4,86688.8,Dealer,TRY,37.038151,1605396.43,3210792.86
+100356,04-26-2022,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,6.0,21266.1,127596.6,Dealer,ARS,995.533058,21171105.56,127026633.39
+100032,12-Mar-2024,BULGARIA,Est Europa,HarvestGrain GmbH,AltaResa,Mais,4.0,44325.63,177302.52,Dealer,BGN,1.888704,83717.99,334871.98
+100807,11-08-2023,Kazakhstan,Asia Centrale,HarvestCereal LLC,AltaResa,Mais,4.0,42640.99,170563.96,Dealer,KZT,461.206766,19666313.1,78665252.39
+100673,2024-12-17,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,2.0,45092.57,90185.14,Dealer,ARS,1033.975986,46624634.53,93249269.05
+100852,2024-04-24,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,3.0,33987.0,101961.0,Vendita diretta,EUR,1.0,33987.0,101961.0
+100071,25/10/2022,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,1.0,21951.33,21951.33,Dealer,EUR,1.0,21951.33,21951.33
+101132,2021-01-21,Australia,Oceania,HarvestFarm SA,FienoFacile,Foraggio,5.0,32285.79,161428.95,Dealer,AUD,1.638242,52891.94,264459.69
+100479,2021-12-08,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,4.0,36738.1,146952.4,Dealer,ZAR,21.365967,784945.03,3139780.13
+101089,2021-03-06,Serbia,Est Europa,GrainHarvest S.L.,TaglioFlex,Cereali (grano/orzo),3.0,28170.56,84511.68,Vendita diretta,RSD,112.798155,3177587.19,9532761.58
+100599,10-20-2024,Russia,Est Europa,GrainAgro Srl,SolePieno,Girasole,4.0,24839.47,99357.88,Dealer,RUB,99.850249,2480227.26,9920909.06
+100723,23-Apr-2023,RUSSIA,Est Europa,AgroCereal GmbH,GranCampo,Mais,1.0,39640.91,39640.91,Dealer,RUB,106.156602,4208144.31,4208144.31
+100582,2025-09-20,Kazakhstan,Asia Centrale,HarvestCereal LLC,GranCampo,Mais,1.0,35902.67,35902.67,Dealer,KZT,461.622702,16573487.53,16573487.53
+100924,2021-06-03,Romania,Est Europa,TerraAgro SC,SolePieno,Girasole,3.0,22807.55,68422.65,Dealer,RON,4.774143,108886.51,326659.52
+100528,2023-05-23,Serbia,,GrainHarvest S.L.,AltaResa,Mais,3.0,43877.24,131631.72,Dealer,RSD,115.891923,5085017.72,15255053.16
+101147,2024-06-25,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,5.0,20964.38,104821.9,Dealer,UAH,45.068216,944827.21,4724136.03
+100114,2024-04-08,Romania,Est Europa,CampoCampo Ltd,FienoFacile,Foraggio,2.0,33072.66,66145.32,Dealer,RON,4.864585,160884.77,321769.53
+100999,2021-04-13,Ungheria,Est Europa,FarmTerra SA,SolePieno,Girasole,3.0,22996.43,68989.29,Dealer,HUF,387.294751,8906396.63,26719189.89
+100436,2025-06-25,Francia,Sud Europa,AgriFarm Kft.,TaglioFlex,Cereali (grano/orzo),3.0,29205.17,87615.51,Dealer,EUR,1.0,29205.17,87615.51
+100380,2024-12-04,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,3.0,19280.22,57840.66,Dealer,KZT,424.852566,8191250.94,24573752.82
+100498,04/01/2023,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,6.0,19913.96,119483.76,Dealer,EUR,1.0,19913.96,119483.76
+100108,2022-12-16,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),2.0,24168.07,48336.14,Dealer,EUR,1.0,24168.07,48336.14
+100989,2022-02-17,Polonia,Centro Europa,AgroTerra SC,  TaglioFlex ,Cereali (grano/orzo),1.0,24262.96,24262.96,Dealer,PLN,4.46474,108327.81,108327.81
+101019,2021-07-12,Bulgaria,Est Europa,HarvestGrain GmbH,FienoFacile,Foraggio,2.0,27651.43,55302.86,Dealer,BGN,1.972881,54552.98,109105.96
+100668,2023-06-06,Ungheria,Est Europa,FarmAgro Sp. z o.o.,SolePieno,Girasole,4.0,23132.4,92529.6,Dealer,HUF,391.895828,9065491.05,36261964.21
+101175,2023-06-27,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,4.0,35769.89,143079.56,Dealer,EUR,1.0,35769.89,143079.56
+101149,2021-11-14,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,3.0,17927.25,53781.75,Dealer,AUD,1.618899,29022.41,87067.22
+100747,05-17-2021,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,2.0,42563.07,85126.14,Dealer,EUR,1.0,42563.07,85126.14
+100452,2024-02-01,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,5.0,21303.88,106519.4,Dealer,UAH,44.305374,943876.37,4719381.86
+100935,2023-06-11,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,3.0,41700.94,125102.82,Dealer,MXN,18.605856,775881.68,2327645.05
+100430,2023-10-25,Australia,Oceania,FarmTerra LLC,SolePieno,Girasole,3.0,23502.27,70506.81,Vendita diretta,AUD,1.69196,39764.9,119294.7
+100262,2021-03-02,Bulgaria,Est Europa,CampoFarm LLC,TaglioFlex,Cereali (grano/orzo),5.0,31353.34,156766.7,Vendita diretta,BGN,2.011142,63056.02,315280.09
+100817,2025-05-16,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,3.0,38296.08,114888.24,Dealer,MXN,19.389834,742554.63,2227663.9
+100554,2022-01-24,Kazakhstan,Asia Centrale,AgriTerra Kft.,AltaResa,Mais,4.0,44086.35,176345.4,Vendita diretta,KZT,499.911308,22039264.89,88157059.57
+101134,13/02/2025,Francia,Sud Europa,FarmFarm Kft.,FienoFacile,Foraggio,3.0,31242.6,93727.8,Dealer,EUR,1.0,31242.6,93727.8
+100175,2024-08-09,USA,Nord America,CerealAgri SC,TaglioFlex,Cereali (grano/orzo),1.0,26490.3,26490.3,Dealer,USD,1.101141,29169.56,29169.56
+100863,2025-08-22,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,3.0,48772.7,146318.1,Dealer,PLN,4.045536,197311.71,591935.14
+100520,2024-03-05,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,2.0,44883.71,89767.42,Dealer,MXN,17.95075,805696.26,1611392.51
+100298,2022-10-20,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,5.0,31955.83,159779.15,Vendita diretta,ZAR,20.887008,667461.68,3337308.38
+100378,2023-01-23,USA,Nord America,FarmCereal SRL,SolePieno,Girasole,2.0,24236.69,48473.38,Dealer,USD,1.003603,24324.01,48648.03
+100740,2025-04-16,Canada,,AgriFarm SC,SolePieno,Girasole,1.0,23440.79,23440.79,Dealer,CAD,1.399448,32804.17,32804.17
+100424,2023-04-05,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,5.0,35305.65,176528.25,Dealer,EUR,1.0,35305.65,176528.25
+100055,05-11-2024,Bulgaria,Est Europa,HarvestGrain GmbH,TaglioFlex,Cereali (grano/orzo),4.0,29402.29,117609.16,Dealer,BGN,1.972938,58008.9,232035.58
+100278,2025-04-25,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),3.0,25498.18,76494.54,Dealer,ZAR,20.726787,528495.35,1585486.04
+100893,2024-09-21,Serbia,Est Europa,FarmCampo Srl,TaglioFlex,Cereali (grano/orzo),5.0,26786.63,133933.15,Dealer,RSD,110.69114,2965042.61,14825213.06
+100057,05-03-2021,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,3.0,20862.99,62588.97,Dealer,KZT,462.852091,9656478.55,28969435.64
+100579,2023-01-21,USA,Nord America,CampoGrain Srl,TaglioFlex,Cereali (grano/orzo),1.0,26145.46,26145.46,Dealer,USD,1.120262,29289.77,29289.77
+100110,2025-11-24,Kazakhstan,Asia Centrale,HarvestCereal LLC,GranCampo,Mais,4.0,42096.33,168385.32,Vendita diretta,KZT,479.717409,20194342.36,80777369.42
+100211,2021-09-10,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,5.0,31361.2,156806.0,Dealer,EUR,1.0,31361.2,156806.0
+100905,2024-08-15,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,2.0,24395.45,48790.9,Dealer,RUB,92.802888,2263968.21,4527936.43
+100313,2024-12-02,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,1.0,37843.68,37843.68,Dealer,EUR,1.0,37843.68,37843.68
+100210,02-28-2024,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,3.0,20756.39,62269.17,Dealer,PLN,4.157999,86305.05,258915.15
+101081,2023-08-15,Italia,Sud Europa,HarvestAgri Srl,GranCampo,Mais,2.0,40320.5,80641.0,Dealer,EUR,1.0,40320.5,80641.0
+101203,2021-04-26,Turchia,Medio Oriente,HarvestGrain Kft.,PrimaRaccolta,Mais,5.0,21228.33,106141.65,Dealer,TRY,35.557406,754824.35,3774121.74
+100219,2024-02-20,Australia,Oceania,FarmTerra LLC,TaglioFlex,Cereali (grano/orzo),3.0,25079.62,75238.86,Dealer,AUD,1.596252,40033.39,120100.18
+100581,2022-06-16,Australia,Oceania,GrainFarm LLC,AltaResa,Mais,5.0,46469.8,232349.0,Dealer,AUD,1.59774,74246.66,371233.29
+100362,2023-01-15,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,2.0,40756.93,81513.86,Dealer,EUR,1.0,40756.93,81513.86
+100763,02/05/2021,GERMANIA,Centro Europa,FarmCampo SA,AltaResa,Mais,2.0,40898.02,81796.04,Dealer,EUR,1.0,40898.02,81796.04
+100494,2023-02-26,Serbia,Est Europa,CerealFarm GmbH,FienoFacile,Foraggio,2.0,29344.89,58689.78,Dealer,RSD,120.881942,3547267.29,7094534.58
+100304,05-Dec-2024,Serbia,Est Europa,FarmAgri SRL,GranCampo,Mais,3.0,38103.83,114311.49,Dealer,RSD,123.83043,4718413.65,14155240.96
+100495,06/04/2024,Francia,Sud Europa,AgriFarm Kft.,TaglioFlex,Cereali (grano/orzo),3.0,27126.88,81380.64,Dealer,EUR,1.0,27126.88,81380.64
+100428,2025-07-24,GERMANIA,Centro Europa,AgroHarvest SA,GranCampo,Mais,-3.0,39489.84,118469.52,Dealer,EUR,1.0,39489.84,118469.52
+101186,2023-01-13,Ucraina,,HarvestCampo Ltd,AltaResa,Mais,4.0,35557.71,142230.84,Dealer,UAH,43.005414,1529174.04,6116696.16
+100529,04-22-2021,Canada,Nord America,AgriFarm SC,SolePieno,Girasole,3.0,23462.66,70387.98,Dealer,CAD,1.478923,34699.47,104098.4
+100535,2023-12-14,UCRAINA,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,2.0,31971.86,63943.72,Vendita diretta,UAH,43.638282,1395197.04,2790394.09
+100887,19/04/2022,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,3.0,42070.25,126210.75,Dealer,EUR,1.0,42070.25,126210.75
+100755,24/10/2024,Argentina,Sud America,AgroCampo Srl,FienoFacile,Foraggio,3.0,30223.08,90669.24,Dealer,ARS,1053.506207,31840202.37,95520607.12
+100890,12-03-2023,USA,Nord America,FarmCereal SRL,FienoFacile,Foraggio,4.0,30769.25,123077.0,Dealer,USD,1.053128,32403.96,129615.83
+100919,2021-04-09,Bulgaria,Est Europa,HarvestGrain GmbH,PrimaRaccolta,Mais,2.0,20934.01,41868.02,Dealer,BGN,1.974308,41330.18,82660.37
+100969,2022-10-19,Brasile,Sud America,GrainAgro Ltd,TaglioFlex,Cereali (grano/orzo),2.0,27282.32,54564.64,Vendita diretta,BRL,5.588704,152472.81,304945.62
+100829,2022-08-15,Ungheria,Est Europa,FarmAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,26504.42,53008.84,Dealer,HUF,386.338972,10239690.38,20479380.75
+100171,2021-06-05,Polonia,Centro Europa,AgroTerra SC,SolePieno,Girasole,4.0,25399.82,101599.28,Dealer,PLN,4.071835,103423.88,413695.5
+100299,2021-01-06,Brasile,Sud America,FarmTerra Sp. z o.o.,PrimaRaccolta,Mais,4.0,21204.65,84818.6,Dealer,BRL,5.507922,116793.56,467174.23
+101220,12-02-2021,Bulgaria,Est Europa,TerraAgro Ltd,TaglioFlex,Cereali (grano/orzo),2.0,25172.26,50344.52,Dealer,BGN,1.859935,46818.77,93637.53
+100395,2022-05-17,Germania,Centro Europa,AgroHarvest SA,GranCampo,Mais,1.0,35610.59,35610.59,Dealer,EUR,1.0,35610.59,35610.59
+100652,02-19-2025,Polonia,Centro Europa,AgroTerra SC,TaglioFlex,Cereali (grano/orzo),3.0,26349.68,79049.04,Vendita diretta,PLN,4.406996,116122.93,348368.8
+100584,2023-04-02,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,2.0,23224.99,46449.98,Dealer,MXN,18.046113,419120.79,838241.59
+100383,2024-02-03,Italia,Sud Europa,AgroAgri S.L.,TaglioFlex,Cereali (grano/orzo),2.0,28180.45,56360.9,Vendita diretta,EUR,1.0,28180.45,56360.9
+100333,2024-12-08,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,,31348.45,62696.9,Dealer,EUR,1.0,31348.45,62696.9
+100462,02-15-2022,Sud Africa,Africa,AgriCampo SA,AltaResa,Mais,2.0,46103.31,92206.62,Dealer,ZAR,19.119581,881475.97,1762951.94
+100478,2023-10-02,Serbia,Est Europa,FarmAgri SRL,AltaResa,Mais,4.0,41913.97,167655.88,Dealer,RSD,112.761173,4726268.42,18905073.69
+100523,04-25-2024,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,4.0,38221.73,152886.92,Dealer,RSD,109.309876,4178012.57,16712050.27
+100234,08-06-2024,Ucraina,Est Europa,HarvestCampo Ltd,TaglioFlex,Cereali (grano/orzo),3.0,27157.85,81473.55,Dealer,UAH,43.419337,1179175.84,3537527.52
+100873,2025-06-21,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,30603.83,61207.66,Dealer,HUF,382.186186,11696361.06,23392722.13
+100200,2023-05-27,Spagna,Sud Europa,FarmGrain SC,PrimaRaccolta,Mais,2.0,21305.3,42610.6,Dealer,EUR,1.0,21305.3,42610.6
+101170,03-11-2023,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,4.0,23238.78,92955.12,Dealer,EUR,1.0,23238.78,92955.12
+100248,2025-07-14,Kazakhstan,Asia Centrale,AgriTerra Kft.,FienoFacile,Foraggio,3.0,30950.95,92852.85,Vendita diretta,KZT,484.00095,14980289.2,44940867.61
+101088,11/06/2023,Spagna,Sud Europa,HarvestCampo S.L.,GranCampo,Mais,2.0,37754.86,75509.72,Dealer,EUR,1.0,37754.86,75509.72
+100595,04-Nov-2025,USA,Nord America,AgroCampo S.L.,AltaResa,Mais,1.0,,47143.78,Dealer,USD,1.139679,53728.78,53728.78
+100011,2025-02-08,SERBIA,Est Europa,CerealFarm GmbH,TaglioFlex,Cereali (grano/orzo),2.0,29197.39,58394.78,Dealer,RSD,112.277481,3278209.4,6556418.8
+100148,01-08-2023,Australia,,FarmCereal SC,AltaResa,Mais,2.0,42485.67,84971.34,Dealer,AUD,1.667095,70827.65,141655.3
+100539,07-07-2023,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,5.0,34915.44,174577.2,Dealer,BGN,1.945033,67911.68,339558.42
+101034,2021-02-25,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,1.0,44151.95,44151.95,Dealer,BGN,1.870845,82601.45,82601.45
+100819,11-24-2022,Italia,Sud Europa,FarmFarm GmbH,PrimaRaccolta,Mais,5.0,20405.54,102027.7,Dealer,EUR,1.0,20405.54,102027.7
+100345,2021-12-17,Bulgaria,Est Europa,HarvestGrain GmbH,SolePieno,Girasole,4.0,24105.31,96421.24,Dealer,BGN,1.978578,47694.24,190776.94
+100507,2023-10-06,Ungheria,Est Europa,FarmTerra SA,PrimaRaccolta,Mais,2.0,20581.52,41163.04,Dealer,HUF,401.445215,8262352.72,16524705.44
+100164,18-May-2025,Turchia,Medio Oriente,TerraAgri SA,GranCampo,Mais,4.0,,173931.76,Dealer,TRY,36.577191,1590483.8,6361935.21
+100781,2025-06-07,Ucraina,Est Europa,HarvestCampo Ltd,AltaResa,Mais,4.0,38851.69,155406.76,Dealer,UAH,46.287641,1798353.08,7193412.32
+100534,08/03/2021,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,1.0,30564.37,30564.37,Dealer,PLN,4.088072,124949.35,124949.35
+100681,2025-04-18,Argentina,Sud America,FarmFarm Srl,TaglioFlex,Cereali (grano/orzo),6.0,23030.23,138181.38,Dealer,ARS,1101.401834,25365537.56,152193225.36
+100732,07-10-2025,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),2.0,28364.75,56729.5,Dealer,ZAR,18.459572,523601.14,1047202.29
+101170,03-11-2023,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,4.0,23238.78,92955.12,Dealer,EUR,1.0,23238.78,92955.12
+100448,2022-05-06,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,5.0,21747.83,108739.15,Dealer,MXN,18.607202,404666.27,2023331.33
+100406,2025-05-21,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,5.0,33235.01,166175.05,Dealer,ZAR,20.051864,666423.9,3332119.5
+100245,2022-07-26,Ungheria,Est Europa,FarmTerra SA,FienoFacile,Foraggio,3.0,32705.19,98115.57,Dealer,HUF,401.722229,13138401.83,39415205.48
+100429,2022-08-09,USA,Nord America,FarmCereal SRL,PrimaRaccolta,Mais,1.0,23702.13,23702.13,Dealer,USD,0.998559,23667.98,23667.98
+100815,2025-07-20,Ungheria,Est Europa,FarmTerra SA,AltaResa,Mais,5.0,45500.21,227501.05,Dealer,HUF,396.957895,18061667.58,90308337.92
+100136,2023-07-26,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,2.0,18759.29,37518.58,Dealer,MXN,19.090325,358120.94,716241.89
+100328,2024-04-18,FRANCIA,Sud Europa,FarmFarm Kft.,SolePieno,Girasole,1.0,24492.69,24492.69,Dealer,EUR,1.0,24492.69,24492.69
+100746,2022-12-13,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,3.0,,136751.31,Dealer,EUR,1.0,45583.77,136751.31
+100651,22-Oct-2025,Brasile,Sud America,FarmTerra Sp. z o.o.,AltaResa,Mais,1.0,41282.4,41282.4,Dealer,BRL,5.662396,233757.3,233757.3
+101139,05-26-2024,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,6.0,25178.51,151071.06,Dealer,ZAR,20.613689,519021.97,3114131.85
+100920,2025-07-25,Canada,Nord America,AgriFarm SC,FienoFacile,Foraggio,4.0,33564.7,134258.8,Dealer,CAD,1.498277,50289.22,201156.87
+101215,2021-11-11,Francia,Sud Europa,AgriFarm Kft.,TaglioFlex,Cereali (grano/orzo),6.0,25587.34,153524.04,Dealer,EUR,1.0,25587.34,153524.04
+100399,2024-05-14,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,2.0,25012.16,50024.32,Dealer,KZT,502.309129,12563836.3,25127672.61
+100332,2021-12-07,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,1.0,20098.3,20098.3,Vendita diretta,RUB,96.814319,1945803.23,1945803.23
+100159,2025-03-20,Australia,Oceania,HarvestFarm SA,SolePieno,Girasole,2.0,24880.24,49760.48,Dealer,AUD,1.699829,42292.15,84584.31
+100141,2024-02-23,Serbia,Est Europa,FarmCampo Srl,FienoFacile,Foraggio,3.0,30559.39,91678.17,Dealer,RSD,117.794333,3599722.96,10799168.89
+100260,2023-09-24,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,2.0,21829.49,43658.98,Vendita diretta,PLN,4.48766,97963.33,195926.66
+100340,16-Mar-2025,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,4.0,38416.62,153666.48,Vendita diretta,TRY,33.329716,1280415.03,5121660.14
+100995,2024-05-06,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,4.0,39101.23,156404.92,Dealer,EUR,1.0,39101.23,156404.92
+100702,2022-02-16,Sud Africa,Africa,AgriFarm SA,PrimaRaccolta,Mais,2.0,18769.75,37539.5,Dealer,ZAR,21.115475,396332.19,792664.37
+101106,2022-12-09,Serbia,Est Europa,GrainHarvest S.L.,AltaResa,Mais,5.0,39737.49,198687.45,Dealer,RSD,119.561377,4751069.02,23755345.11
+100425,2022-12-03,Polonia,Centro Europa,AgroTerra SC,FienoFacile,Foraggio,2.0,31720.4,63440.8,Dealer,PLN,4.332766,137437.07,274874.14
+100945,10-Mar-2021,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,7.0,40320.16,282241.12,Dealer,PLN,4.333809,174739.87,1223179.11
+100066,2023-07-28,Serbia,Est Europa,,AltaResa,Mais,1.0,41302.07,41302.07,Dealer,RSD,125.760987,5194189.09,5194189.09
+100414,2023-12-28,Spagna,Sud Europa,FarmGrain SC,FienoFacile,Foraggio,2.0,33154.13,66308.26,Dealer,EUR,1.0,33154.13,66308.26
+100779,2025-09-05,Brasile,Sud America,HarvestFarm Kft.,SolePieno,Girasole,3.0,24476.7,73430.1,Dealer,BRL,5.186619,126951.32,380853.95
+101108,14-Jan-2025,Sud Africa,Africa,AgriCampo SA,AltaResa,Mais,5.0,44723.86,223619.3,Vendita diretta,ZAR,20.687504,925225.03,4626125.16
+100097,2025-04-19,Italia,Sud Europa,AgroAgri S.L.,AltaResa,Mais,2.0,40454.28,80908.56,Vendita diretta,EUR,1.0,40454.28,80908.56
+100310,2021-06-18,Brasile,Sud America,GrainAgro Ltd,TaglioFlex,Cereali (grano/orzo),5.0,28850.14,144250.7,Dealer,BRL,5.665177,163441.15,817205.75
+101079,2024-03-09,Spagna,Sud Europa,TerraAgri GmbH,FienoFacile,Foraggio,3.0,31008.42,93025.26,Dealer,EUR,1.0,31008.42,93025.26
+100627,08-24-2021,USA,Nord America,CerealAgri SC,FienoFacile,Foraggio,4.0,30481.56,121926.24,Dealer,USD,1.141783,34803.33,139213.31
+100157,10-20-2023,Canada,Nord America,AgriFarm SC,AltaResa,Mais,3.0,43735.41,131206.23,Dealer,CAD,1.580663,69130.94,207392.83
+100725,2021-02-05,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),5.0,27373.0,136865.0,Dealer,CAD,1.496499,40963.67,204818.34
+100610,06-13-2024,Ucraina,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,2.0,26345.78,52691.56,Vendita diretta,UAH,43.916473,1157013.74,2314027.47
+101133,26/02/2021,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,3.0,35326.34,105979.02,Dealer,ZAR,21.092718,745128.53,2235385.58
+100504,27/05/2023,Turchia,Medio Oriente,TerraCampo SA,AltaResa,Mais,4.0,41807.29,167229.16,Dealer,TRY,37.774369,1579244.0,6316976.0
+101064,2023-04-19,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,4.0,41183.63,164734.52,Vendita diretta,RSD,119.477153,4920502.86,19682011.45
+101051,2023-02-16,Polonia,Centro Europa,GrainAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,28195.31,84585.93,Dealer,PLN,4.195515,118293.85,354881.54
+100381,2025-07-19,Serbia,Est Europa,GrainHarvest S.L.,SolePieno,Girasole,1.0,24345.55,24345.55,Dealer,RSD,115.228835,2805309.36,2805309.36
+100934,08-18-2021,Kazakhstan,Asia Centrale,HarvestCereal LLC,FienoFacile,Foraggio,4.0,27376.39,109505.56,Dealer,KZT,485.709981,13296985.87,53187943.47
+100536,2023-04-22,Canada,Nord America,AgroAgro LLC,PrimaRaccolta,Mais,3.0,18650.76,55952.28,Dealer,CAD,1.497176,27923.47,83770.41
+100283,2022-05-09,Bulgaria,Est Europa,HarvestGrain GmbH,SolePieno,Girasole,5.0,25998.31,129991.55,Dealer,BGN,1.863756,48454.51,242272.53
+101218,2025-03-11,USA,Nord America,CerealAgri SC,FienoFacile,Foraggio,3.0,33613.97,100841.91,Dealer,USD,1.087886,36568.17,109704.5
+100410,2022-02-08,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,3.0,31929.43,95788.29,Dealer,BGN,1.962566,62663.61,187990.84
+101055,06-17-2024,Romania,Est Europa,CampoCampo Ltd,PrimaRaccolta,Mais,2.0,19582.63,39165.26,Dealer,RON,5.184715,101530.36,203060.71
+101069,2023-06-14,Russia,Est Europa,GrainAgro Srl,GranCampo,Mais,2.0,41598.37,83196.74,Dealer,RUB,99.162582,4125001.78,8250003.55
+100585,10-15-2021,Kazakhstan,Asia Centrale,AgriTerra Kft.,TaglioFlex,Cereali (grano/orzo),3.0,24619.18,73857.54,Vendita diretta,KZT,467.51954,11509947.71,34529843.13
+100574,2021-11-12,Australia,Oceania,GrainFarm LLC,PrimaRaccolta,Mais,1.0,22612.81,22612.81,Dealer,AUD,1.557162,35211.81,35211.81
+100926,2023-05-25,Spagna,Sud Europa,,FienoFacile,Foraggio,1.0,32071.23,32071.23,Dealer,EUR,1.0,32071.23,32071.23
+100179,2025-03-23,USA,Nord America,CerealAgri SC,GranCampo,Mais,4.0,43255.83,173023.32,Dealer,USD,1.136841,49175.0,196700.0
+100994,08-16-2022,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,3.0,36436.14,109308.42,Vendita diretta,UAH,42.940623,1564590.55,4693771.65
+100968,06-06-2025,Serbia,Est Europa,GrainHarvest S.L.,PrimaRaccolta,Mais,3.0,22179.13,66537.39,Dealer,RSD,124.586168,2763212.82,8289638.45
+100287,04-09-2025,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,1.0,42925.23,42925.23,Dealer,MXN,19.247265,826193.28,826193.28
+100391,2022-04-15,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,4.0,39291.14,157164.56,Dealer,ARS,993.023564,39017027.88,156068111.51
+100865,2021-09-11,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,2.0,30506.38,61012.76,Vendita diretta,EUR,1.0,30506.38,61012.76
+100089,06-Mar-2021,Romania,Est Europa,GrainCampo GmbH,FienoFacile,Foraggio,3.0,30343.96,91031.88,Dealer,RON,4.969093,150781.96,452345.88
+100808,2024-03-17,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,3.0,31170.51,93511.53,Dealer,KZT,439.128305,13687853.22,41063559.67
+101006,2024-04-11,Spagna,Sud Europa,HarvestCampo S.L.,SolePieno,Girasole,4.0,21233.27,84933.08,Dealer,EUR,1.0,21233.27,84933.08
+100900,18/05/2024,Serbia,Est Europa,FarmCampo Srl,FienoFacile,Foraggio,5.0,31489.9,157449.5,Dealer,RSD,117.08243,3686914.01,18434570.06
+100491,2021-10-16,Australia,Oceania,FarmCereal SC,GranCampo,Mais,2.0,40140.2,80280.4,Dealer,AUD,1.724867,69236.51,138473.01
+101043,2021-04-13,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,3.0,38767.04,116301.12,Dealer,EUR,1.0,38767.04,116301.12
+101128,2025-08-06,Sud Africa,Africa,AgriCampo SA,AltaResa,Mais,2.0,43549.08,87098.16,Vendita diretta,ZAR,20.918329,910973.98,1821947.97
+100291,2021-04-25,Ucraina,Est Europa,CerealFarm Kft.,PrimaRaccolta,Mais,4.0,21828.95,87315.8,Dealer,UAH,44.305357,967139.42,3868557.69
+100286,2021-01-12,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,3.0,19099.08,57297.24,Dealer,PLN,4.196632,80151.81,240455.43
+101208,2023-09-03,Canada,Nord America,AgroAgro LLC,GranCampo,Mais,4.0,36230.83,144923.32,Dealer,CAD,1.477808,53542.21,214168.84
+101113,06-03-2024,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,SolePieno,Girasole,3.0,23014.39,69043.17,Dealer,TRY,35.498754,816982.17,2450946.51
+100267,2021-05-14,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,2.0,21345.74,42691.48,Vendita diretta,MXN,18.776967,400808.26,801616.51
+100060,2023-12-08,Argentina,Sud America,AgroCampo Srl,AltaResa,Mais,5.0,47419.64,237098.2,Dealer,ARS,1022.204968,48472591.59,242362957.94
+101204,2023-01-10,Sud Africa,Africa,AgriFarm SA,TaglioFlex,Cereali (grano/orzo),1.0,24431.62,24431.62,Dealer,ZAR,20.327536,496634.64,496634.64
+100372,24/12/2023,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),5.0,,137432.2,Dealer,HUF,415.736056,11427104.16,57135520.8
+100788,2023-02-03,Ucraina,Est Europa,TerraHarvest SC,  TaglioFlex ,Cereali (grano/orzo),3.0,25758.62,77275.86,Dealer,UAH,45.017142,1159579.45,3478738.36
+100756,2023-07-02,Kazakhstan,Asia Centrale,,PrimaRaccolta,Mais,2.0,20235.64,40471.28,Dealer,KZT,476.497572,9642233.33,19284466.66
+100366,09/05/2022,Ungheria,Est Europa,FarmTerra SA,FienoFacile,Foraggio,3.0,32406.77,97220.31,Dealer,HUF,387.823805,12568116.85,37704350.55
+100715,2022-05-28,Italia,Sud Europa,AgroAgro SC,GranCampo,Mais,2.0,36246.69,72493.38,Dealer,EUR,1.0,36246.69,72493.38
+101189,2023-03-24,Argentina,Sud America,FarmFarm Srl,SolePieno,Girasole,3.0,26014.89,78044.67,Vendita diretta,ARS,1033.801749,26894238.78,80682716.35
+100630,18/01/2021,USA,Nord America,FarmCereal SRL,PrimaRaccolta,Mais,3.0,20108.15,60324.45,Dealer,USD,1.089127,21900.33,65700.99
+101145,04-03-2025,Sud Africa,Africa,AgriFarm SA,PrimaRaccolta,Mais,3.0,19260.91,57782.73,Dealer,ZAR,20.292734,390856.52,1172569.57
+100896,01-05-2021,Polonia,Centro Europa,AgroTerra SC,GranCampo,Mais,3.0,32632.81,97898.43,Vendita diretta,PLN,4.330698,141322.85,423968.54
+100678,2023-03-14,Kazakhstan,Asia Centrale,AgriTerra Kft.,FienoFacile,Foraggio,2.0,36843.88,73687.76,Dealer,KZT,478.167086,17617530.74,35235061.47
+100986,2021-05-16,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,3.0,24389.49,73168.47,Dealer,MXN,18.064766,440590.43,1321771.29
+100416,2022-05-19,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,3.0,22789.22,68367.66,Dealer,UAH,45.616664,1039568.19,3118704.57
+100901,2023-05-04,Francia,Sud Europa,,SolePieno,Girasole,2.0,22361.39,44722.78,Vendita diretta,EUR,1.0,22361.39,44722.78
+100084,2024-08-16,Messico,Nord America,CerealCereal LLC,AltaResa,Mais,1.0,42720.2,42720.2,Dealer,MXN,18.124862,774297.73,774297.73
+100130,2021-11-20,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,2.0,29201.97,58403.94,Vendita diretta,ZAR,20.052961,585585.97,1171171.93
+100753,25/06/2023,Messico,Nord America,CerealCereal LLC,AltaResa,Mais,1.0,41339.25,41339.25,Dealer,MXN,19.276043,796857.16,796857.16
+101237,15/05/2022,Italia,Sud Europa,AgroAgri S.L.,AltaResa,Mais,3.0,44336.13,133008.39,Dealer,EUR,1.0,44336.13,133008.39
+101178,2025-07-14,Serbia,Est Europa,GrainHarvest S.L.,GranCampo,Mais,3.0,39518.4,118555.2,Dealer,RSD,120.016347,4742854.01,14228562.02
+100629,2024-12-13,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,4.0,37756.98,151027.92,Dealer,ZAR,21.271371,803142.73,3212570.92
+100261,2021-05-11,Polonia,Centro Europa,CampoTerra Srl,PrimaRaccolta,Mais,4.0,20837.22,83348.88,Dealer,PLN,4.031369,84002.52,336010.09
+100597,2025-05-25,USA,Nord America,CerealAgri SC,SolePieno,Girasole,1.0,22683.27,22683.27,Dealer,USD,1.050169,23821.27,23821.27
+100611,2023-02-07,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,999.0,22075.5,88302.0,Vendita diretta,RUB,92.655579,2045418.23,8181672.94
+100992,2025-05-11,Brasile,Sud America,CampoGrain Kft.,FienoFacile,Foraggio,3.0,31334.28,94002.84,Dealer,BRL,5.390848,168918.34,506755.02
+100623,2023-10-17,Ucraina,Est Europa,HarvestCampo Ltd,AltaResa,Mais,3.0,40800.18,122400.54,Dealer,UAH,42.77281,1745138.35,5235415.04
+100139,2023-06-19,Canada,Nord America,AgroAgro LLC,PrimaRaccolta,Mais,1.0,20434.7,20434.7,Vendita diretta,CAD,1.434604,29315.7,29315.7
+100293,2024-12-26,Ungheria,Est Europa,FarmTerra SA,AltaResa,Mais,1.0,43626.04,43626.04,Dealer,HUF,368.251282,16065345.16,16065345.16
+101038,2022-08-10,Sud Africa,Africa,AgriFarm SA,AltaResa,Mais,4.0,36743.09,146972.36,Vendita diretta,ZAR,21.388815,785891.15,3143564.62
+100440,2024-04-04,Serbia,Est Europa,FarmAgri SRL,AltaResa,Mais,3.0,41457.99,124373.97,Dealer,RSD,114.990866,4767290.17,14301870.52
+100142,2021-02-10,Germania,Centro Europa,AgroHarvest SA,GranCampo,Mais,2.0,38740.92,77481.84,Dealer,EUR,1.0,38740.92,77481.84
+100803,05-18-2025,Germania,Centro Europa,FarmCampo SA,PrimaRaccolta,Mais,4.0,21351.08,85404.32,Dealer,EUR,1.0,21351.08,85404.32
+100483,08/01/2021,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),4.0,31267.35,125069.4,Dealer,HUF,391.185652,12231338.7,48925354.78
+100468,2022-01-05,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,5.0,42673.21,213366.05,Vendita diretta,PLN,4.281544,182707.23,913536.13
+100140,2024-06-01,Turchia,Medio Oriente,TerraAgri SA,AltaResa,Mais,5.0,44235.14,221175.7,Vendita diretta,TRY,35.807901,1583967.51,7919837.57
+100845,2025-07-26,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,5.0,46701.52,233507.6,Dealer,BRL,5.22816,244163.02,1220815.09
+100946,2021-02-04,Ungheria,Est Europa,FarmTerra SA,SolePieno,Girasole,2.0,25693.45,51386.9,Dealer,HUF,386.316248,9925797.2,19851594.4
+100225,02-11-2025,Russia,Est Europa,GrainAgro Srl,GranCampo,Mais,4.0,40703.84,162815.36,Vendita diretta,RUB,92.161579,3751330.17,15005320.66
+100618,2022-11-14,Brasile,Sud America,GrainAgro Ltd,AltaResa,Mais,3.0,37509.97,112529.91,Dealer,BRL,5.102435,191392.18,574176.55
+100275,2025-07-10,Brasile,Sud America,GrainAgro Ltd,SolePieno,Girasole,4.0,24234.1,96936.4,Vendita diretta,BRL,5.497748,133232.97,532931.9
+100324,2025-05-24,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,3.0,41973.19,125919.57,Dealer,BGN,2.153246,90378.6,271135.81
+100351,2025-08-28,USA,Nord America,FarmCereal SRL,FienoFacile,Foraggio,3.0,34158.69,102476.07,Vendita diretta,USD,1.157729,39546.51,118639.52
+100722,2025-09-13,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),3.0,30419.06,91257.18,Dealer,RUB,100.360304,3052866.11,9158598.33
+100482,2025-05-07,Turchia,Medio Oriente,TerraCampo SA,SolePieno,Girasole,3.0,23772.77,71318.31,Dealer,TRY,36.404993,865447.53,2596342.58
+100412,2021-01-13,Kazakhstan,Asia Centrale,CerealAgro S.L.,TaglioFlex,Cereali (grano/orzo),5.0,28648.15,143240.75,Dealer,KZT,505.288609,14475583.86,72377919.32
+101115,2025-01-02,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,2.0,21625.22,43250.44,Dealer,AUD,1.655192,35793.89,71587.78
+100567,2023-12-23,Bulgaria,Est Europa,CampoFarm LLC,SolePieno,Girasole,5.0,24836.21,124181.05,Dealer,BGN,1.858149,46149.38,230746.89
+101093,2021-11-23,Australia,Oceania,FarmCereal SC,AltaResa,Mais,5.0,45527.63,227638.15,Dealer,AUD,1.644128,74853.25,374266.26
+100353,2025-11-19,Spagna,Sud Europa,HarvestCampo S.L.,FienoFacile,Foraggio,2.0,30543.5,61087.0,Dealer,EUR,1.0,30543.5,61087.0
+101167,2024-12-10,Germania,Centro Europa,FarmCampo SA,TaglioFlex,Cereali (grano/orzo),2.0,27867.51,55735.02,Dealer,EUR,1.0,27867.51,55735.02
+100056,2024-03-05,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,1.0,29142.63,29142.63,Dealer,KZT,524.441444,15283602.96,15283602.96
+100847,2024-07-16,Messico,Nord America,CerealCereal LLC,SolePieno,Girasole,1.0,24010.44,24010.44,Vendita diretta,MXN,17.785408,427035.47,427035.47
+100553,2024-06-13,Spagna,Sud Europa,TerraAgri GmbH,GranCampo,Mais,3.0,38530.03,115590.09,Vendita diretta,EUR,1.0,38530.03,115590.09
+100645,2023-03-16,Canada,Nord America,,TaglioFlex,Cereali (grano/orzo),4.0,28001.35,112005.4,Dealer,CAD,1.438316,40274.79,161099.16
+100530,19-Apr-2024,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,2.0,22596.96,45193.92,Dealer,MXN,20.046259,452984.51,905969.03
+100580,2025-09-08,Brasile,Sud America,CampoGrain Kft.,FienoFacile,Foraggio,3.0,30661.7,91985.1,Dealer,BRL,5.28157,161941.91,485825.74
+100543,2024-05-22,Serbia,Est Europa,FarmCampo Srl,FienoFacile,Foraggio,2.0,35556.4,71112.8,Dealer,RSD,115.84392,4118992.76,8237985.51
+100661,03-12-2022,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,5.0,42688.46,213442.3,Dealer,BGN,2.026952,86527.46,432637.3
+100322,2023-05-08,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,7.0,38028.48,266199.36,Dealer,EUR,1.0,38028.48,266199.36
+100821,2024-11-13,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),5.0,26551.41,132757.05,Dealer,RUB,95.354259,2531790.03,12658950.13
+100711,2024-04-14,Australia,Oceania,FarmCereal SC,PrimaRaccolta,Mais,2.0,19389.76,38779.52,Dealer,AUD,1.649455,31982.54,63965.07
+100948,2025-03-18,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,2.0,21790.32,43580.64,Dealer,KZT,488.221176,10638495.66,21276991.31
+100382,2025-10-23,Kazakhstan,Asia Centrale,CerealAgro S.L.,TaglioFlex,Cereali (grano/orzo),4.0,28182.95,112731.8,Dealer,KZT,458.921043,12933748.81,51734995.24
+100040,2022-09-22,Brasile,Sud America,HarvestFarm Kft.,TaglioFlex,Cereali (grano/orzo),6.0,29792.15,178752.9,Dealer,BRL,5.448878,162333.79,974002.74
+100031,2021-12-09,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,3.0,20948.97,62846.91,Dealer,ARS,1000.915522,20968149.24,62904447.73
+100243,2024-05-03,POLONIA,Centro Europa,AgroTerra SC,AltaResa,Mais,3.0,40688.22,122064.66,Vendita diretta,PLN,3.974999,161735.63,485206.9
+100858,05-20-2022,Ungheria,Est Europa,FarmAgro Srl,SolePieno,Girasole,4.0,25572.83,102291.32,Vendita diretta,HUF,397.920003,10175940.59,40703762.36
+100137,28-Jul-2022,Spagna,Sud Europa,HarvestCampo S.L.,GranCampo,Mais,2.0,46002.28,92004.56,Dealer,EUR,1.0,46002.28,92004.56
+100311,2023-01-27,Ucraina,Est Europa,CerealFarm Kft.,FienoFacile,Foraggio,5.0,28375.08,141875.4,Dealer,UAH,43.165866,1224834.9,6124174.51
+101063,12-Feb-2023,Russia,Est Europa,AgroCereal GmbH,TaglioFlex,Cereali (grano/orzo),2.0,29427.63,58855.26,Dealer,RUB,99.037171,2914429.22,5828858.45
+101228,12-Jun-2024,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,1.0,19780.62,19780.62,Dealer,MXN,18.610702,368131.22,368131.22
+101173,2021-02-28,Francia,Sud Europa,FarmFarm Kft.,SolePieno,Girasole,4.0,26308.18,105232.72,Vendita diretta,EUR,1.0,26308.18,105232.72
+101125,2024-06-16,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,FienoFacile,Foraggio,5.0,29288.58,146442.9,Vendita diretta,TRY,33.885408,992455.48,4962277.42
+100243,2024-05-03,Polonia,Centro Europa,AgroTerra SC,AltaResa,Mais,3.0,40688.22,122064.66,Vendita diretta,PLN,3.974999,161735.63,485206.9
+100463,2022-04-15,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,4.0,22646.14,90584.56,Dealer,EUR,1.0,22646.14,90584.56
+100004,2021-03-15,Bulgaria,Est Europa,HarvestGrain GmbH,TaglioFlex,Cereali (grano/orzo),3.0,25721.14,77163.42,Dealer,BGN,1.880594,48371.02,145113.06
+100112,2024-05-28,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,3.0,24677.24,74031.72,Dealer,UAH,43.630549,1076681.53,3230044.59
+100674,2022-05-26,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,-3.0,29741.09,89223.27,Dealer,EUR,1.0,29741.09,89223.27
+101100,2022-06-21,Italia,Sud Europa,,AltaResa,Mais,3.0,40322.32,120966.96,Dealer,EUR,1.0,40322.32,120966.96
+100701,2024-11-11,Spagna,Sud Europa,TerraAgri GmbH,SolePieno,Girasole,2.0,23287.28,46574.56,Dealer,EUR,1.0,23287.28,46574.56
+100925,2022-12-09,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,3.0,42286.32,126858.96,Dealer,ZAR,20.069777,848677.01,2546031.04
+100837,2025-01-09,Australia,Oceania,FarmCereal SC,SolePieno,Girasole,1.0,22129.29,22129.29,Dealer,AUD,1.745415,38624.79,38624.79
+100377,16/01/2025,USA,Nord America,AgroCampo S.L.,TaglioFlex,Cereali (grano/orzo),3.0,31127.83,93383.49,Dealer,USD,1.146668,35693.29,107079.86
+100544,2022-10-10,Ungheria,Est Europa,FarmAgro Srl,FienoFacile,Foraggio,1.0,29355.16,29355.16,Dealer,HUF,370.251674,10868797.13,10868797.13
+100439,2021-06-10,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,6.0,19963.37,119780.22,Dealer,KZT,477.973823,9541968.28,57251809.67
+100315,05/01/2025,Kazakhstan,Asia Centrale,CerealAgro S.L.,TaglioFlex,Cereali (grano/orzo),3.0,27640.52,82921.56,Vendita diretta,KZT,494.977501,13681435.52,41044306.55
+101033,26/04/2021,USA,Nord America,FarmCereal SRL,AltaResa,Mais,4.0,44068.08,176272.32,Dealer,USD,1.052783,46394.13,185576.5
+100320,2024-06-20,Spagna,Sud Europa,HarvestCampo S.L.,AltaResa,Mais,4.0,42738.84,170955.36,Dealer,EUR,1.0,42738.84,170955.36
+101040,2021-06-06,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,,39856.26,119568.78,Vendita diretta,ZAR,20.639566,822615.91,2467847.73
+100967,2024-09-14,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,2.0,41064.38,82128.76,Dealer,PLN,4.574949,187867.44,375734.89
+100006,2022-11-13,Romania,Est Europa,,TaglioFlex,Cereali (grano/orzo),2.0,27065.38,54130.76,Vendita diretta,RON,4.861777,131585.84,263171.68
+100101,2023-09-22,Russia,Est Europa,AgroCereal GmbH,TaglioFlex,Cereali (grano/orzo),3.0,24202.22,72606.66,Vendita diretta,RUB,103.30718,2500263.1,7500789.29
+100714,2022-10-05,Argentina,Sud America,AgroCampo Srl,TaglioFlex,Cereali (grano/orzo),5.0,25374.01,126870.05,Dealer,ARS,1088.806759,27627393.59,138136967.95
+100571,2021-05-27,Ucraina,Est Europa,CerealFarm Kft.,PrimaRaccolta,Mais,2.0,18768.73,37537.46,Vendita diretta,UAH,42.38591,795529.7,1591059.4
+100549,2021-04-28,Kazakhstan,Asia Centrale,,SolePieno,Girasole,-1.0,23316.18,23316.18,Dealer,KZT,493.177314,11499011.03,11499011.03
+100947,2022-01-14,Australia,Oceania,GrainFarm LLC,GranCampo,Mais,3.0,37389.07,112167.21,Vendita diretta,AUD,1.689558,63171.0,189513.01
+100913,2024-10-25,Polonia,Centro Europa,GrainAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,25544.43,76633.29,Dealer,PLN,4.383954,111985.61,335956.82
+100712,15-Sep-2023,Turchia,Medio Oriente,HarvestGrain Kft.,PrimaRaccolta,Mais,4.0,24051.19,96204.76,Dealer,TRY,34.478819,829256.63,3317026.51
+100404,2022-07-10,USA,Nord America,FarmCereal SRL,AltaResa,Mais,5.0,42589.92,212949.6,Dealer,USD,1.082931,46121.94,230609.72
+101171,2025-12-20,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,3.0,20274.72,60824.16,Dealer,ARS,1021.38203,20708234.67,62124704.01
+100228,2025-05-16,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,5.0,21258.05,106290.25,Dealer,RUB,99.601368,2117330.86,10586654.31
+100431,2025-05-07,Ucraina,Est Europa,HarvestCampo Ltd,GranCampo,Mais,3.0,43110.1,129330.3,Dealer,UAH,44.263004,1908182.53,5724547.59
+100590,2025-08-16,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,3.0,21418.64,64255.92,Dealer,RUB,100.161787,2145329.26,6435987.77
+100716,2025-05-02,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,2.0,18229.36,36458.72,Dealer,UAH,43.39442,791052.5,1582105.01
+100667,2024-02-20,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),4.0,27987.34,111949.36,Dealer,MXN,19.107055,534755.64,2139022.58
+100067,2024-04-22,Sud Africa,Africa,AgriCampo SA,AltaResa,Mais,1.0,32470.67,32470.67,Dealer,ZAR,19.660002,638373.44,638373.44
+101104,2024-04-12,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,3.0,20502.13,61506.39,Dealer,RUB,97.325194,1995373.78,5986121.34
+100068,04-Sep-2024,Russia,Est Europa,,AltaResa,Mais,2.0,46799.29,93598.58,Vendita diretta,RUB,92.393846,4323966.39,8647932.79
+100472,13/05/2021,USA,Nord America,AgroCampo S.L.,FienoFacile,Foraggio,4.0,29122.86,116491.44,Dealer,USD,1.072576,31236.48,124945.92
+100212,2022-11-27,Bulgaria,Est Europa,CampoFarm LLC,TaglioFlex,Cereali (grano/orzo),3.0,28447.97,85343.91,Dealer,BGN,1.919425,54603.74,163811.23
+100013,2022-04-22,Russia,Est Europa,AgroCereal GmbH,GranCampo,Mais,2.0,33748.61,67497.22,Dealer,RUB,95.346466,3217810.7,6435621.39
+100923,03/01/2025,Bulgaria,Est Europa,TerraAgro Ltd,GranCampo,Mais,2.0,39523.47,79046.94,Vendita diretta,BGN,1.911837,75562.43,151124.86
+100724,24/10/2023,Kazakhstan,Asia Centrale,CerealAgro S.L.,PrimaRaccolta,Mais,1.0,21378.9,21378.9,Dealer,KZT,456.158197,9752160.48,9752160.48
+100300,2022-04-15,Serbia,Est Europa,FarmCampo Srl,AltaResa,Mais,4.0,38188.65,152754.6,Vendita diretta,RSD,120.496733,4601607.56,18406430.25
+100809,2022-03-14,Serbia,Est Europa,FarmCampo Srl,TaglioFlex,Cereali (grano/orzo),2.0,25279.84,50559.68,Vendita diretta,RSD,109.103228,2758112.15,5516224.29
+100853,09-16-2024,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,4.0,21460.3,85841.2,Dealer,RON,4.864347,104390.35,417561.38
+101144,2024-02-14,Francia,Sud Europa,FarmFarm Kft.,SolePieno,Girasole,3.0,,75370.95,Dealer,EUR,1.0,25123.65,75370.95
+101143,2023-05-19,Ucraina,Est Europa,CerealFarm Kft.,GranCampo,Mais,4.0,39294.95,157179.8,Dealer,UAH,40.815602,1603847.04,6415388.16
+100666,2023-01-03,Sud Africa,Africa,AgriFarm SA,FienoFacile,Foraggio,3.0,32366.08,97098.24,Dealer,ZAR,19.840461,642157.95,1926473.84
+101210,2023-01-18,Ungheria,Est Europa,,FienoFacile,Foraggio,5.0,30293.16,151465.8,Dealer,HUF,406.700617,12320246.86,61601234.31
+100443,2023-08-24,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,1.0,31014.9,31014.9,Dealer,PLN,4.246816,131714.57,131714.57
+101184,12-15-2024,Brasile,Sud America,FarmTerra Sp. z o.o.,SolePieno,Girasole,1.0,25481.95,25481.95,Vendita diretta,BRL,5.121239,130499.16,130499.16
+100765,2025-05-23,Kazakhstan,Asia Centrale,,FienoFacile,Foraggio,2.0,31679.61,63359.22,Dealer,KZT,471.185466,14926971.8,29853943.6
+101191,2021-03-15,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),5.0,26886.41,134432.05,Vendita diretta,EUR,1.0,26886.41,134432.05
+100813,2022-04-24,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,3.0,37745.91,113237.73,Dealer,EUR,1.0,37745.91,113237.73
+100895,2023-04-27,Romania,Est Europa,CampoCampo Ltd,SolePieno,Girasole,1.0,24251.02,24251.02,Dealer,RON,4.912668,119137.21,119137.21
+101103,2022-05-09,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,25234.35,50468.7,Dealer,RUB,105.136532,2653052.05,5306104.09
+100274,2023-07-19,Kazakhstan,Asia Centrale,AgriTerra Kft.,SolePieno,Girasole,3.0,23780.06,71340.18,Dealer,KZT,460.128867,10941892.06,32825676.19
+100465,2022-03-12,Russia,Est Europa,AgroCereal GmbH,GranCampo,Mais,4.0,38461.05,153844.2,Dealer,RUB,97.653617,3755860.65,15023442.58
+100363,2024-03-15,Germania,Centro Europa,AgroHarvest SA,GranCampo,Mais,3.0,41724.92,125174.76,Dealer,EUR,1.0,41724.92,125174.76
+100238,02-May-2025,Turchia,Medio Oriente,,PrimaRaccolta,Mais,2.0,19160.24,38320.48,Dealer,TRY,37.02127,709336.42,1418672.84
+101168,2023-05-12,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,1.0,41893.19,41893.19,Dealer,EUR,1.0,41893.19,41893.19
+100515,2021-10-03,Bulgaria,Est Europa,CampoFarm LLC,PrimaRaccolta,Mais,3.0,18757.78,56273.34,Dealer,BGN,1.871109,35097.85,105293.55
+100003,2025-04-15,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,4.0,36960.13,147840.52,Dealer,EUR,1.0,36960.13,147840.52
+100007,03-22-2025,Bulgaria,Est Europa,HarvestGrain GmbH,TaglioFlex,Cereali (grano/orzo),2.0,27713.53,55427.06,Dealer,BGN,1.91291,53013.49,106026.98
+100371,2025-03-23,Australia,Oceania,FarmCereal SC,GranCampo,Mais,2.0,42655.99,85311.98,Dealer,AUD,1.760797,75108.54,150217.08
+100312,2023-01-23,Sud Africa,Africa,AgriFarm SA,AltaResa,Mais,3.0,39998.19,119994.57,Dealer,ZAR,20.638876,825517.68,2476553.05
+101095,2024-04-09,Serbia,Est Europa,FarmCampo Srl,TaglioFlex,Cereali (grano/orzo),4.0,26349.49,105397.96,Dealer,RSD,118.732592,3128543.25,12514172.98
+100915,2024-02-13,Bulgaria,Est Europa,CampoFarm LLC,AltaResa,Mais,3.0,42047.97,126143.91,Dealer,BGN,1.892851,79590.54,238771.63
+101161,21-Feb-2025,USA,Nord America,CampoGrain Srl,TaglioFlex,Cereali (grano/orzo),3.0,24710.39,74131.17,Dealer,USD,1.109617,27419.07,82257.21
+100683,2022-04-04,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,4.0,30837.81,123351.24,Dealer,EUR,1.0,30837.81,123351.24
+100970,2022-07-08,Bulgaria,Est Europa,CampoFarm LLC,AltaResa,Mais,3.0,41910.62,125731.86,Dealer,BGN,2.033103,85208.61,255625.82
+100216,2024-09-15,Messico,Nord America,CerealCereal LLC,FienoFacile,Foraggio,3.0,30213.3,90639.9,Vendita diretta,MXN,18.932012,571998.56,1715995.67
+100965,2022-05-15,Canada,Nord America,AgriFarm SC,GranCampo,Mais,2.0,,75854.2,Dealer,CAD,1.466407,55616.56,111233.13
+100028,2024-08-12,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,3.0,38299.37,114898.11,Vendita diretta,RSD,111.980551,4288784.56,12866353.67
+101230,2022-02-24,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,3.0,31924.64,95773.92,Vendita diretta,KZT,489.206545,15617742.83,46853228.5
+100971,11-01-2025,Serbia,Est Europa,FarmAgri SRL,SolePieno,Girasole,3.0,23302.63,69907.89,Vendita diretta,RSD,123.411804,2875819.61,8627458.82
+101094,2023-06-26,Kazakhstan,Asia Centrale,CerealAgro S.L.,PrimaRaccolta,Mais,4.0,20554.08,82216.32,Dealer,KZT,445.035147,9147288.01,36589152.06
+101030,08-Jul-2021,Ucraina,Est Europa,CerealFarm Kft.,AltaResa,Mais,2.0,45542.98,91085.96,Vendita diretta,UAH,42.025601,1913971.11,3827942.21
+100546,2023-04-14,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,6.0,19993.59,119961.54,Dealer,RSD,120.700128,2413228.87,14479373.23
+100931,2023-06-25,Spagna,Sud Europa,TerraAgri GmbH,AltaResa,Mais,3.0,42939.4,128818.2,Dealer,EUR,1.0,42939.4,128818.2
+100827,2024-07-03,Brasile,Sud America,HarvestFarm Kft.,GranCampo,Mais,2.0,42274.08,84548.16,Dealer,BRL,5.519713,233340.79,466681.58
+100917,2024-04-13,USA,Nord America,CampoGrain Srl,AltaResa,Mais,1.0,43211.6,43211.6,Vendita diretta,USD,1.06282,45926.15,45926.15
+100355,27/05/2025,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,4.0,38049.61,152198.44,Dealer,UAH,43.486038,1654626.79,6618507.15
+101117,2024-04-22,Brasile,Sud America,CampoGrain Kft.,SolePieno,Girasole,4.0,26208.89,104835.56,Dealer,BRL,5.777692,151426.89,605707.58
+101223,2021-04-09,USA,Nord America,FarmCereal SRL,FienoFacile,Foraggio,1.0,28775.91,28775.91,Dealer,USD,1.059236,30480.48,30480.48
+100257,2024-06-21,USA,Nord America,CampoGrain Srl,SolePieno,Girasole,2.0,23461.82,46923.64,Dealer,USD,1.098324,25768.68,51537.36
+100292,2021-07-06,Serbia,Est Europa,FarmAgri SRL,SolePieno,Girasole,3.0,24472.4,73417.2,Vendita diretta,RSD,116.115964,2841636.32,8524908.95
+100026,2023-01-26,Ungheria,Est Europa,FarmTerra SA,TaglioFlex,Cereali (grano/orzo),2.0,28165.12,56330.24,Vendita diretta,HUF,402.156394,11326783.1,22653566.19
+100337,03-18-2023,Serbia,Est Europa,FarmAgri SRL,FienoFacile,Foraggio,3.0,30312.87,90938.61,Dealer,RSD,114.301931,3464819.58,10394458.73
+100187,2021-06-06,Romania,Est Europa,TerraAgro SC,GranCampo,Mais,3.0,39895.09,119685.27,Dealer,RON,4.825722,192522.61,577567.84
+100048,2022-03-27,Messico,Nord America,CerealTerra Kft.,TaglioFlex,Cereali (grano/orzo),2.0,25849.97,51699.94,Dealer,MXN,17.70754,457739.38,915478.76
+100319,2024-08-20,Germania,Centro Europa,FarmCampo SA,AltaResa,Mais,2.0,44081.78,88163.56,Dealer,EUR,1.0,44081.78,88163.56
+100107,2024-01-03,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,3.0,26501.6,79504.8,Vendita diretta,UAH,44.509859,1179582.48,3538747.44
+100950,06-Jul-2025,USA,Nord America,AgroCampo S.L.,GranCampo,Mais,3.0,40198.25,120594.75,Dealer,USD,0.998926,40155.08,120465.23
+100056,2024-03-05,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,1.0,29142.63,29142.63,Dealer,KZT,524.441444,15283602.96,15283602.96
+100862,2024-02-24,Brasile,Sud America,CampoGrain Kft.,GranCampo,Mais,2.0,42103.0,84206.0,Dealer,BRL,5.655434,238110.74,476221.48
+100214,12/05/2021,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,2.0,36961.84,73923.68,Dealer,TRY,34.226888,1265088.76,2530177.52
+100121,2021-12-15,Spagna,Sud Europa,FarmGrain SC,TaglioFlex,Cereali (grano/orzo),1.0,27020.61,27020.61,Dealer,EUR,1.0,27020.61,27020.61
+100632,2023-03-20,Brasile,Sud America,HarvestFarm Kft.,AltaResa,Mais,2.0,41450.89,82901.78,Dealer,BRL,5.266596,218305.09,436610.18
+100533,01/06/2025,Romania,Est Europa,TerraAgro SC,PrimaRaccolta,Mais,3.0,17748.56,53245.68,Dealer,RON,5.274847,93620.94,280862.82
+100586,2024-09-11,Canada,Nord America,AgriFarm SC,AltaResa,Mais,2.0,39289.73,78579.46,Vendita diretta,CAD,1.410967,55436.51,110873.02
+100073,23-Apr-2025,Bulgaria,Est Europa,CampoFarm LLC,PrimaRaccolta,Mais,4.0,21104.33,84417.32,Dealer,BGN,1.921864,40559.65,162238.61
+100411,19/05/2022,Serbia,Est Europa,FarmCampo Srl,FienoFacile,Foraggio,4.0,30420.8,121683.2,Dealer,RSD,113.23086,3444573.35,13778293.38
+100768,2021-08-27,USA,Nord America,CampoGrain Srl,PrimaRaccolta,Mais,4.0,20310.36,81241.44,Dealer,USD,1.018304,20682.12,82728.48
+100843,2022-03-04,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,6.0,38142.18,228853.08,Dealer,ARS,985.853581,37602604.74,225615628.44
+100568,2022-05-23,Francia,Sud Europa,AgriFarm Kft.,SolePieno,Girasole,7.0,21946.68,153626.76,Dealer,EUR,1.0,21946.68,153626.76
+100433,12-Oct-2021,Spagna,Sud Europa,TerraAgri GmbH,SolePieno,Girasole,5.0,24583.85,122919.25,Dealer,EUR,1.0,24583.85,122919.25
+100561,2021-09-22,Australia,Oceania,FarmTerra LLC,AltaResa,Mais,3.0,46291.61,138874.83,Dealer,AUD,1.517849,70263.67,210791.02
+101014,2024-04-10,Polonia,Centro Europa,AgroTerra SC,GranCampo,Mais,4.0,40776.67,163106.68,Dealer,PLN,4.063775,165707.21,662828.85
+100885,2021-05-27,Australia,Oceania,,TaglioFlex,Cereali (grano/orzo),3.0,27639.99,82919.97,Dealer,AUD,1.642212,45390.72,136172.17
+100621,20-Mar-2025,Turchia,,HarvestGrain Kft.,TaglioFlex,Cereali (grano/orzo),,25002.95,100011.8,Vendita diretta,TRY,35.352571,883918.57,3535674.26
+100631,11-02-2025,Australia,Oceania,,AltaResa,Mais,3.0,38831.06,116493.18,Dealer,AUD,1.585096,61550.96,184652.87
+100527,27/01/2022,Brasile,Sud America,FarmTerra Sp. z o.o.,SolePieno,Girasole,2.0,24837.01,49674.02,Vendita diretta,BRL,5.646272,140236.51,280473.03
+101076,2024-12-09,Romania,Est Europa,TerraAgro SC,FienoFacile,Foraggio,4.0,32383.85,129535.4,Dealer,RON,5.05944,163844.15,655376.58
+100326,2022-05-10,Russia,Est Europa,AgroCereal GmbH,FienoFacile,Foraggio,2.0,31138.79,62277.58,Dealer,RUB,99.99041,3113580.38,6227160.76
+101138,2024-05-15,Germania,Centro Europa,AgroHarvest SA,PrimaRaccolta,Mais,1.0,18993.42,18993.42,Dealer,EUR,1.0,18993.42,18993.42
+100483,08/01/2021,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),4.0,31267.35,125069.4,Dealer,HUF,391.185652,12231338.7,48925354.78
+100317,15-Jul-2023,Serbia,Est Europa,FarmAgri SRL,AltaResa,Mais,4.0,43063.33,172253.32,Dealer,RSD,111.989618,4822645.88,19290583.51
+100694,2021-05-18,Bulgaria,Est Europa,TerraAgro Ltd,GranCampo,Mais,1.0,36924.46,36924.46,Dealer,BGN,2.025004,74772.18,74772.18
+100937,2025-03-02,Ucraina,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,6.0,31931.67,191590.02,Dealer,UAH,43.65298,1393912.55,8363475.31
+100466,01/08/2022,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,2.0,20456.08,40912.16,Vendita diretta,UAH,42.554871,870505.85,1741011.69
+100600,05-May-2022,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,3.0,23083.02,69249.06,Dealer,RUB,100.670851,2323787.27,6971361.8
+100365,2021-05-24,Italia,Sud Europa,FarmFarm GmbH,PrimaRaccolta,Mais,2.0,19846.2,39692.4,Dealer,EUR,1.0,19846.2,39692.4
+101090,2025-03-02,Canada,Nord America,AgroAgro LLC,TaglioFlex,Cereali (grano/orzo),2.0,26561.17,53122.34,Dealer,CAD,1.533171,40722.82,81445.63
+100573,09-11-2022,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,3.0,35669.17,107007.51,Vendita diretta,EUR,1.0,35669.17,107007.51
+100615,2022-04-02,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,,43572.25,130716.75,Vendita diretta,BGN,2.036504,88735.06,266205.18
+100061,2022-11-27,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,2.0,44506.15,89012.3,Dealer,EUR,1.0,44506.15,89012.3
+100434,25-Jun-2022,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),1.0,29739.75,29739.75,Vendita diretta,ZAR,21.299662,633446.62,633446.62
+100812,2022-11-11,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,5.0,36304.74,181523.7,Dealer,PLN,4.206727,152724.13,763620.65
+100093,2023-10-27,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,2.0,39776.43,79552.86,Dealer,ARS,1052.282724,41856050.11,83712100.22
+100972,2025-10-02,Francia,Sud Europa,AgriFarm Kft.,TaglioFlex,Cereali (grano/orzo),1.0,24356.71,24356.71,Dealer,EUR,1.0,24356.71,24356.71
+101159,2025-05-22,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,1.0,,24084.9,Dealer,MXN,19.602454,472123.14,472123.14
+100352,2025-04-16,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,4.0,40000.63,160002.52,Dealer,EUR,1.0,40000.63,160002.52
+100195,2024-04-15,Ungheria,Est Europa,FarmAgro Sp. z o.o.,AltaResa,Mais,3.0,43565.83,130697.49,Dealer,HUF,383.511233,16707985.18,50123955.54
+100281,18-Mar-2022,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,3.0,33575.86,100727.58,Vendita diretta,EUR,1.0,33575.86,100727.58
+101098,2021-07-27,USA,Nord America,CerealAgri SC,  PrimaRaccolta ,Mais,2.0,18903.6,37807.2,Dealer,USD,1.110207,20986.91,41973.82
+100889,2023-10-19,Romania,Est Europa,TerraAgro SC,FienoFacile,Foraggio,4.0,26372.27,105489.08,Dealer,RON,4.933928,130118.88,520475.53
+100360,2025-05-10,Sud Africa,Africa,AgriFarm SA,  FienoFacile ,Foraggio,5.0,30456.48,152282.4,Dealer,ZAR,20.483909,623867.76,3119338.82
+101233,2022-01-21,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,5.0,22555.29,112776.45,Dealer,AUD,1.621897,36582.36,182911.79
+100616,2025-11-27,Australia,Oceania,GrainFarm LLC,AltaResa,Mais,2.0,44700.26,89400.52,Dealer,AUD,1.583735,70793.37,141586.73
+100942,2024-06-22,Romania,Est Europa,TerraAgro SC,FienoFacile,Foraggio,5.0,32189.85,160949.25,Dealer,RON,4.764061,153354.41,766772.04
+100592,2021-05-02,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,4.0,,85710.96,Dealer,UAH,43.884518,940346.04,3761384.17
+100459,2024-10-03,Brasile,Sud America,HarvestFarm Kft.,GranCampo,Mais,4.0,41656.51,166626.04,Dealer,BRL,5.345297,222666.42,890665.67
+100559,2022-04-07,Kazakhstan,Asia Centrale,CerealAgro S.L.,AltaResa,Mais,1.0,43997.36,43997.36,Dealer,KZT,457.943155,20148289.85,20148289.85
+100183,08/05/2021,Turchia,Medio Oriente,TerraCampo SA,AltaResa,Mais,2.0,38211.96,76423.92,Dealer,TRY,35.141144,1342811.99,2685623.98
+100111,09/03/2025,Bulgaria,Est Europa,TerraAgro Ltd,TaglioFlex,Cereali (grano/orzo),2.0,29033.08,58066.16,Dealer,BGN,1.959514,56890.73,113781.45
+101032,07-03-2021,USA,Nord America,FarmCereal SRL,FienoFacile,Foraggio,2.0,29280.22,58560.44,Dealer,USD,1.037918,30390.47,60780.93
+101172,12-04-2021,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),2.0,29363.07,58726.14,Vendita diretta,CAD,1.528434,44879.51,89759.03
+100205,24/07/2022,Ungheria,Est Europa,FarmTerra SA,FienoFacile,Foraggio,5.0,31178.56,155892.8,Dealer,HUF,411.83459,12840409.47,64202047.37
+100598,13/08/2021,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,30854.22,61708.44,Dealer,HUF,383.690992,11838486.28,23676972.56
+100912,2023-10-03,Ungheria,Est Europa,FarmAgro Srl,SolePieno,Girasole,5.0,24115.31,120576.55,Dealer,HUF,379.304933,9147056.04,45735280.22
+100888,2024-06-20,Polonia,Centro Europa,AgroTerra SC,TaglioFlex,Cereali (grano/orzo),3.0,26991.47,80974.41,Dealer,PLN,4.348334,117367.93,352103.78
+101126,2022-05-28,Polonia,Centro Europa,GrainAgro Sp. z o.o.,AltaResa,Mais,2.0,39206.81,78413.62,Dealer,PLN,4.285773,168031.49,336062.98
+100910,2021-01-20,Bulgaria,Est Europa,TerraAgro Ltd,PrimaRaccolta,Mais,2.0,20312.3,40624.6,Vendita diretta,BGN,1.944091,39488.96,78977.92
+100603,17-Jun-2022,Polonia,Centro Europa,AgroTerra SC,FienoFacile,Foraggio,5.0,29685.28,148426.4,Dealer,PLN,4.595733,136425.62,682128.1
+100184,2023-05-24,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,2.0,37209.0,74418.0,Dealer,BRL,5.519203,205364.02,410728.05
+100138,2024-04-01,Kazakhstan,Asia Centrale,AgriTerra Kft.,SolePieno,Girasole,1.0,21293.51,21293.51,Dealer,KZT,463.480063,9869117.36,9869117.36
+100709,2022-01-13,Russia,Est Europa,GrainAgro Srl,FienoFacile,Foraggio,4.0,30764.35,123057.4,Dealer,RUB,94.866554,2918507.87,11674031.48
+100081,2021-02-18,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,5.0,22771.24,113856.2,Dealer,PLN,4.094174,93229.42,466147.09
+100894,22/04/2022,Kazakhstan,Asia Centrale,HarvestCereal LLC,TaglioFlex,Cereali (grano/orzo),2.0,26124.24,52248.48,Dealer,KZT,490.008574,12801101.59,25602203.18
+100537,2023-12-18,Italia,Sud Europa,AgroAgro SC,SolePieno,Girasole,3.0,24273.41,72820.23,Dealer,EUR,1.0,24273.41,72820.23
+100481,2023-11-19,Sud Africa,Africa,AgriFarm SA,PrimaRaccolta,Mais,1.0,20713.48,20713.48,Dealer,ZAR,21.429691,443883.48,443883.48
+100166,17-Apr-2025,Australia,Oceania,FarmCereal SC,PrimaRaccolta,Mais,3.0,24782.84,74348.52,Dealer,AUD,1.633861,40491.72,121475.15
+100249,2021-12-15,Spagna,Sud Europa,TerraAgri GmbH,GranCampo,Mais,1.0,32997.52,32997.52,Dealer,EUR,1.0,32997.52,32997.52
+100308,2025-04-15,Polonia,Centro Europa,CampoTerra Srl,GranCampo,Mais,2.0,35765.23,71530.46,Dealer,PLN,4.305862,154000.14,308000.29
+100225,02-11-2025,Russia,Est Europa,GrainAgro Srl,GranCampo,Mais,4.0,40703.84,162815.36,Vendita diretta,RUB,92.161579,3751330.17,15005320.66
+100542,27/06/2025,Francia,Sud Europa,FarmFarm Kft.,SolePieno,Girasole,4.0,25015.59,100062.36,Dealer,EUR,1.0,25015.59,100062.36
+100335,2025-04-16,Turchia,Medio Oriente,TerraCampo SA,PrimaRaccolta,Mais,1.0,22373.45,22373.45,Dealer,TRY,34.82009,779045.54,779045.54
+100098,2022-01-16,Bulgaria,Est Europa,HarvestGrain GmbH,SolePieno,Girasole,5.0,24959.86,124799.3,Dealer,BGN,2.036089,50820.5,254102.48
+100552,2022-04-19,Canada,Nord America,AgriFarm SC,PrimaRaccolta,Mais,2.0,19158.98,38317.96,Dealer,CAD,1.491382,28573.36,57146.72
+101242,2023-02-19,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,2.0,33152.1,66304.2,Vendita diretta,PLN,4.3308,143575.11,287150.23
+100908,2023-09-26,Sud Africa,Africa,,GranCampo,Mais,2.0,37462.98,74925.96,Dealer,ZAR,20.736678,776857.75,1553715.51
+100932,2021-06-02,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,4.0,42956.5,171826.0,Dealer,MXN,17.687947,759812.3,3039249.18
+100775,2022-04-19,USA,Nord America,CerealAgri SC,FienoFacile,Foraggio,4.0,29530.92,118123.68,Dealer,USD,1.118897,33042.06,132168.23
+100637,2025-05-05,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,2.0,38906.6,77813.2,Dealer,TRY,34.834976,1355310.48,2710620.95
+101188,2022-04-01,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,3.0,,64943.64,Vendita diretta,UAH,46.793511,1012980.31,3038940.93
+100303,21/11/2021,Brasile,Sud America,CampoGrain Kft.,FienoFacile,Foraggio,2.0,31897.94,63795.88,Dealer,BRL,5.409463,172550.73,345101.45
+100550,2025-05-15,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,5.0,19816.49,99082.45,Dealer,RON,5.160427,102261.55,511307.75
+100389,2024-06-13,Australia,Oceania,FarmTerra LLC,GranCampo,Mais,3.0,3916587.0000000005,117497.61,Dealer,AUD,1.635694,64063.38,192190.14
+100236,12-Jun-2024,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,3.0,41708.42,125125.26,Vendita diretta,EUR,1.0,41708.42,125125.26
+100916,2024-04-16,Argentina,Sud America,FarmFarm Srl,GranCampo,Mais,3.0,38763.22,116289.66,Dealer,ARS,1044.365463,40482968.2,121448904.61
+101120,28-Dec-2024,Russia,Est Europa,AgroCereal GmbH,AltaResa,Mais,2.0,42366.17,84732.34,Dealer,RUB,94.431072,4000682.85,8001365.7
+100306,2025-08-23,Australia,Oceania,GrainFarm LLC,AltaResa,Mais,5.0,46819.0,234095.0,Dealer,AUD,1.649735,77238.94,386194.71
+100869,2022-07-18,Australia,Oceania,GrainFarm LLC,SolePieno,Girasole,4.0,23522.62,94090.48,Dealer,AUD,1.50102,35307.92,141231.69
+101035,2022-09-06,Australia,Oceania,GrainFarm LLC,GranCampo,Mais,5.0,36093.82,180469.1,Dealer,AUD,1.556487,56179.56,280897.81
+100250,2025-10-21,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,2.0,38017.56,76035.12,Dealer,TRY,33.975372,1291660.74,2583321.49
+100856,2023-06-26,Italia,Sud Europa,AgroAgro SC,GranCampo,Mais,2.0,38831.7,77663.4,Dealer,EUR,1.0,38831.7,77663.4
+100839,2021-03-02,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,1.0,21162.27,21162.27,Dealer,AUD,1.663084,35194.63,35194.63
+100072,2023-01-06,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,4.0,21185.36,84741.44,Dealer,KZT,493.187491,10448354.54,41793418.18
+100095,2023-05-17,Ucraina,,HarvestCampo Ltd,FienoFacile,Foraggio,2.0,30759.28,61518.56,Dealer,UAH,44.679252,1374301.62,2748603.24
+100614,2023-03-05,Francia,Sud Europa,,TaglioFlex,Cereali (grano/orzo),6.0,25598.47,153590.82,Dealer,EUR,1.0,25598.47,153590.82
+100034,22-May-2025,USA,Nord America,CerealAgri SC,AltaResa,Mais,1.0,47017.42,47017.42,Dealer,USD,1.117739,52553.2,52553.2
+100866,2023-08-01,Germania,Centro Europa,AgroHarvest SA,SolePieno,Girasole,2.0,27443.68,54887.36,Dealer,EUR,1.0,27443.68,54887.36
+100449,2024-04-24,USA,Nord America,CampoGrain Srl,GranCampo,Mais,2.0,36843.19,73686.38,Dealer,USD,1.044045,38465.95,76931.9
+100446,2023-04-25,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,4.0,37424.39,149697.56,Vendita diretta,ZAR,19.964625,747163.91,2988655.65
+100931,2023-06-25,Spagna,Sud Europa,TerraAgri GmbH,  AltaResa ,Mais,3.0,42939.4,128818.2,Dealer,EUR,1.0,42939.4,128818.2
+100655,02-May-2024,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),2.0,26552.62,53105.24,Vendita diretta,TRY,35.985098,955498.63,1910997.27
+100766,2021-06-01,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,3.0,36628.05,109884.15,Dealer,TRY,37.194915,1362377.21,4087131.62
+100078,2021-03-24,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,5.0,30561.24,152806.2,Dealer,EUR,1.0,30561.24,152806.2
+100085,2025-03-10,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,1.0,40006.8,40006.8,Vendita diretta,EUR,1.0,40006.8,40006.8
+100987,2021-11-07,Turchia,Medio Oriente,TerraCampo SA,FienoFacile,Foraggio,4.0,34077.58,136310.32,Dealer,TRY,34.796648,1185785.56,4743142.22
+100083,2022-04-02,Messico,Nord America,CerealTerra Kft.,TaglioFlex,Cereali (grano/orzo),4.0,28681.64,114726.56,Vendita diretta,MXN,19.504832,559430.57,2237722.28
+100458,2023-04-15,Serbia,Est Europa,CerealFarm GmbH,SolePieno,Girasole,6.0,26408.15,158448.9,Dealer,RSD,108.409122,2862884.36,17177306.13
+100721,2024-08-21,Spagna,Sud Europa,FarmGrain SC,TaglioFlex,Cereali (grano/orzo),3.0,27679.74,83039.22,Vendita diretta,EUR,1.0,27679.74,83039.22
+100833,14-Apr-2021,Ungheria,Est Europa,FarmTerra SA,GranCampo,Mais,4.0,38972.4,155889.6,Dealer,HUF,373.879738,14570990.7,58283962.8
+100437,2025-06-20,Kazakhstan,Asia Centrale,HarvestCereal LLC,AltaResa,Mais,4.0,42676.23,170704.92,Dealer,KZT,460.523158,19653392.21,78613568.84
+100705,11-20-2023,Argentina,Sud America,FarmFarm Srl,  AltaResa ,Mais,5.0,46509.53,232547.65,Dealer,ARS,1055.789469,49104271.98,245521359.91
+101012,2025-01-25,Brasile,Sud America,GrainAgro Ltd,PrimaRaccolta,Mais,1.0,21820.75,21820.75,Dealer,BRL,5.326725,116233.13,116233.13
+100405,25/05/2021,Turchia,Medio Oriente,HarvestGrain Kft.,AltaResa,Mais,2.0,44507.15,89014.3,Dealer,TRY,34.09903,1517650.64,3035301.29
+101112,2022-12-20,Italia,Sud Europa,HarvestAgri Srl,PrimaRaccolta,Mais,-3.0,23432.49,70297.47,Vendita diretta,EUR,1.0,23432.49,70297.47
+100679,2023-06-28,USA,Nord America,AgroCampo S.L.,FienoFacile,Foraggio,1.0,27145.55,27145.55,Dealer,USD,0.998535,27105.78,27105.78
+101164,2024-07-27,Ucraina,Est Europa,HarvestCampo Ltd,FienoFacile,Foraggio,1.0,31123.53,31123.53,Dealer,UAH,44.497684,1384925.0,1384925.0
+100105,2022-04-10,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,2.0,42653.99,85307.98,Vendita diretta,EUR,1.0,42653.99,85307.98
+100784,2024-10-14,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,3.0,21288.57,63865.71,Vendita diretta,RUB,94.87257,2019701.35,6059104.04
+100677,2021-07-19,Italia,Sud Europa,AgroAgri S.L.,FienoFacile,Foraggio,3.0,31398.92,94196.76,Dealer,EUR,1.0,31398.92,94196.76
+100063,2025-03-24,Bulgaria,Est Europa,HarvestGrain GmbH,PrimaRaccolta,Mais,2.0,21467.12,42934.24,Dealer,BGN,1.833601,39362.13,78724.27
+100282,15/04/2022,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,2.0,,51377.28,Dealer,MXN,18.313239,470442.2,940884.41
+100904,2025-06-10,Spagna,Sud Europa,HarvestCampo S.L.,FienoFacile,Foraggio,2.0,33234.85,66469.7,Dealer,EUR,1.0,33234.85,66469.7
+100239,2021-05-19,Turchia,Medio Oriente,HarvestGrain Kft.,PrimaRaccolta,Mais,4.0,21503.81,86015.24,Dealer,TRY,35.639455,766384.07,3065536.28
+100224,2021-04-25,SPAGNA,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,3.0,21215.67,63647.01,Dealer,EUR,1.0,21215.67,63647.01
+100146,2023-12-18,Turchia,Medio Oriente,TerraAgri SA,AltaResa,Mais,3.0,42054.15,126162.45,Dealer,TRY,37.347012,1570596.84,4711790.53
+101190,2023-02-09,Germania,Centro Europa,AgroHarvest SA,FienoFacile,Foraggio,5.0,31942.87,159714.35,Dealer,EUR,1.0,31942.87,159714.35
+100374,06/09/2025,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,5.0,,186681.55,Vendita diretta,ZAR,19.773445,738267.47,3691337.36
+100119,2025-09-13,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,3.0,20195.5,60586.5,Dealer,EUR,1.0,20195.5,60586.5
+100909,2023-05-09,Spagna,Sud Europa,FarmGrain SC,GranCampo,Mais,2.0,39807.08,79614.16,Dealer,EUR,1.0,39807.08,79614.16
+100251,2021-06-27,Polonia,Centro Europa,CampoTerra Srl,TaglioFlex,Cereali (grano/orzo),1.0,30960.55,30960.55,Dealer,PLN,4.410225,136542.99,136542.99
+101229,2025-01-19,Brasile,Sud America,HarvestFarm Kft.,PrimaRaccolta,Mais,3.0,21143.81,63431.43,Dealer,BRL,5.512428,116553.73,349661.19
+100010,2021-11-20,Brasile,Sud America,HarvestFarm Kft.,AltaResa,Mais,4.0,45509.3,182037.2,Dealer,BRL,5.447226,247899.44,991597.77
+100450,2025-04-22,Spagna,Sud Europa,FarmGrain SC,SolePieno,Girasole,2.0,20288.63,40577.26,Dealer,EUR,1.0,20288.63,40577.26
+100991,2021-04-28,Italia,Sud Europa,FarmFarm GmbH,PrimaRaccolta,Mais,4.0,23644.13,94576.52,Vendita diretta,EUR,1.0,23644.13,94576.52
+100594,2022-05-23,Kazakhstan,Asia Centrale,AgriTerra Kft.,GranCampo,Mais,4.0,43020.76,172083.04,Dealer,KZT,470.545035,20243205.02,80972820.08
+100390,2021-07-19,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,,18703.06,56109.18,Dealer,RON,4.864824,90987.1,272961.29
+101000,2025-03-17,Canada,Nord America,AgroAgro LLC,PrimaRaccolta,Mais,3.0,20986.35,62959.05,Dealer,CAD,1.48805,31228.74,93686.21
+101023,18/06/2022,Ungheria,Est Europa,FarmTerra SA,AltaResa,Mais,4.0,47735.5,190942.0,Vendita diretta,HUF,399.283491,19059997.08,76239988.34
+100558,2024-12-12,Polonia,,CampoTerra Srl,PrimaRaccolta,Mais,3.0,19486.0,58458.0,Dealer,PLN,4.171167,81279.36,243838.08
+100461,2022-05-03,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,1.0,20367.67,20367.67,Dealer,RUB,103.13641,2100648.36,2100648.36
+101174,2024-04-25,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,3.0,31436.2,94308.6,Dealer,HUF,388.321112,12207340.14,36622020.42
+100145,2022-06-15,Bulgaria,Est Europa,CampoFarm LLC,  AltaResa ,Mais,,41264.64,165058.56,Vendita diretta,BGN,2.062003,85087.81,340351.25
+100502,2025-12-09,Argentina,Sud America,FarmFarm Srl,FienoFacile,Foraggio,2.0,29118.33,58236.66,Dealer,ARS,993.473421,28928286.92,57856573.84
+101177,2023-01-23,BRASILE,Sud America,GrainAgro Ltd,GranCampo,Mais,3.0,0.0,115420.41,Dealer,BRL,5.306688,204166.7,612500.1
+100540,2025-08-13,Serbia,Est Europa,FarmCampo Srl,AltaResa,Mais,3.0,42682.54,128047.62,Dealer,RSD,111.369339,4753526.27,14260578.8
+100178,11/07/2023,Romania,Est Europa,GrainCampo GmbH,GranCampo,Mais,1.0,37665.77,37665.77,Dealer,RON,4.638048,174695.65,174695.65
+101231,2023-06-22,USA,Nord America,CampoGrain Srl,GranCampo,Mais,3.0,40464.5,121393.5,Dealer,USD,1.107308,44806.66,134419.99
+100786,2025-03-05,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,3.0,42327.15,126981.45,Dealer,BRL,5.432926,229960.27,689880.82
+100662,2023-04-24,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,6.0,31523.67,189142.02,Dealer,EUR,1.0,31523.67,189142.02
+101035,2022-09-06,Australia,Oceania,GrainFarm LLC,GranCampo,Mais,5.0,36093.82,180469.1,Dealer,AUD,1.556487,56179.56,280897.81
+100008,2021-04-19,Romania,Est Europa,TerraAgro SC,PrimaRaccolta,Mais,3.0,20571.21,61713.63,Dealer,RON,4.863911,100056.53,300169.6
+100625,07/05/2021,Ungheria,Est Europa,FarmAgro Sp. z o.o.,SolePieno,Girasole,2.0,28402.93,56805.86,Dealer,HUF,377.430921,10720144.03,21440288.06
+100954,2025-11-23,USA,Nord America,FarmCereal SRL,GranCampo,Mais,4.0,32953.78,131815.12,Dealer,USD,1.095389,36097.21,144388.83
+100358,2023-05-01,Australia,Oceania,GrainFarm LLC,SolePieno,Girasole,3.0,26080.32,78240.96,Dealer,AUD,1.631387,42547.1,127641.29
+100330,2025-04-20,Romania,Est Europa,GrainCampo GmbH,AltaResa,Mais,1.0,41372.48,41372.48,Vendita diretta,RON,5.266356,217882.21,217882.21
+100794,2024-06-20,UNGHERIA,Est Europa,FarmAgro Srl,PrimaRaccolta,Mais,1.0,20089.96,20089.96,Dealer,HUF,417.412795,8385806.36,8385806.36
+100939,2022-05-05,Spagna,Sud Europa,FarmGrain SC,FienoFacile,Foraggio,3.0,28536.04,85608.12,Dealer,EUR,1.0,28536.04,85608.12
+100259,2024-05-15,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,4.0,35460.51,141842.04,Dealer,EUR,1.0,35460.51,141842.04
+100985,2021-06-03,Brasile,Sud America,CampoGrain Kft.,FienoFacile,Foraggio,4.0,32923.03,131692.12,Dealer,BRL,5.356724,176359.58,705438.34
+101135,03-Dec-2024,Ungheria,Est Europa,FarmAgro Srl,GranCampo,Mais,3.0,39067.57,117202.71,Vendita diretta,HUF,387.282078,15130169.69,45390509.08
+100874,2022-03-23,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,6.0,19362.35,116174.1,Vendita diretta,AUD,1.658999,32122.12,192732.72
+100672,16/10/2021,Argentina,Sud America,AgroCampo Srl,SolePieno,Girasole,5.0,23594.28,117971.4,Vendita diretta,ARS,1024.266825,24166838.26,120834191.32
+100938,05-21-2021,Ucraina,Est Europa,HarvestCampo Ltd,FienoFacile,Foraggio,2.0,34621.88,69243.76,Dealer,UAH,41.3788,1432611.85,2865223.7
+100526,2025-01-13,Brasile,Sud America,FarmTerra Sp. z o.o.,GranCampo,Mais,2.0,,83908.06,Dealer,BRL,5.520461,231605.59,463211.17
+101041,2024-05-04,USA,Nord America,,GranCampo,Mais,3.0,41074.6,123223.8,Dealer,USD,1.077954,44276.53,132829.59
+100737,2022-06-23,Argentina,Sud America,FarmFarm Srl,TaglioFlex,Cereali (grano/orzo),5.0,23553.86,117769.3,Vendita diretta,ARS,1030.460892,24271331.59,121356657.93
+100848,2022-04-01,Serbia,Est Europa,,FienoFacile,Foraggio,1.0,34535.29,34535.29,Dealer,RSD,123.402701,4261748.07,4261748.07
+101213,2023-12-26,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,6.0,37321.73,223930.38,Dealer,ARS,981.717173,36639383.27,219836299.6
+100441,2022-06-04,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,4.0,19982.14,79928.56,Dealer,EUR,1.0,19982.14,79928.56
+100532,2022-08-28,Ungheria,Est Europa,FarmAgro Srl,SolePieno,Girasole,2.0,23109.7,46219.4,Dealer,HUF,398.549087,9210349.84,18420699.67
+100227,2021-04-26,Canada,Nord America,AgriFarm SC,AltaResa,Mais,1.0,42733.19,42733.19,Vendita diretta,CAD,1.562754,66781.46,66781.46
+100229,05-28-2021,Romania,Est Europa,TerraAgro SC,PrimaRaccolta,Mais,1.0,22578.24,22578.24,Dealer,RON,4.765929,107606.29,107606.29
+101107,2022-07-03,Australia,Oceania,GrainFarm LLC,TaglioFlex,Cereali (grano/orzo),3.0,28550.64,85651.92,Dealer,AUD,1.488414,42495.17,127485.52
+100213,2021-11-14,Serbia,Est Europa,CerealFarm GmbH,TaglioFlex,Cereali (grano/orzo),3.0,26347.07,79041.21,Dealer,RSD,123.64796,3257761.46,9773284.37
+100080,2022-04-10,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,1.0,21476.52,21476.52,Dealer,RON,4.944128,106182.66,106182.66
+100149,2025-09-07,Romania,Est Europa,TerraAgro SC,AltaResa,Mais,2.0,43497.57,86995.14,Dealer,RON,5.217969,226968.97,453937.94
+101074,2024-02-09,Argentina,Sud America,FarmFarm Srl,PrimaRaccolta,Mais,2.0,21563.13,43126.26,Dealer,ARS,1016.200107,21912455.01,43824910.03
+100797,11-May-2021,Germania,Centro Europa,FarmCampo SA,PrimaRaccolta,Mais,2.0,23546.11,47092.22,Dealer,EUR,1.0,23546.11,47092.22
+100824,2024-05-24,Francia,,FarmFarm Kft.,GranCampo,Mais,5.0,38291.89,191459.45,Dealer,EUR,1.0,38291.89,191459.45
+100134,2024-04-06,Spagna,Sud Europa,FarmGrain SC,PrimaRaccolta,Mais,3.0,21305.03,63915.09,Dealer,EUR,1.0,21305.03,63915.09
+100882,2022-01-27,Messico,Nord America,CerealTerra Kft.,TaglioFlex,Cereali (grano/orzo),3.0,29866.24,89598.72,Dealer,MXN,17.863457,533514.29,1600542.88
+100409,25-Nov-2022,Brasile,Sud America,GrainAgro Ltd,FienoFacile,Foraggio,5.0,31523.49,157617.45,Vendita diretta,BRL,5.170523,162992.93,814964.65
+100789,2021-04-13,Francia,Sud Europa,AgriFarm Kft.,SolePieno,Girasole,3.0,22722.88,68168.64,Dealer,EUR,1.0,22722.88,68168.64
+100508,19-Mar-2023,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),3.0,,81778.26,Dealer,CAD,1.437628,39188.91,117566.72
+100997,12-Feb-2023,Russia,Est Europa,,SolePieno,Girasole,3.0,24806.11,74418.33,Dealer,RUB,94.271024,2338497.39,7015492.17
+100505,2023-03-03,Italia,Sud Europa,HarvestAgri Srl,GranCampo,Mais,4.0,,159629.8,Vendita diretta,EUR,1.0,39907.45,159629.8
+100757,2024-09-07,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,3.0,21045.68,63137.04,Dealer,ARS,977.289545,20567723.03,61703169.09
+100348,2022-07-10,Kazakhstan,Asia Centrale,CerealAgro S.L.,TaglioFlex,Cereali (grano/orzo),2.0,28883.99,57767.98,Vendita diretta,KZT,499.124116,14416695.98,28833391.95
+100387,2022-03-11,Serbia,,FarmAgri SRL,SolePieno,Girasole,2.0,23116.19,46232.38,Vendita diretta,RSD,116.934389,2703077.55,5406155.11
+100001,2024-05-14,Germania,Centro Europa,AgroHarvest SA,FienoFacile,Foraggio,5.0,31605.52,158027.6,Vendita diretta,EUR,1.0,31605.52,158027.6
+100361,24-Mar-2022,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,4.0,22893.33,91573.32,Dealer,EUR,1.0,22893.33,91573.32
+101206,2023-09-26,Sud Africa,Africa,AgriCampo SA,PrimaRaccolta,Mais,4.0,22074.57,88298.28,Dealer,ZAR,20.941517,462274.98,1849099.93
+100476,16/12/2023,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,2.0,47201.2,94402.4,Dealer,ARS,1034.805951,48844082.65,97688165.31
+100876,2022-03-05,Canada,Nord America,AgroAgro LLC,TaglioFlex,Cereali (grano/orzo),1.0,31759.12,31759.12,Vendita diretta,CAD,1.528204,48534.41,48534.41
+100870,11-19-2023,Bulgaria,Est Europa,TerraAgro Ltd,GranCampo,Mais,4.0,38626.49,154505.96,Dealer,BGN,1.839044,71035.81,284143.26
+100850,2022-08-01,Turchia,Medio Oriente,HarvestGrain Kft.,SolePieno,Girasole,3.0,28317.44,84952.32,Dealer,TRY,33.098504,937264.9,2811794.7
+100696,2022-05-25,Kazakhstan,Asia Centrale,AgriTerra Kft.,SolePieno,Girasole,3.0,22878.13,68634.39,Vendita diretta,KZT,510.547571,11680373.7,35041121.1
+100173,2023-04-25,Ungheria,Est Europa,FarmAgro Sp. z o.o.,PrimaRaccolta,Mais,2.0,19864.18,39728.36,Dealer,HUF,383.869372,7625250.3,15250500.6
+100451,2021-12-15,Brasile,,CampoGrain Kft.,AltaResa,Mais,3.0,41338.92,124016.76,Dealer,BRL,5.259599,217426.14,652278.43
+100126,2022-06-03,Canada,Nord America,AgroAgro LLC,PrimaRaccolta,Mais,6.0,24490.26,146941.56,Vendita diretta,CAD,1.529655,37461.65,224769.89
+100717,2023-04-16,Ungheria,Est Europa,FarmAgro Sp. z o.o.,AltaResa,Mais,3.0,47035.24,141105.72,Dealer,HUF,373.380622,17562047.17,52686141.5
+100531,09-10-2021,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,1.0,31082.16,31082.16,Dealer,BGN,2.00583,62345.53,62345.53
+100091,04-23-2023,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,4.0,40577.48,162309.92,Dealer,EUR,1.0,40577.48,162309.92
+101234,2024-06-18,Italia,,HarvestAgri Srl,AltaResa,Mais,5.0,41378.53,206892.65,Dealer,EUR,1.0,41378.53,206892.65
+100182,2023-05-06,UCRAINA,Est Europa,HarvestCampo Ltd,AltaResa,Mais,5.0,48336.4,241682.0,Dealer,UAH,44.156283,2134355.76,10671778.79
+100738,02-17-2022,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,3.0,20575.47,61726.41,Dealer,RSD,114.400041,2353834.61,7061503.83
+100415,16-Dec-2022,Kazakhstan,Asia Centrale,AgriTerra Kft.,GranCampo,Mais,2.0,36976.56,73953.12,Dealer,KZT,472.114394,17457166.22,34914332.43
+100252,2022-03-12,Ucraina,Est Europa,HarvestCampo Ltd,GranCampo,Mais,3.0,39242.5,117727.5,Vendita diretta,UAH,41.626502,1633528.0,4900584.01
+100070,2025-06-09,Argentina,Sud America,FarmFarm Srl,TaglioFlex,Cereali (grano/orzo),,27883.19,111532.76,Vendita diretta,ARS,1024.790891,28574439.12,114297756.5
+100132,21/07/2022,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,2.0,31846.85,63693.7,Vendita diretta,BGN,1.953343,62207.82,124415.64
+100301,2021-07-09,Ucraina,Est Europa,HarvestCampo Ltd,SolePieno,Girasole,3.0,22822.6,68467.8,Dealer,UAH,41.841596,954934.01,2864802.03
+100846,12-May-2025,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,3.0,21623.86,64871.58,Dealer,RUB,98.616453,2132468.37,6397405.12
+100327,10-May-2022,Argentina,Sud America,AgroCampo Srl,TaglioFlex,Cereali (grano/orzo),2.0,27603.93,55207.86,Vendita diretta,ARS,928.692609,25635565.77,51271131.54
+101247,13-Apr-2021,USA,Nord America,CerealAgri SC,SolePieno,Girasole,4.0,23738.68,94954.72,Dealer,USD,1.084547,25745.71,102982.86
+100891,2023-10-02,Brasile,Sud America,CampoGrain Kft.,TaglioFlex,Cereali (grano/orzo),4.0,28621.77,114487.08,Vendita diretta,BRL,5.585331,159862.06,639448.24
+100500,2024-08-21,Australia,Oceania,FarmCereal SC,TaglioFlex,Cereali (grano/orzo),3.0,27793.28,83379.84,Dealer,AUD,1.589172,44168.3,132504.91
+101009,07-24-2024,Spagna,Sud Europa,TerraAgri GmbH,GranCampo,Mais,2.0,33905.38,67810.76,Vendita diretta,EUR,1.0,33905.38,67810.76
+100365,2021-05-24,Italia,Sud Europa,FarmFarm GmbH,PrimaRaccolta,Mais,2.0,19846.2,39692.4,Dealer,EUR,1.0,19846.2,39692.4
+100496,27-May-2021,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,5.0,16561.32,82806.6,Dealer,KZT,483.529911,8007893.59,40039467.93
+101187,2023-12-07,Polonia,Centro Europa,CampoTerra Srl,SolePieno,Girasole,2.0,26066.38,52132.76,Dealer,PLN,4.469022,116491.23,232982.45
+100339,24/07/2024,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,2.0,19829.23,39658.46,Dealer,RUB,94.103104,1865992.09,3731984.19
+100422,2024-03-01,Polonia,Centro Europa,CampoTerra Srl,SolePieno,Girasole,6.0,24458.13,146748.78,Dealer,PLN,4.411866,107905.99,647435.95
+100165,2024-10-28,USA,Nord America,FarmCereal SRL,PrimaRaccolta,Mais,1.0,19504.73,19504.73,Vendita diretta,USD,1.10232,21500.45,21500.45
+100029,2022-01-13,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,1.0,35824.98,35824.98,Dealer,RSD,117.281877,4201620.9,4201620.9
+100517,04/08/2024,Australia,Oceania,HarvestFarm SA,SolePieno,Girasole,3.0,23870.01,71610.03,Dealer,AUD,1.630979,38931.49,116794.46
+100194,2023-08-23,Canada,Nord America,AgriFarm SC,AltaResa,Mais,4.0,41015.53,164062.12,Dealer,CAD,1.499385,61498.07,245992.28
+100613,24/02/2022,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31906.35,63812.7,Dealer,HUF,408.382554,13029996.7,26059993.4
+101053,05-05-2023,Italia,Sud Europa,AgroAgro SC,GranCampo,Mais,3.0,40077.38,120232.14,Dealer,EUR,1.0,40077.38,120232.14
+100170,2023-07-12,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,3.0,28444.76,85334.28,Dealer,BGN,1.97597,56205.99,168617.98
+100799,2021-07-13,Polonia,Centro Europa,AgroTerra SC,FienoFacile,Foraggio,3.0,27228.3,81684.9,Vendita diretta,PLN,4.290728,116829.23,350487.69
+100653,2023-07-02,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,2.0,33883.79,67767.58,Dealer,PLN,4.366531,147954.62,295909.24
+100174,2025-03-02,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,2.0,36537.19,73074.38,Dealer,EUR,1.0,36537.19,73074.38
+100519,2023-11-13,Argentina,Sud America,FarmFarm Srl,PrimaRaccolta,Mais,3.0,20650.59,61951.77,Dealer,ARS,1058.07386,21849849.47,65549548.42
+101037,2025-09-19,Brasile,Sud America,HarvestFarm Kft.,FienoFacile,Foraggio,4.0,29011.97,116047.88,Dealer,BRL,5.29941,153746.32,614985.3
+100880,2021-05-26,Germania,,AgroHarvest SA,PrimaRaccolta,Mais,4.0,21107.6,84430.4,Dealer,EUR,1.0,21107.6,84430.4
+100492,2023-04-06,Spagna,Sud Europa,HarvestCampo S.L.,GranCampo,Mais,2.0,38508.31,77016.62,Vendita diretta,EUR,1.0,38508.31,77016.62
+100074,2024-01-16,Brasile,Sud America,FarmTerra Sp. z o.o.,GranCampo,Mais,3.0,39059.48,117178.44,Dealer,BRL,5.272697,205948.8,617846.41
+101067,13-Jan-2023,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,3.0,25980.63,77941.89,Dealer,MXN,18.855751,489884.29,1469652.87
+100588,2025-09-18,Australia,Oceania,FarmCereal SC,SolePieno,Girasole,4.0,23543.62,94174.48,Dealer,AUD,1.682903,39621.63,158486.51
+100658,2021-11-17,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,4.0,29902.53,119610.12,Dealer,ZAR,22.109321,661124.63,2644498.54
+100235,2023-07-20,Canada,Nord America,AgroAgro LLC,AltaResa,Mais,4.0,40341.61,161366.44,Dealer,CAD,1.508232,60844.51,243378.03
+100215,2022-06-05,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,2.0,32373.46,64746.92,Dealer,EUR,1.0,32373.46,64746.92
+100163,2021-03-03,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,2.0,41277.52,82555.04,Dealer,MXN,18.298185,755303.7,1510607.39
+100133,2021-08-19,Francia,Sud Europa,AgriFarm Kft.,PrimaRaccolta,Mais,4.0,21776.63,87106.52,Dealer,EUR,1.0,21776.63,87106.52
+100875,2024-02-04,Canada,Nord America,,SolePieno,Girasole,-4.0,22612.9,90451.6,Dealer,CAD,1.479437,33454.36,133817.44
+100826,10-May-2024,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,2.0,22621.3,45242.6,Vendita diretta,UAH,46.328751,1048016.57,2096033.15
+101047,2021-09-24,Kazakhstan,Asia Centrale,HarvestCereal LLC,TaglioFlex,Cereali (grano/orzo),1.0,26876.43,26876.43,Dealer,KZT,446.549344,12001652.19,12001652.19
+100186,2022-07-08,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,PrimaRaccolta,Mais,2.0,20767.59,41535.18,Dealer,TRY,36.129231,750317.06,1500634.11
+100042,2022-01-16,Romania,Est Europa,TerraAgro SC,GranCampo,Mais,1.0,36574.82,36574.82,Vendita diretta,RON,5.004757,183048.09,183048.09
+100693,15-Jun-2022,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,3.0,39511.21,118533.63,Dealer,BGN,1.796377,70977.03,212931.09
+100109,2024-11-08,Bulgaria,Est Europa,CampoFarm LLC,TaglioFlex,Cereali (grano/orzo),4.0,30280.35,121121.4,Dealer,BGN,1.921842,58194.05,232776.19
+100974,2022-07-05,Italia,Sud Europa,AgroAgro SC,FienoFacile,Foraggio,5.0,30140.36,150701.8,Dealer,EUR,1.0,30140.36,150701.8
+100569,2021-06-27,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,2.0,44044.88,88089.76,Dealer,EUR,1.0,44044.88,88089.76
+100728,2024-01-10,Australia,Oceania,FarmCereal SC,GranCampo,Mais,5.0,40260.36,201301.8,Dealer,AUD,1.546077,62245.62,311228.08
+101080,2024-06-08,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,2.0,34520.12,69040.24,Dealer,BGN,1.863057,64312.95,128625.9
+101227,04-01-2022,Canada,Nord America,AgriFarm SC,SolePieno,Girasole,3.0,23883.02,71649.06,Vendita diretta,CAD,1.467033,35037.18,105111.54
+100484,07-Jan-2025,Brasile,Sud America,FarmTerra Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,25629.56,76888.68,Dealer,BRL,5.102002,130762.07,392286.2
+100469,2021-06-19,Turchia,Medio Oriente,TerraAgri SA,FienoFacile,Foraggio,2.0,31971.55,63943.1,Vendita diretta,TRY,33.328505,1065563.96,2131127.93
+100025,08/12/2022,Argentina,Sud America,AgroCampo Srl,TaglioFlex,Cereali (grano/orzo),3.0,24682.73,74048.19,Vendita diretta,ARS,938.482606,23164312.77,69492938.32
+101092,2023-05-27,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,4.0,20837.51,83350.04,Dealer,PLN,4.487563,93509.64,374038.56
+100949,2023-06-03,Romania,Est Europa,GrainCampo GmbH,AltaResa,Mais,2.0,43514.97,87029.94,Dealer,RON,4.804145,209052.23,418104.45
+100849,14/09/2025,Germania,Centro Europa,AgroHarvest SA,FienoFacile,Foraggio,3.0,28463.83,85391.49,Dealer,EUR,1.0,28463.83,85391.49
+101078,28-Mar-2023,Polonia,Centro Europa,GrainAgro Sp. z o.o.,GranCampo,Mais,2.0,38408.57,76817.14,Dealer,PLN,4.025702,154621.46,309242.91
+100367,2023-03-14,Polonia,Centro Europa,GrainAgro Sp. z o.o.,AltaResa,Mais,5.0,39588.19,197940.95,Dealer,PLN,4.338646,171759.14,858795.71
+100951,02-13-2025,Sud Africa,Africa,AgriFarm SA,AltaResa,Mais,7.0,40211.81,281482.67,Dealer,ZAR,20.797755,836315.37,5854207.61
+101121,2023-10-20,USA,Nord America,CampoGrain Srl,PrimaRaccolta,Mais,3.0,24097.46,72292.38,Dealer,USD,1.111036,26773.15,80319.44
+100384,26/04/2024,Polonia,Centro Europa,CampoTerra Srl,PrimaRaccolta,Mais,1.0,21178.61,21178.61,Dealer,PLN,4.282773,90703.18,90703.18
+100718,18-May-2025,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,2.0,23921.3,47842.6,Dealer,RUB,101.572542,2429747.25,4859494.5
+100455,2023-04-21,USA,Nord America,FarmCereal SRL,AltaResa,Mais,3.0,42469.98,127409.94,Vendita diretta,USD,1.035604,43982.08,131946.24
+100265,2024-01-17,Ucraina,Est Europa,TerraHarvest SC,TaglioFlex,Cereali (grano/orzo),2.0,28001.8,56003.6,Vendita diretta,UAH,42.956047,1202846.64,2405693.27
+101250,06-27-2023,USA,Nord America,CampoGrain Srl,AltaResa,Mais,3.0,43888.58,131665.74,Dealer,USD,1.070286,46973.33,140920.0
+100233,2021-04-03,Ungheria,Est Europa,FarmTerra SA,SolePieno,Girasole,3.0,23889.54,71668.62,Dealer,HUF,375.568064,8972148.29,26916444.86
+100445,2024-01-17,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,3.0,29076.9,87230.7,Dealer,ZAR,20.720302,602482.15,1807446.45
+100396,2022-04-16,Polonia,Centro Europa,AgroTerra SC,SolePieno,Girasole,3.0,19092.13,57276.39,Dealer,PLN,4.222879,80623.75,241871.26
+100918,2023-11-28,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,2.0,38518.95,77037.9,Dealer,EUR,1.0,38518.95,77037.9
+100177,2025-04-02,Ucraina,Est Europa,CerealFarm Kft.,AltaResa,Mais,5.0,39235.18,196175.9,Dealer,UAH,44.020134,1727137.88,8635689.41
+100019,2023-06-17,Romania,Est Europa,CampoCampo Ltd,FienoFacile,Foraggio,1.0,30867.92,30867.92,Dealer,RON,4.987305,153947.73,153947.73
+101118,2023-09-06,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,3.0,40851.25,122553.75,Vendita diretta,ARS,982.098038,40119932.47,120359797.42
+101238,07/06/2023,Italia,Sud Europa,AgroAgri S.L.,PrimaRaccolta,Mais,2.0,22431.22,44862.44,Vendita diretta,EUR,1.0,22431.22,44862.44
+100922,12/02/2024,Germania,Centro Europa,FarmCampo SA,SolePieno,Girasole,3.0,26079.26,78237.78,Dealer,EUR,1.0,26079.26,78237.78
+100771,2024-07-24,UNGHERIA,Est Europa,FarmAgro Srl,SolePieno,Girasole,3.0,26235.37,78706.11,Dealer,HUF,404.562534,10613847.77,31841543.3
+100596,01/02/2024,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,3.0,24603.43,73810.29,Dealer,ZAR,20.965712,515828.43,1547485.28
+100062,2021-05-19,Serbia,Est Europa,GrainHarvest S.L.,GranCampo,Mais,1.0,36419.95,36419.95,Dealer,RSD,124.774892,4544295.33,4544295.33
+100273,2022-10-11,Polonia,Centro Europa,,SolePieno,Girasole,1.0,23879.71,23879.71,Dealer,PLN,4.293598,102529.88,102529.88
+101198,23-Jul-2024,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),2.0,28869.47,57738.94,Dealer,ZAR,23.052586,665515.94,1331031.88
+100279,2021-06-07,Serbia,Est Europa,CerealFarm GmbH,AltaResa,Mais,3.0,40086.9,120260.7,Dealer,RSD,121.071917,4853397.83,14560193.49
+100953,2022-02-21,Messico,Nord America,CerealTerra Kft.,FienoFacile,Foraggio,6.0,28234.35,169406.1,Dealer,MXN,18.780867,530265.57,3181593.43
+100695,2023-08-18,Russia,Est Europa,AgroCereal GmbH,AltaResa,Mais,1.0,41919.64,41919.64,Dealer,RUB,94.328895,3954233.32,3954233.32
+100369,2022-06-10,Australia,Oceania,FarmTerra LLC,GranCampo,Mais,1.0,34388.36,34388.36,Vendita diretta,AUD,1.71232,58883.88,58883.88
+101008,2023-04-10,Turchia,Medio Oriente,TerraCampo SA,AltaResa,Mais,2.0,39666.27,79332.54,Vendita diretta,TRY,35.209099,1396613.63,2793227.25
+100736,18-Mar-2021,Ucraina,Est Europa,TerraHarvest SC,SolePieno,Girasole,2.0,24263.71,48527.42,Dealer,UAH,44.229129,1073162.76,2146325.52
+100927,09-Mar-2021,Russia,Est Europa,GrainAgro Srl,PrimaRaccolta,Mais,4.0,19368.37,77473.48,Dealer,RUB,102.496481,1985189.77,7940759.07
+100975,06-May-2023,Spagna,Sud Europa,HarvestCampo S.L.,AltaResa,Mais,4.0,3974351.9999999995,158974.08,Dealer,EUR,1.0,39743.52,158974.08
+100810,21-Jul-2022,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),1.0,27089.34,27089.34,Dealer,RUB,101.76303,2756693.32,2756693.32
+101156,2024-05-19,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),4.0,27444.55,109778.2,Dealer,CAD,1.391884,38199.63,152798.52
+100548,2021-12-16,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,2.0,21435.86,42871.72,Dealer,ZAR,20.526712,440007.72,880015.45
+101001,2025-11-22,Ucraina,Est Europa,CerealFarm Kft.,TaglioFlex,Cereali (grano/orzo),3.0,25628.61,76885.83,Dealer,UAH,44.68959,1145332.07,3435996.22
+100689,17-Feb-2025,Brasile,Sud America,FarmTerra Sp. z o.o.,PrimaRaccolta,Mais,5.0,20367.33,101836.65,Dealer,BRL,5.663079,115341.8,576708.99
+100739,2021-05-06,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,2.0,21300.45,42600.9,Dealer,ARS,1063.333037,22649472.19,45298944.38
+101217,2022-03-09,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,3.0,41077.22,123231.66,Dealer,ARS,1147.636279,47141707.91,141425123.74
+100457,05-05-2021,Serbia,,FarmCampo Srl,TaglioFlex,Cereali (grano/orzo),2.0,26064.96,52129.92,Dealer,RSD,115.756198,3017180.67,6034361.34
+100394,2022-05-11,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,1.0,,24637.53,Dealer,UAH,46.115788,1136179.11,1136179.11
+100676,2021-10-10,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,2.0,33330.72,66661.44,Dealer,MXN,18.388923,612916.04,1225832.09
+100761,2025-07-27,Serbia,Est Europa,FarmAgri SRL,PrimaRaccolta,Mais,3.0,19681.94,59045.82,Dealer,RSD,120.170043,2365179.58,7095538.73
+100291,2021-04-25,Ucraina,Est Europa,CerealFarm Kft.,PrimaRaccolta,Mais,4.0,21828.95,87315.8,Dealer,UAH,44.305357,967139.42,3868557.69
+100729,2022-09-17,Ucraina,Est Europa,CerealFarm Kft.,TaglioFlex,Cereali (grano/orzo),3.0,,74431.65,Dealer,UAH,42.882562,1063939.95,3191819.85
+100420,2022-06-02,Spagna,Sud Europa,TerraAgri GmbH,PrimaRaccolta,Mais,3.0,22488.44,67465.32,Dealer,EUR,1.0,22488.44,67465.32
+100376,08-May-2023,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,6.0,30241.34,181448.04,Dealer,USD,1.091304,33002.5,198014.97
+100413,2023-12-19,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,27272.72,81818.16,Vendita diretta,TRY,34.302293,935516.83,2806550.5
+100075,10/10/2021,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),1.0,29135.48,29135.48,Dealer,MXN,19.204488,559531.98,559531.98
+101194,17-Mar-2023,Brasile,Sud America,FarmTerra Sp. z o.o.,FienoFacile,Foraggio,3.0,30824.13,92472.39,Vendita diretta,BRL,5.494839,169373.63,508120.89
+100979,19-Nov-2025,Bulgaria,Est Europa,TerraAgro Ltd,FienoFacile,Foraggio,4.0,30215.26,120861.04,Dealer,BGN,1.955393,59082.71,236330.83
+100501,2023-02-07,USA,Nord America,CerealAgri SC,GranCampo,Mais,3.0,38541.45,115624.35,Dealer,USD,1.115644,42998.54,128995.61
+100907,2025-04-09,Australia,Oceania,FarmTerra LLC,FienoFacile,Foraggio,4.0,28707.77,114831.08,Dealer,AUD,1.560986,44812.43,179249.71
+100617,2023-04-17,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,1.0,21885.71,21885.71,Vendita diretta,ZAR,20.586715,450554.87,450554.87
+100115,2024-11-13,Messico,Nord America,,FienoFacile,Foraggio,2.0,,58558.94,Dealer,MXN,18.420798,539351.2,1078702.4
+100418,2024-04-07,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,25979.12,77937.36,Vendita diretta,HUF,399.475948,10378033.59,31134100.77
+100602,2022-03-20,Argentina,Sud America,FarmFarm Srl,FienoFacile,Foraggio,3.0,32758.45,98275.35,Dealer,ARS,1038.675052,34025384.76,102076154.27
+100605,2025-07-10,USA,Nord America,AgroCampo S.L.,FienoFacile,Foraggio,2.0,31055.09,62110.18,Vendita diretta,USD,0.99707,30964.1,61928.2
+100944,02/11/2025,Italia,Sud Europa,FarmFarm GmbH,TaglioFlex,Cereali (grano/orzo),3.0,25214.13,75642.39,Dealer,EUR,1.0,25214.13,75642.39
+100090,01-23-2024,Spagna,Sud Europa,HarvestCampo S.L.,GranCampo,Mais,,41925.72,83851.44,Dealer,EUR,1.0,41925.72,83851.44
+100933,2025-07-23,Russia,Est Europa,AgroCereal GmbH,TaglioFlex,Cereali (grano/orzo),5.0,24656.92,123284.6,Dealer,RUB,97.057913,2393149.2,11965745.98
+101221,2025-03-25,Australia,Oceania,HarvestFarm SA,SolePieno,Girasole,5.0,22605.24,113026.2,Vendita diretta,AUD,1.58,35716.28,178581.4
+100754,2021-05-05,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,,69184.46,Dealer,PLN,4.384488,151669.22,303338.43
+100499,2025-07-03,Kazakhstan,Asia Centrale,AgriTerra Kft.,GranCampo,Mais,3.0,40898.32,122694.96,Dealer,KZT,469.937503,19219654.38,57658963.13
+101209,2024-05-24,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,5.0,17950.51,89752.55,Dealer,KZT,479.576931,8608650.5,43043252.48
+101004,2022-02-19,Spagna,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,3.0,21387.42,64162.26,Dealer,EUR,1.0,21387.42,64162.26
+101002,02/06/2024,Canada,Nord America,AgriFarm SC,PrimaRaccolta,Mais,2.0,20856.19,41712.38,Dealer,CAD,1.404853,29299.88,58599.76
+100012,11/06/2025,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,3.0,27564.25,82692.75,Dealer,USD,1.094844,30178.55,90535.66
+100397,2023-03-05,Ungheria,Est Europa,FarmAgro Srl,SolePieno,Girasole,4.0,27376.82,109507.28,Dealer,HUF,417.076177,11418219.42,45672877.7
+100851,2025-04-18,Bulgaria,Est Europa,CampoFarm LLC,AltaResa,Mais,2.0,45541.74,91083.48,Dealer,BGN,1.911071,87033.5,174067.0
+100556,2024-03-17,Turchia,Medio Oriente,TerraAgri SA,PrimaRaccolta,Mais,2.0,22547.22,45094.44,Dealer,TRY,35.966332,810940.8,1621881.6
+100043,07/04/2025,Spagna,Sud Europa,HarvestCampo S.L.,TaglioFlex,Cereali (grano/orzo),3.0,25157.55,75472.65,Dealer,EUR,1.0,25157.55,75472.65
+100168,03-28-2024,Bulgaria,Est Europa,HarvestGrain GmbH,SolePieno,Girasole,3.0,23944.97,71834.91,Vendita diretta,BGN,1.917395,45911.97,137735.9
+100417,01-Mar-2024,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,5.0,43094.96,215474.8,Vendita diretta,EUR,1.0,43094.96,215474.8
+100577,2025-03-16,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,3.0,38886.43,116659.29,Dealer,EUR,1.0,38886.43,116659.29
+100268,2024-03-02,Turchia,Medio Oriente,HarvestGrain Kft.,TaglioFlex,Cereali (grano/orzo),3.0,27332.82,81998.46,Dealer,TRY,34.345218,938751.66,2816254.98
+101054,2025-06-25,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,3.0,39352.03,118056.09,Dealer,EUR,1.0,39352.03,118056.09
+100427,2024-08-28,Polonia,Centro Europa,CampoTerra Srl,TaglioFlex,Cereali (grano/orzo),2.0,29210.68,58421.36,Dealer,PLN,4.209398,122959.38,245918.76
+100691,2024-06-19,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,4.0,19379.63,77518.52,Dealer,KZT,493.082103,9555748.72,38222994.86
+100545,2022-08-22,Bulgaria,Est Europa,CampoFarm LLC,FienoFacile,Foraggio,3.0,29590.86,88772.58,Dealer,BGN,2.06359,61063.4,183190.21
+101195,2024-02-27,Turchia,Medio Oriente,TerraCampo SA,TaglioFlex,Cereali (grano/orzo),4.0,23178.63,92714.52,Dealer,TRY,33.702946,781188.12,3124752.46
+100675,2025-06-04,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,3.0,22295.34,66886.02,Dealer,KZT,472.699362,10538992.99,31616978.98
+100690,2021-04-06,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,2.0,20245.6,40491.2,Vendita diretta,EUR,1.0,20245.6,40491.2
+101123,2021-04-08,Canada,Nord America,AgriFarm SC,AltaResa,Mais,1.0,37203.87,37203.87,Dealer,CAD,1.396028,51937.64,51937.64
+101249,03-03-2023,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,5.0,35593.41,177967.05,Dealer,RSD,113.048543,4023783.14,20118915.7
+100160,2025-06-24,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,1.0,29735.32,29735.32,Dealer,EUR,1.0,29735.32,29735.32
+101005,2025-01-28,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,4.0,40325.0,161300.0,Dealer,BGN,1.97431,79614.05,318456.2
+100258,2024-03-10,Ucraina,Est Europa,TerraHarvest SC,TaglioFlex,Cereali (grano/orzo),3.0,28690.97,86072.91,Dealer,UAH,44.942438,1289442.14,3868326.42
+100959,2023-06-07,Francia,,AgriFarm Kft.,AltaResa,Mais,3.0,46831.53,140494.59,Dealer,EUR,1.0,46831.53,140494.59
+100336,2023-11-11,Messico,Nord America,CerealTerra Kft.,PrimaRaccolta,Mais,2.0,22454.37,44908.74,Dealer,MXN,19.393779,435475.09,870950.18
+100980,2021-10-17,Spagna,Sud Europa,HarvestCampo S.L.,SolePieno,Girasole,3.0,23151.57,69454.71,Dealer,EUR,1.0,23151.57,69454.71
+100016,2023-11-20,Ungheria,Est Europa,FarmAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),4.0,25370.31,101481.24,Dealer,HUF,376.099935,9541771.94,38167087.77
+101024,2023-06-04,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,3.0,20805.76,62417.28,Dealer,UAH,42.099182,875905.48,2627716.43
+100325,05-21-2023,USA,Nord America,AgroCampo S.L.,SolePieno,Girasole,2.0,23495.76,46991.52,Dealer,USD,0.970889,22811.77,45623.55
+100769,2022-02-17,Spagna,Sud Europa,,PrimaRaccolta,Mais,3.0,22438.28,67314.84,Dealer,EUR,1.0,22438.28,67314.84
+100608,12-Jul-2021,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,3.0,39962.59,119887.77,Dealer,UAH,41.213161,1646984.66,4940953.97
+101122,2024-04-25,USA,Nord America,CerealAgri SC,GranCampo,Mais,4.0,38074.87,152299.48,Dealer,USD,1.10818,42193.81,168775.24
+101010,2024-08-24,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,2.0,38699.25,77398.5,Dealer,UAH,42.725341,1653438.65,3306877.31
+100099,2024-12-21,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,3.0,34941.97,104825.91,Vendita diretta,BGN,2.103586,73503.44,220510.32
+100223,2023-06-09,Messico,Nord America,CerealCereal LLC,AltaResa,Mais,3.0,43412.85,130238.55,Dealer,MXN,18.376333,797768.99,2393306.96
+100180,2021-05-14,Turchia,,HarvestAgro Sp. z o.o.,AltaResa,Mais,3.0,36845.87,110537.61,Dealer,TRY,32.085299,1182210.76,3546632.27
+101099,2025-04-24,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,3.0,38423.02,115269.06,Dealer,BRL,5.571042,214056.26,642168.77
+100100,22/05/2023,Messico,Nord America,CerealCereal LLC,PrimaRaccolta,Mais,3.0,20891.79,62675.37,Vendita diretta,MXN,18.291156,382134.99,1146404.97
+100758,2025-05-28,Russia,Est Europa,GrainAgro Srl,FienoFacile,Foraggio,4.0,34244.02,136976.08,Dealer,RUB,99.85601,3419471.2,13677884.81
+100522,2024-04-28,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,2.0,21254.81,42509.62,Dealer,UAH,43.4196,922875.35,1845750.7
+100762,11-Mar-2023,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,1.0,22697.94,22697.94,Dealer,MXN,16.348829,371084.74,371084.74
+100023,2024-05-05,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,SolePieno,Girasole,3.0,26304.73,78914.19,Dealer,TRY,35.245775,927130.6,2781391.79
+100357,2022-03-27,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,AltaResa,Mais,3.0,41722.55,125167.65,Dealer,TRY,34.879749,1455272.07,4365816.21
+100734,2022-05-12,Italia,Sud Europa,AgroAgro SC,AltaResa,Mais,2.0,43313.81,86627.62,Dealer,EUR,1.0,43313.81,86627.62
+101058,2024-03-05,Ucraina,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,1.0,32837.73,32837.73,Dealer,UAH,44.860561,1473118.99,1473118.99
+101192,2025-10-28,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,5.0,22269.92,111349.6,Dealer,ZAR,20.681919,460584.68,2302923.41
+100612,05-07-2025,Turchia,Medio Oriente,HarvestGrain Kft.,SolePieno,Girasole,4.0,25788.99,103155.96,Dealer,TRY,32.003628,825341.24,3301364.97
+101085,2024-10-12,Ucraina,Est Europa,HarvestCampo Ltd,AltaResa,Mais,2.0,44029.99,88059.98,Dealer,UAH,43.456861,1913405.16,3826810.31
+100341,2025-12-02,Argentina,Sud America,AgroCampo Srl,FienoFacile,Foraggio,3.0,,92739.03,Vendita diretta,ARS,992.380152,30677457.56,92032372.69
+100432,2021-05-08,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,1.0,36750.05,36750.05,Dealer,EUR,1.0,36750.05,36750.05
+100940,2021-07-26,Sud Africa,,AgriCampo SA,GranCampo,Mais,3.0,39814.91,119444.73,Dealer,ZAR,21.327767,849163.12,2547489.37
+100218,04-08-2021,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,3.0,39401.36,118204.08,Dealer,UAH,39.992499,1575758.85,4727276.55
+100204,2025-10-05,Brasile,Sud America,GrainAgro Ltd,AltaResa,Mais,3.0,43212.96,129638.88,Dealer,BRL,4.983188,215338.3,646014.91
+101028,2021-08-16,Spagna,Sud Europa,TerraAgri GmbH,AltaResa,Mais,,40654.56,81309.12,Dealer,EUR,1.0,40654.56,81309.12
+101152,2022-03-01,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,3.0,18134.42,54403.26,Dealer,KZT,478.095353,8669981.93,26009945.79
+100094,2025-06-10,Ungheria,Est Europa,FarmTerra SA,  PrimaRaccolta ,Mais,4.0,22764.6,91058.4,Dealer,HUF,423.694187,9645228.69,38580914.76
+100902,2025-07-28,Spagna,Sud Europa,TerraAgri GmbH,GranCampo,Mais,1.0,42012.95,42012.95,Dealer,EUR,1.0,42012.95,42012.95
+100069,2022-03-24,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,2.0,34127.56,68255.12,Dealer,CAD,1.385571,47286.16,94572.31
+101075,2025-11-28,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,4.0,43532.17,174128.68,Dealer,ARS,1102.215842,47981847.41,191927389.64
+100285,2025-03-13,Bulgaria,Est Europa,CampoFarm LLC,PrimaRaccolta,Mais,2.0,23343.92,46687.84,Vendita diretta,BGN,1.893598,44204.0,88408.0
+100697,28/05/2025,Canada,Nord America,AgriFarm SC,FienoFacile,Foraggio,2.0,30553.48,61106.96,Dealer,CAD,1.584025,48397.48,96794.95
+100086,20/08/2025,Germania,Centro Europa,FarmCampo SA,SolePieno,Girasole,1.0,25465.87,25465.87,Dealer,EUR,1.0,25465.87,25465.87
+100435,09/06/2021,Spagna,Sud Europa,FarmGrain SC,AltaResa,Mais,4.0,43473.22,173892.88,Dealer,EUR,1.0,43473.22,173892.88
+101226,2025-12-15,Argentina,Sud America,AgroCampo Srl,  TaglioFlex ,Cereali (grano/orzo),2.0,29072.41,58144.82,Dealer,ARS,1039.17994,30211465.28,60422930.56
+100154,2025-10-19,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),4.0,25462.61,101850.44,Dealer,MXN,18.120443,461393.77,1845575.09
+100076,2023-06-16,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,5.0,23135.25,115676.25,Dealer,RSD,120.497334,2787735.95,13938679.73
+101109,2022-04-07,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,4.0,39844.2,159376.8,Dealer,MXN,18.004346,717368.76,2869475.05
+100790,2022-05-16,Polonia,Centro Europa,GrainAgro Sp. z o.o.,GranCampo,Mais,4.0,39273.82,157095.28,Dealer,PLN,4.076828,160112.61,640450.44
+100581,2022-06-16,Australia,Oceania,GrainFarm LLC,AltaResa,Mais,5.0,46469.8,232349.0,Dealer,AUD,1.59774,74246.66,371233.29
+100447,2021-07-02,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,3.0,39219.91,117659.73,Dealer,EUR,1.0,39219.91,117659.73
+100704,2021-07-03,Turchia,Medio Oriente,TerraCampo SA,GranCampo,Mais,2.0,36530.07,73060.14,Dealer,TRY,36.061091,1317314.18,2634628.36
+100189,2024-05-15,Russia,,AgroCereal GmbH,GranCampo,Mais,2.0,42114.84,84229.68,Dealer,RUB,94.535591,3981351.29,7962702.58
+100272,26/03/2023,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,5.0,48105.64,240528.2,Dealer,EUR,1.0,48105.64,240528.2
+100237,2024-06-02,Polonia,Centro Europa,CampoTerra Srl,SolePieno,Girasole,3.0,23594.72,70784.16,Dealer,PLN,4.360554,102886.05,308658.15
+100488,23/04/2025,Messico,Nord America,CerealTerra Kft.,FienoFacile,Foraggio,5.0,32636.81,163184.05,Dealer,MXN,17.893021,583971.13,2919855.63
+101232,2023-04-11,Canada,Nord America,AgriFarm SC,PrimaRaccolta,Mais,2.0,20084.56,40169.12,Dealer,CAD,1.445016,29022.51,58045.02
+100560,2021-02-13,Brasile,Sud America,CampoGrain Kft.,  GranCampo ,Mais,4.0,41718.12,166872.48,Dealer,BRL,5.188068,216436.44,865745.77
+100118,2023-05-11,Polonia,Centro Europa,AgroTerra SC,AltaResa,Mais,1.0,41669.76,41669.76,Dealer,PLN,4.261993,177596.23,177596.23
+100638,2022-02-22,Australia,Oceania,FarmTerra LLC,PrimaRaccolta,Mais,7.0,19482.19,136375.33,Vendita diretta,AUD,1.655945,32261.44,225830.05
+101146,2024-08-02,Canada,Nord America,AgriFarm SC,GranCampo,Mais,3.0,42167.02,126501.06,Dealer,CAD,1.471561,62051.34,186154.03
+100802,2024-01-08,Turchia,Medio Oriente,TerraCampo SA,AltaResa,Mais,3.0,40267.54,120802.62,Dealer,TRY,36.17086,1456511.55,4369534.66
+100751,2022-02-01,Bulgaria,Est Europa,TerraAgro Ltd,SolePieno,Girasole,3.0,,74884.86,Dealer,BGN,1.934299,48283.24,144849.71
+100513,2022-11-07,Canada,Nord America,AgriFarm SC,GranCampo,Mais,4.0,37614.37,150457.48,Dealer,CAD,1.505467,56627.19,226508.77
+100634,2025-05-10,Polonia,Centro Europa,AgroTerra SC,FienoFacile,Foraggio,2.0,32299.38,64598.76,Dealer,PLN,4.414955,142600.31,285200.62
+100886,2025-06-25,Kazakhstan,Asia Centrale,AgriTerra Kft.,AltaResa,Mais,3.0,41587.3,124761.9,Dealer,KZT,485.906163,20207525.37,60622576.12
+101082,2021-09-07,USA,Nord America,CerealAgri SC,TaglioFlex,Cereali (grano/orzo),4.0,27941.11,111764.44,Dealer,USD,1.078067,30122.39,120489.55
+100966,2021-04-23,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,3.0,37012.2,111036.6,Dealer,BGN,1.906794,70574.64,211723.92
+100127,2024-10-23,Sud Africa,Africa,AgriCampo SA,PrimaRaccolta,Mais,3.0,19712.84,59138.52,Dealer,ZAR,19.366104,381760.91,1145282.73
+100791,08/05/2025,ROMANIA,Est Europa,GrainCampo GmbH,SolePieno,Girasole,1.0,22726.8,22726.8,Dealer,RON,5.202636,118239.27,118239.27
+100830,2021-07-04,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31621.04,63242.08,Dealer,HUF,355.523801,11242032.33,22484064.66
+100117,2024-05-01,Canada,Nord America,AgriFarm SC,AltaResa,Mais,3.0,43512.89,130538.67,Dealer,CAD,1.540833,67046.1,201138.29
+100474,2024-10-14,Australia,Oceania,HarvestFarm SA,GranCampo,Mais,2.0,43777.75,87555.5,Dealer,AUD,1.599662,70029.6,140059.21
+100741,2021-12-06,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,3.0,41140.77,123422.31,Dealer,PLN,4.601848,189323.57,567970.71
+101111,2024-06-06,Ucraina,Est Europa,TerraHarvest SC,FienoFacile,Foraggio,2.0,31121.22,62242.44,Dealer,UAH,42.467402,1321637.36,2643274.72
+100058,2024-02-11,Canada,Nord America,AgriFarm SC,GranCampo,Mais,3.0,37597.67,112793.01,Dealer,CAD,1.427054,53653.91,160961.72
+100604,18-Feb-2023,Russia,Est Europa,AgroCereal GmbH,FienoFacile,Foraggio,4.0,29807.46,119229.84,Dealer,RUB,101.369585,3021569.85,12086279.4
+100787,2024-02-15,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,4.0,40258.88,161035.52,Dealer,RSD,111.675623,4495935.51,17983742.02
+100831,2024-05-24,Turchia,Medio Oriente,HarvestGrain Kft.,AltaResa,Mais,4.0,39860.64,159442.56,Dealer,TRY,35.013251,1395650.59,5582602.37
+100120,2021-01-08,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,3.0,,65810.61,Vendita diretta,MXN,19.717276,432535.32,1297605.96
+100657,13-May-2022,Bulgaria,Est Europa,,SolePieno,Girasole,3.0,24922.85,74768.55,Dealer,BGN,2.113206,52667.12,158001.35
+101025,2023-03-12,Polonia,Centro Europa,GrainAgro Sp. z o.o.,AltaResa,Mais,2.0,36055.91,72111.82,Dealer,PLN,4.28258,154412.32,308824.64
+100670,2025-05-22,Italia,Sud Europa,HarvestAgri Srl,GranCampo,Mais,2.0,33837.93,67675.86,Vendita diretta,EUR,1.0,33837.93,67675.86
+100106,2025-01-26,Messico,Nord America,,AltaResa,Mais,5.0,48058.6,240293.0,Dealer,MXN,19.798952,951509.91,4757549.57
+100636,2025-05-03,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,5.0,25804.74,129023.7,Dealer,ZAR,21.751473,561291.11,2806455.53
+100370,2023-04-15,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,2.0,23072.88,46145.76,Dealer,RUB,108.028141,2492520.33,4985040.67
+100269,2024-05-25,Ucraina,Est Europa,HarvestCampo Ltd,AltaResa,Mais,3.0,43018.72,129056.16,Dealer,UAH,39.396329,1694779.65,5084338.94
+100656,2025-07-21,Russia,Est Europa,AgroCereal GmbH,AltaResa,Mais,4.0,42467.93,169871.72,Vendita diretta,RUB,102.384354,4348051.58,17392206.32
+100820,2024-11-28,Spagna,Sud Europa,HarvestCampo S.L.,GranCampo,Mais,4.0,38226.79,152907.16,Dealer,EUR,1.0,38226.79,152907.16
+100823,17-Nov-2021,Brasile,Sud America,HarvestFarm Kft.,FienoFacile,Foraggio,3.0,29720.64,89161.92,Dealer,BRL,5.268811,156592.43,469777.3
+101050,2025-05-13,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,1.0,24001.84,24001.84,Dealer,KZT,497.064444,11930461.25,11930461.25
+100047,2025-09-14,Canada,Nord America,AgroAgro LLC,SolePieno,Girasole,4.0,25389.67,101558.68,Vendita diretta,CAD,1.506789,38256.88,153027.5
+100350,2021-02-23,Argentina,Sud America,AgroCampo Srl,TaglioFlex,Cereali (grano/orzo),1.0,30056.77,30056.77,Dealer,ARS,1073.36166,32261784.54,32261784.54
+101101,11/05/2023,Polonia,Centro Europa,AgroTerra SC,AltaResa,Mais,6.0,40510.59,243063.54,Dealer,PLN,4.153915,168277.55,1009665.28
+100877,2023-07-26,KAZAKHSTAN,Asia Centrale,AgriTerra Kft.,GranCampo,Mais,2.0,36842.07,73684.14,Dealer,KZT,477.525136,17593014.49,35186028.97
+100774,2023-12-28,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,6.0,24734.69,148408.14,Dealer,RUB,94.26692,2331663.04,13989978.26
+100196,2023-05-13,Ungheria,Est Europa,FarmTerra SA,PrimaRaccolta,Mais,2.0,20636.15,41272.3,Dealer,HUF,393.823952,8127010.15,16254020.29
+100103,2021-09-22,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,9.0,22206.4,199857.6,Dealer,KZT,477.266314,10598366.68,95385300.08
+100005,2022-12-06,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,2.0,42923.89,85847.78,Dealer,ARS,1111.557248,47712361.04,95424722.08
+100620,2025-06-27,Australia,Oceania,FarmTerra LLC,SolePieno,Girasole,4.0,26373.56,105494.24,Dealer,AUD,1.630029,42989.67,171958.67
+100572,2023-08-14,Ucraina,Est Europa,,PrimaRaccolta,Mais,5.0,23674.26,118371.3,Dealer,UAH,43.068691,1019619.39,5098096.94
+100053,01-13-2025,Sud Africa,Africa,,FienoFacile,Foraggio,5.0,28519.75,142598.75,Dealer,ZAR,21.2422,605822.23,3029111.17
+100264,2024-07-17,Russia,Est Europa,AgroCereal GmbH,GranCampo,Mais,1.0,40594.06,40594.06,Dealer,RUB,99.936598,4056832.26,4056832.26
+101162,16-Mar-2022,USA,Nord America,CampoGrain Srl,AltaResa,Mais,4.0,41583.55,166334.2,Dealer,USD,1.055728,43900.92,175603.67
+100444,17/08/2023,Italia,Sud Europa,AgroAgri S.L.,PrimaRaccolta,Mais,4.0,19894.33,79577.32,Dealer,EUR,1.0,19894.33,79577.32
+101062,2023-09-26,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,1.0,35447.14,35447.14,Dealer,EUR,1.0,35447.14,35447.14
+100783,2025-07-13,Ucraina,Est Europa,CerealFarm Kft.,AltaResa,Mais,2.0,42543.05,85086.1,Dealer,UAH,44.613215,1897982.24,3795964.47
+100838,2021-06-05,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,3.0,39028.84,117086.52,Dealer,PLN,4.211382,164365.35,493096.06
+101160,2025-01-11,Francia,Sud Europa,FarmFarm Kft.,SolePieno,Girasole,2.0,22597.67,45195.34,Dealer,EUR,1.0,22597.67,45195.34
+100692,2025-05-19,Spagna,Sud Europa,TerraAgri GmbH,AltaResa,Mais,3.0,42870.78,128612.34,Dealer,EUR,1.0,42870.78,128612.34
+100305,2025-05-16,Australia,Oceania,FarmCereal SC,PrimaRaccolta,Mais,,18522.59,55567.77,Dealer,AUD,1.5776,29221.24,87663.71
+100342,2022-05-03,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,6.0,37256.13,223536.78,Dealer,EUR,1.0,37256.13,223536.78
+100984,2022-03-11,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,2.0,31156.85,62313.7,Vendita diretta,ZAR,21.60788,673233.48,1346466.95
+100314,12-12-2024,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,3.0,33368.14,100104.42,Dealer,PLN,4.404772,146979.05,440937.15
+100150,01-Jul-2025,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,4.0,19395.66,77582.64,Vendita diretta,RSD,113.176433,2195131.61,8780526.46
+100125,2023-02-15,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,2.0,36416.16,72832.32,Dealer,ZAR,20.212353,736056.28,1472112.56
+101127,2023-05-19,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31527.51,63055.02,Dealer,HUF,410.030639,12927245.07,25854490.14
+100575,2023-12-27,Kazakhstan,Asia Centrale,AgriTerra Kft.,TaglioFlex,Cereali (grano/orzo),4.0,25551.72,102206.88,Dealer,KZT,501.34231,12810158.33,51240633.32
+100698,2022-05-22,Bulgaria,Est Europa,HarvestGrain GmbH,AltaResa,Mais,5.0,37881.05,189405.25,Dealer,BGN,1.971075,74666.39,373331.95
+100665,2022-03-17,Polonia,Centro Europa,GrainAgro Sp. z o.o.,AltaResa,Mais,2.0,44738.82,89477.64,Dealer,PLN,4.344938,194387.4,388774.8
+100051,2022-03-03,Kazakhstan,Asia Centrale,AgriTerra Kft.,FienoFacile,Foraggio,2.0,32858.39,65716.78,Dealer,KZT,483.325074,15881283.78,31762567.56
+101245,2024-05-09,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,3.0,21640.43,64921.29,Dealer,EUR,1.0,21640.43,64921.29
+100727,2024-02-17,Messico,Nord America,CerealCereal LLC,SolePieno,Girasole,2.0,23493.26,46986.52,Dealer,MXN,17.451839,410000.59,820001.18
+100800,2021-02-10,Brasile,Sud America,FarmTerra Sp. z o.o.,AltaResa,Mais,3.0,39112.03,117336.09,Dealer,BRL,5.654986,221177.98,663533.95
+100834,05-Jun-2021,Canada,Nord America,AgriFarm SC,PrimaRaccolta,Mais,2.0,20331.81,40663.62,Dealer,CAD,1.457143,29626.35,59252.71
+100354,2025-12-05,Russia,Est Europa,AgroCereal GmbH,AltaResa,Mais,3.0,41349.51,124048.53,Vendita diretta,RUB,96.914892,4007383.3,12022149.89
+101225,12-Nov-2022,Brasile,Sud America,FarmTerra Sp. z o.o.,GranCampo,Mais,4.0,34715.57,138862.28,Dealer,BRL,5.058196,175598.16,702392.63
+100143,2024-02-12,Serbia,Est Europa,FarmAgri SRL,SolePieno,Girasole,4.0,23001.21,92004.84,Dealer,RSD,119.753377,2754472.57,11017890.29
+100471,2024-03-02,Spagna,Sud Europa,FarmGrain SC,PrimaRaccolta,Mais,999.0,19145.66,38291.32,Vendita diretta,EUR,1.0,19145.66,38291.32
+100883,2025-08-23,USA,Nord America,CerealAgri SC,SolePieno,Girasole,4.0,27855.21,111420.84,Dealer,USD,1.100436,30652.88,122611.5
+100654,2022-04-02,Serbia,Est Europa,GrainHarvest S.L.,AltaResa,Mais,5.0,45207.48,226037.4,Dealer,RSD,125.277852,5663495.99,28317479.94
+100400,01-Feb-2025,CANADA,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),2.0,26020.9,52041.8,Dealer,CAD,1.448804,37699.18,75398.37
+101027,2025-10-28,Argentina,Sud America,AgroCampo Srl,SolePieno,Girasole,4.0,25947.76,103791.04,Dealer,ARS,1090.870266,28305639.85,113222559.41
+101222,2025-04-14,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,9.0,42200.13,379801.17,Dealer,BGN,1.965913,82961.78,746656.06
+100321,2024-07-15,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,4.0,38495.82,153983.28,Dealer,EUR,1.0,38495.82,153983.28
+100020,2023-06-02,Francia,Sud Europa,,AltaResa,Mais,4.0,41120.92,164483.68,Dealer,EUR,1.0,41120.92,164483.68
+100685,2024-08-20,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,1.0,42770.13,42770.13,Dealer,EUR,1.0,42770.13,42770.13
+100036,2024-04-11,Ucraina,Est Europa,TerraHarvest SC,SolePieno,Girasole,2.0,24115.19,48230.38,Dealer,UAH,41.41859,998817.17,1997634.33
+100825,2022-12-10,Brasile,Sud America,GrainAgro Ltd,FienoFacile,Foraggio,6.0,31112.37,186674.22,Dealer,BRL,5.524587,171882.99,1031297.97
+100903,2021-10-08,Spagna,Sud Europa,TerraAgri GmbH,SolePieno,Girasole,2.0,23117.35,46234.7,Dealer,EUR,1.0,23117.35,46234.7
+100506,2023-05-03,Ucraina,Est Europa,HarvestCampo Ltd,TaglioFlex,Cereali (grano/orzo),6.0,25928.42,155570.52,Dealer,UAH,43.349681,1123988.74,6743932.42
+100828,2024-09-14,Sud Africa,Africa,AgriCampo SA,  FienoFacile ,Foraggio,2.0,29714.25,59428.5,Dealer,ZAR,20.692682,614867.53,1229735.05
+101140,17/05/2021,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,2.0,28643.11,57286.22,Vendita diretta,USD,1.12769,32300.55,64601.1
+100408,2023-02-10,Australia,Oceania,GrainFarm LLC,SolePieno,Girasole,1.0,22206.54,22206.54,Vendita diretta,AUD,1.642487,36473.95,36473.95
+100921,27/05/2021,Ungheria,Est Europa,FarmAgro Srl,PrimaRaccolta,Mais,1.0,19163.39,19163.39,Dealer,HUF,377.493868,7234062.22,7234062.22
+100818,2022-05-07,Kazakhstan,Asia Centrale,HarvestCereal LLC,TaglioFlex,Cereali (grano/orzo),1.0,28110.51,28110.51,Dealer,KZT,523.611835,14718995.72,14718995.72
+100867,2023-04-09,Romania,Est Europa,TerraAgro SC,PrimaRaccolta,Mais,4.0,21001.0,84004.0,Dealer,RON,4.701704,98740.49,394961.94
+100538,2023-01-21,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),4.0,27579.65,110318.6,Vendita diretta,EUR,1.0,27579.65,110318.6
+100759,2023-03-18,Polonia,Centro Europa,GrainAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),3.0,26984.79,80954.37,Dealer,PLN,4.508162,121651.8,364955.41
+101137,10-22-2023,Ucraina,Est Europa,HarvestCampo Ltd,TaglioFlex,Cereali (grano/orzo),3.0,27542.55,82627.65,Dealer,UAH,43.957045,1210689.11,3632067.33
+101068,2022-02-11,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),2.0,0.0,60762.34,Dealer,EUR,1.0,30381.17,60762.34
+100039,15-Oct-2024,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,2.0,28265.79,56531.58,Dealer,ZAR,19.319166,546071.49,1092142.98
+100176,05-22-2023,Germania,Centro Europa,AgroHarvest SA,PrimaRaccolta,Mais,3.0,22196.38,66589.14,Dealer,EUR,1.0,22196.38,66589.14
+100246,2022-08-26,Germania,Centro Europa,AgroHarvest SA,GranCampo,Mais,2.0,35894.0,71788.0,Dealer,EUR,1.0,35894.0,71788.0
+100811,2025-04-05,Romania,Est Europa,CampoCampo Ltd,GranCampo,Mais,3.0,37082.75,111248.25,Vendita diretta,RON,5.005337,185611.66,556834.98
+101154,2025-11-07,Serbia,Est Europa,CerealFarm GmbH,TaglioFlex,Cereali (grano/orzo),3.0,30247.56,90742.68,Dealer,RSD,115.037045,3479589.92,10438769.76
+101086,2022-12-08,Spagna,Sud Europa,FarmGrain SC,TaglioFlex,Cereali (grano/orzo),3.0,27790.43,83371.29,Dealer,EUR,1.0,27790.43,83371.29
+101059,2024-06-22,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,3.0,40658.22,121974.66,Dealer,MXN,17.716754,720331.68,2160995.05
+100785,06-01-2025,Serbia,Est Europa,FarmAgri SRL,FienoFacile,Foraggio,3.0,31957.64,95872.92,Dealer,RSD,113.568829,3629391.75,10888175.26
+101137,10-22-2023,Ucraina,Est Europa,HarvestCampo Ltd,TaglioFlex,Cereali (grano/orzo),3.0,27542.55,82627.65,Dealer,UAH,43.957045,1210689.11,3632067.33
+100490,2025-10-02,Sud Africa,Africa,AgriFarm SA,TaglioFlex,Cereali (grano/orzo),3.0,26907.17,80721.51,Dealer,ZAR,20.524756,552263.1,1656789.3
+100155,2025-01-10,Serbia,Est Europa,FarmAgri SRL,SolePieno,Girasole,4.0,24303.29,97213.16,Dealer,RSD,129.371915,3144163.17,12576652.67
+100639,2021-07-10,Argentina,Sud America,AgroCampo Srl,TaglioFlex,Cereali (grano/orzo),3.0,26286.65,78859.95,Dealer,ARS,1007.66167,26488049.64,79464148.91
+100962,2023-02-08,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,26123.5,52247.0,Dealer,RUB,95.609189,2497646.65,4995293.3
+100663,21-Mar-2022,Messico,Nord America,CerealTerra Kft.,TaglioFlex,Cereali (grano/orzo),4.0,25284.3,101137.2,Dealer,MXN,18.155304,459044.15,1836176.61
+100854,11/06/2025,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,3.0,34274.62,102823.86,Dealer,MXN,18.498715,634036.43,1902109.28
+100943,24-Dec-2021,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,2.0,38105.02,76210.04,Dealer,ZAR,21.117199,804671.29,1609342.58
+100288,2022-09-02,Australia,Oceania,FarmCereal SC,FienoFacile,Foraggio,3.0,31128.34,93385.02,Dealer,AUD,1.703423,53024.73,159074.19
+100626,07/05/2021,Romania,Est Europa,TerraAgro SC,FienoFacile,Foraggio,3.0,33700.56,101101.68,Vendita diretta,RON,4.996246,168376.29,505128.86
+101199,03-16-2022,USA,Nord America,AgroCampo S.L.,GranCampo,Mais,3.0,38035.57,114106.71,Dealer,USD,1.021246,38843.67,116531.02
+100686,2025-05-02,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,4.0,35117.48,140469.92,Dealer,BGN,1.795621,63057.68,252230.74
+101248,12-23-2022,Sud Africa,Africa,AgriCampo SA,AltaResa,Mais,1.0,46081.31,46081.31,Vendita diretta,ZAR,20.587879,948716.43,948716.43
+100990,2022-05-16,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,,31450.5,62901.0,Dealer,USD,1.041951,32769.88,65539.76
+100570,09-Feb-2021,SPAGNA,Sud Europa,HarvestCampo S.L.,SolePieno,Girasole,2.0,25426.49,50852.98,Dealer,EUR,1.0,25426.49,50852.98
+100593,2022-04-07,USA,Nord America,FarmCereal SRL,AltaResa,Mais,5.0,39458.69,197293.45,Vendita diretta,USD,1.073912,42375.16,211875.8
+100735,10-Nov-2024,Italia,Sud Europa,AgroAgri S.L.,FienoFacile,Foraggio,2.0,32324.17,64648.34,Dealer,EUR,1.0,32324.17,64648.34
+100793,2023-05-12,USA,Nord America,FarmCereal SRL,PrimaRaccolta,Mais,3.0,22288.39,66865.17,Dealer,USD,1.067779,23799.07,71397.22
+100018,10/06/2023,Germania,Centro Europa,FarmCampo SA,FienoFacile,Foraggio,4.0,30134.95,120539.8,Dealer,EUR,1.0,30134.95,120539.8
+100128,04-Dec-2024,Ucraina,Est Europa,CerealFarm Kft.,GranCampo,Mais,3.0,38574.63,115723.89,Dealer,UAH,43.219069,1667159.6,5001478.79
+100323,22/04/2022,Russia,Est Europa,GrainAgro Srl,GranCampo,Mais,2.0,36463.27,72926.54,Dealer,RUB,98.11047,3577428.56,7154857.11
+100256,2025-02-09,Italia,Sud Europa,FarmFarm GmbH,AltaResa,Mais,1.0,42601.38,42601.38,Dealer,EUR,1.0,42601.38,42601.38
+101049,19-Jul-2025,Messico,Nord America,CerealTerra Kft.,PrimaRaccolta,Mais,2.0,21949.63,43899.26,Dealer,MXN,16.744972,367545.94,735091.88
+100983,2021-04-21,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,4.0,19483.03,77932.12,Dealer,PLN,4.277267,83334.12,333336.49
+100928,06/04/2023,Russia,Est Europa,AgroCereal GmbH,AltaResa,Mais,1.0,37896.38,37896.38,Dealer,RUB,100.318089,3801692.42,3801692.42
+100981,2024-05-20,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,5.0,42491.09,212455.45,Dealer,EUR,1.0,42491.09,212455.45
+100303,21/11/2021,Brasile,Sud America,CampoGrain Kft.,FienoFacile,Foraggio,2.0,31897.94,63795.88,Dealer,BRL,5.409463,172550.73,345101.45
+100191,21/09/2021,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,3.0,21893.12,65679.36,Dealer,EUR,1.0,21893.12,65679.36
+100116,11-May-2025,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,2.0,35710.02,71420.04,Vendita diretta,EUR,1.0,35710.02,71420.04
+100993,06-19-2023,Brasile,Sud America,FarmTerra Sp. z o.o.,SolePieno,Girasole,5.0,24640.6,123203.0,Vendita diretta,BRL,5.467317,134717.97,673589.86
+101246,2021-03-24,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),2.0,28693.65,57387.3,Dealer,CAD,1.485518,42624.93,85249.87
+101011,2022-01-10,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,3.0,24722.51,74167.53,Vendita diretta,ZAR,20.537303,507733.68,1523201.04
+100607,27-Jun-2022,Ungheria,Est Europa,FarmAgro Srl,PrimaRaccolta,Mais,1.0,20275.11,20275.11,Dealer,HUF,417.809386,8471131.26,8471131.26
+100181,2025-06-13,Spagna,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,4.0,23493.79,93975.16,Dealer,EUR,1.0,23493.79,93975.16
+100302,2024-06-10,Serbia,Est Europa,GrainHarvest S.L.,AltaResa,Mais,4.0,42820.24,171280.96,Dealer,RSD,119.966076,5136976.17,20547904.66
+100497,2022-10-06,Sud Africa,Africa,AgriCampo SA,FienoFacile,Foraggio,3.0,28601.38,85804.14,Dealer,ZAR,21.14139,604672.93,1814018.79
+100349,03-Dec-2021,Spagna,Sud Europa,TerraAgri GmbH,FienoFacile,Foraggio,3.0,29357.75,88073.25,Dealer,EUR,1.0,29357.75,88073.25
+101102,2022-05-28,Ungheria,Est Europa,FarmAgro Sp. z o.o.,GranCampo,Mais,1.0,40680.04,40680.04,Dealer,HUF,385.765606,15692960.28,15692960.28
+100037,2024-02-22,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,2.0,42677.07,85354.14,Dealer,ARS,1017.103362,43406991.38,86813982.75
+100745,07/05/2022,Kazakhstan,Asia Centrale,AgriTerra Kft.,AltaResa,Mais,4.0,42412.66,169650.64,Vendita diretta,KZT,478.913501,20311995.49,81247981.95
+101151,2025-08-27,Australia,Oceania,GrainFarm LLC,FienoFacile,Foraggio,3.0,29870.31,89610.93,Dealer,AUD,1.661699,49635.46,148906.39
+101056,14/01/2021,Argentina,Sud America,AgroCampo Srl,SolePieno,Girasole,4.0,25583.88,102335.52,Dealer,ARS,1070.46682,27386694.67,109546778.67
+100518,2021-09-04,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,5.0,25201.84,126009.2,Dealer,ZAR,21.088912,531479.39,2657396.93
+100373,2023-03-27,Sud Africa,Africa,AgriCampo SA,GranCampo,Mais,1.0,38041.35,38041.35,Dealer,ZAR,20.128353,765709.72,765709.72
+100046,2024-02-22,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),3.0,28032.63,84097.89,Vendita diretta,EUR,1.0,28032.63,84097.89
+100477,2023-03-06,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,,24470.6,122353.0,Dealer,ZAR,20.809222,509214.15,2546070.74
+100158,2025-06-23,Bulgaria,Est Europa,CampoFarm LLC,SolePieno,Girasole,5.0,26260.31,131301.55,Dealer,BGN,2.159033,56696.88,283484.38
+101114,2022-05-23,Russia,Est Europa,AgroCereal GmbH,FienoFacile,Foraggio,2.0,33737.5,67475.0,Dealer,RUB,102.296594,3451231.34,6902462.68
+100172,2022-07-13,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,2.0,43426.83,86853.66,Dealer,EUR,1.0,43426.83,86853.66
+100017,2021-12-05,Argentina,Sud America,FarmFarm Srl,PrimaRaccolta,Mais,5.0,22430.26,112151.3,Dealer,ARS,1083.415009,24301280.34,121506401.7
+100512,2025-10-05,Brasile,Sud America,HarvestFarm Kft.,SolePieno,Girasole,2.0,22538.97,45077.94,Vendita diretta,BRL,5.643094,127189.53,254379.05
+100049,2023-07-15,Brasile,Sud America,HarvestFarm Kft.,TaglioFlex,Cereali (grano/orzo),5.0,28428.76,142143.8,Dealer,BRL,5.373187,152753.04,763765.22
+100192,26-Jun-2025,Brasile,Sud America,HarvestFarm Kft.,TaglioFlex,Cereali (grano/orzo),1.0,24575.58,24575.58,Dealer,BRL,5.952978,146297.89,146297.89
+100547,2021-07-16,Sud Africa,Africa,AgriFarm SA,PrimaRaccolta,Mais,3.0,19956.18,59868.54,Vendita diretta,ZAR,20.009878,399320.73,1197962.18
+100516,2025-11-15,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,1.0,20663.96,20663.96,Dealer,ARS,1008.237326,20834175.77,20834175.77
+100659,2023-04-16,Serbia,Est Europa,FarmAgri SRL,SolePieno,Girasole,3.0,24006.21,72018.63,Vendita diretta,RSD,118.891196,2854127.02,8562381.05
+101046,2024-02-17,Messico,Nord America,CerealCereal LLC,FienoFacile,Foraggio,4.0,31966.88,127867.52,Dealer,MXN,18.57154,593674.19,2374696.76
+101020,2021-03-05,Italia,Sud Europa,AgroAgro SC,PrimaRaccolta,Mais,5.0,24228.45,121142.25,Dealer,EUR,1.0,24228.45,121142.25
+101070,2023-03-02,Spagna,Sud Europa,TerraAgri GmbH,SolePieno,Girasole,1.0,24160.84,24160.84,Vendita diretta,EUR,1.0,24160.84,24160.84
+100960,2021-01-18,Australia,Oceania,FarmCereal SC,TaglioFlex,Cereali (grano/orzo),2.0,28194.25,56388.5,Dealer,AUD,1.631175,45989.76,91979.51
+101201,2021-04-20,Ungheria,Est Europa,FarmTerra SA,SolePieno,Girasole,3.0,26685.18,80055.54,Dealer,HUF,406.590055,10849928.8,32549786.41
+100284,2024-07-11,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,6.0,20745.58,124473.48,Dealer,UAH,43.026796,892615.84,5355695.03
+100798,2023-05-18,Romania,Est Europa,CampoCampo Ltd,GranCampo,Mais,6.0,40394.27,242365.62,Dealer,RON,4.878642,197069.18,1182415.09
+100226,2022-05-26,Canada,Nord America,AgriFarm SC,FienoFacile,Foraggio,4.0,34244.44,136977.76,Dealer,CAD,1.482561,50769.47,203077.88
+100027,13-Mar-2021,Serbia,Est Europa,CerealFarm GmbH,PrimaRaccolta,Mais,3.0,20755.89,62267.67,Vendita diretta,RSD,118.205336,2453456.95,7360370.85
+100438,2022-05-26,Ucraina,Est Europa,CerealFarm Kft.,AltaResa,Mais,2.0,44301.64,88603.28,Dealer,UAH,42.558669,1885418.83,3770837.67
+101240,2024-01-04,Australia,Oceania,GrainFarm LLC,GranCampo,Mais,2.0,39981.4,79962.8,Dealer,AUD,1.747453,69865.62,139731.23
+100230,2024-05-24,Germania,Centro Europa,AgroHarvest SA,PrimaRaccolta,Mais,1.0,18339.36,18339.36,Vendita diretta,EUR,1.0,18339.36,18339.36
+100038,2021-07-10,Ucraina,Est Europa,TerraHarvest SC,TaglioFlex,Cereali (grano/orzo),5.0,26880.03,134400.15,Dealer,UAH,45.345885,1218898.75,6094493.75
+100750,04-11-2024,Romania,Est Europa,GrainCampo GmbH,AltaResa,Mais,2.0,45147.6,90295.2,Dealer,RON,4.712923,212777.16,425554.32
+100470,2022-12-21,Spagna,Sud Europa,TerraAgri GmbH,AltaResa,Mais,5.0,42420.25,212101.25,Vendita diretta,EUR,1.0,42420.25,212101.25
+101091,2024-05-22,Germania,Centro Europa,FarmCampo SA,PrimaRaccolta,Mais,5.0,22429.75,112148.75,Vendita diretta,EUR,1.0,22429.75,112148.75
+100787,2024-02-15,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,4.0,40258.88,161035.52,Dealer,RSD,111.675623,4495935.51,17983742.02
+100688,2021-05-07,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31631.15,63262.3,Vendita diretta,HUF,401.983379,12715196.56,25430393.12
+100640,12/06/2023,Romania,Est Europa,GrainCampo GmbH,FienoFacile,Foraggio,2.0,32845.91,65691.82,Dealer,RON,4.93884,162220.69,324441.39
+101119,2025-03-14,Canada,Nord America,AgriFarm SC,GranCampo,Mais,5.0,37881.81,189409.05,Dealer,CAD,1.406792,53291.83,266459.14
+101066,2025-09-17,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,2.0,27574.27,55148.54,Dealer,CAD,1.457505,40189.64,80379.27
+101157,2021-01-04,Sud Africa,Africa,AgriCampo SA,TaglioFlex,Cereali (grano/orzo),1.0,27379.4,27379.4,Vendita diretta,ZAR,20.697817,566693.81,566693.81
+100801,2021-01-03,Australia,Oceania,HarvestFarm SA,PrimaRaccolta,Mais,3.0,24349.25,73047.75,Dealer,AUD,1.629843,39685.45,119056.36
+100161,2024-03-13,Serbia,Est Europa,FarmAgri SRL,TaglioFlex,Cereali (grano/orzo),2.0,29084.6,58169.2,Dealer,RSD,117.343128,3412877.94,6825755.88
+100957,2022-03-09,Argentina,Sud America,AgroCampo Srl,SolePieno,Girasole,2.0,20681.18,41362.36,Dealer,ARS,1081.546177,22367651.16,44735302.33
+100822,2025-04-24,Kazakhstan,Asia Centrale,CerealAgro S.L.,FienoFacile,Foraggio,3.0,30125.33,90375.99,Dealer,KZT,482.527576,14536302.46,43608907.38
+101084,2021-05-02,Francia,Sud Europa,FarmFarm Kft.,FienoFacile,Foraggio,,26756.14,80268.42,Dealer,EUR,1.0,26756.14,80268.42
+100878,2023-05-16,Italia,Sud Europa,HarvestAgri Srl,AltaResa,Mais,5.0,43001.52,215007.6,Vendita diretta,EUR,1.0,43001.52,215007.6
+100914,19/06/2022,Canada,Nord America,AgroAgro LLC,FienoFacile,Foraggio,2.0,29116.3,58232.6,Dealer,CAD,1.555017,45276.34,90552.68
+100153,2024-03-17,Bulgaria,Est Europa,TerraAgro Ltd,AltaResa,Mais,2.0,44833.72,89667.44,Dealer,BGN,2.036327,91296.11,182592.23
+101166,2022-05-07,Spagna,Sud Europa,FarmGrain SC,FienoFacile,Foraggio,2.0,29207.34,58414.68,Dealer,EUR,1.0,29207.34,58414.68
+100510,2025-04-22,Kazakhstan,,AgriTerra Kft.,SolePieno,Girasole,5.0,23377.41,116887.05,Dealer,KZT,520.393077,12165442.32,60827211.61
+101071,2021-06-23,Kazakhstan,Asia Centrale,CerealAgro S.L.,GranCampo,Mais,3.0,36900.99,110702.97,Dealer,KZT,450.210965,16613230.32,49839690.95
+100104,2025-05-25,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,3.0,41357.9,124073.7,Dealer,EUR,1.0,41357.9,124073.7
+100587,2021-05-18,Italia,Sud Europa,AgroAgri S.L.,AltaResa,Mais,4.0,40392.76,161571.04,Vendita diretta,EUR,1.0,40392.76,161571.04
+101129,2023-09-01,Serbia,Est Europa,FarmCampo Srl,TaglioFlex,Cereali (grano/orzo),1.0,29949.7,29949.7,Dealer,RSD,109.998652,3294426.63,3294426.63
+100054,2024-07-18,Turchia,Medio Oriente,HarvestGrain Kft.,PrimaRaccolta,Mais,6.0,20112.26,120673.56,Dealer,TRY,36.863234,741402.95,4448417.68
+100152,19/05/2022,Polonia,Centro Europa,,AltaResa,Mais,4.0,45783.71,183134.84,Dealer,PLN,4.223522,193368.51,773474.03
+100404,2022-07-10,USA,Nord America,FarmCereal SRL,AltaResa,Mais,5.0,42589.92,212949.6,Dealer,USD,1.082931,46121.94,230609.72
+100208,2025-06-15,Romania,Est Europa,CampoCampo Ltd,PrimaRaccolta,Mais,1.0,19023.66,19023.66,Dealer,RON,4.787372,91073.34,91073.34
+101207,21/11/2025,Australia,Oceania,HarvestFarm SA,GranCampo,Mais,5.0,37806.86,189034.3,Dealer,AUD,1.524805,57648.09,288240.45
+100009,2024-02-17,Russia,Est Europa,GrainAgro Srl,AltaResa,Mais,4.0,41983.75,167935.0,Dealer,RUB,108.890987,4571651.98,18286607.9
+101015,2025-04-24,Ucraina,Est Europa,TerraHarvest SC,SolePieno,Girasole,5.0,24873.44,124367.2,Dealer,UAH,45.212996,1124602.74,5623013.72
+101061,05-11-2023,Australia,Oceania,FarmTerra LLC,FienoFacile,Foraggio,4.0,26186.19,104744.76,Dealer,AUD,1.571282,41145.89,164583.56
+100453,2022-11-15,Sud Africa,Africa,AgriCampo SA,PrimaRaccolta,Mais,3.0,19318.72,57956.16,Dealer,ZAR,20.589019,397753.49,1193260.48
+100254,2022-02-19,Australia,Oceania,FarmCereal SC,SolePieno,Girasole,6.0,24601.32,147607.92,Dealer,AUD,1.637468,40283.87,241703.25
+100897,2024-02-28,USA,Nord America,AgroCampo S.L.,GranCampo,Mais,4.0,41876.41,167505.64,Vendita diretta,USD,1.060637,44415.67,177662.68
+101116,2025-11-22,Serbia,Est Europa,CerealFarm GmbH,TaglioFlex,Cereali (grano/orzo),3.0,29112.7,87338.1,Dealer,RSD,110.145219,3206624.72,9619874.15
+100881,2025-04-08,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,4.0,23747.59,94990.36,Dealer,KZT,483.430939,11480319.73,45921278.93
+101205,2023-03-03,Messico,Nord America,CerealCereal LLC,AltaResa,Mais,3.0,38966.02,116898.06,Dealer,MXN,18.174208,708176.55,2124529.66
+100624,2022-10-11,Francia,Sud Europa,FarmFarm Kft.,PrimaRaccolta,Mais,3.0,21259.83,63779.49,Vendita diretta,EUR,1.0,21259.83,63779.49
+100346,2025-11-05,Ungheria,Est Europa,FarmAgro Srl,AltaResa,Mais,1.0,40662.83,40662.83,Dealer,HUF,373.715405,15196325.98,15196325.98
+101097,27-Apr-2021,USA,Nord America,AgroCampo S.L.,AltaResa,Mais,3.0,41320.66,123961.98,Dealer,USD,1.142634,47214.39,141643.17
+100263,27/05/2022,Australia,Oceania,GrainFarm LLC,TaglioFlex,Cereali (grano/orzo),3.0,24465.45,73396.35,Vendita diretta,AUD,1.719768,42074.9,126224.69
+100151,2022-05-04,Polonia,Centro Europa,AgroTerra SC,GranCampo,Mais,2.0,42568.83,85137.66,Vendita diretta,PLN,4.36915,185989.6,371979.21
+100473,2024-04-05,Romania,Est Europa,GrainCampo GmbH,GranCampo,Mais,3.0,35513.5,106540.5,Dealer,RON,5.188871,184274.97,552824.91
+100641,2021-04-07,Serbia,Est Europa,FarmCampo Srl,AltaResa,Mais,2.0,42653.46,85306.92,Dealer,RSD,114.756703,4894770.44,9789540.88
+100536,2023-04-22,Canada,Nord America,AgroAgro LLC,PrimaRaccolta,Mais,3.0,18650.76,55952.28,Dealer,CAD,1.497176,27923.47,83770.41
+101202,04-05-2025,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,SolePieno,Girasole,1.0,23066.85,23066.85,Dealer,TRY,35.030612,808045.87,808045.87
+100551,2022-05-11,Ungheria,Est Europa,FarmAgro Sp. z o.o.,AltaResa,Mais,5.0,41625.01,208125.05,Dealer,HUF,418.876248,17435728.01,87178640.06
+100929,2024-04-04,Romania,Est Europa,GrainCampo GmbH,SolePieno,Girasole,2.0,23240.73,46481.46,Dealer,RON,4.81308,111859.49,223718.99
+100489,2023-04-05,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,3.0,38435.24,115305.72,Dealer,ZAR,19.850216,762947.82,2288843.45
+101150,2024-03-15,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,1.0,39399.56,39399.56,Vendita diretta,EUR,1.0,39399.56,39399.56
+100147,2024-12-03,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,3.0,40905.05,122715.15,Dealer,BGN,1.967497,80480.56,241441.69
+100403,2021-09-25,Turchia,Medio Oriente,TerraCampo SA,SolePieno,Girasole,4.0,24849.11,99396.44,Dealer,TRY,32.436924,806028.69,3224114.77
+100955,2023-11-12,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,2.0,23123.2,46246.4,Dealer,MXN,18.875089,436452.46,872904.92
+101197,25/07/2025,Brasile,Sud America,GrainAgro Ltd,TaglioFlex,Cereali (grano/orzo),4.0,,109116.04,Vendita diretta,BRL,5.522423,150646.23,602584.93
+100660,2024-10-06,Italia,Sud Europa,FarmFarm GmbH,SolePieno,Girasole,2.0,22283.08,44566.16,Dealer,EUR,1.0,22283.08,44566.16
+100464,2023-03-27,Germania,Centro Europa,,AltaResa,Mais,4.0,40606.91,162427.64,Dealer,EUR,1.0,40606.91,162427.64
+100187,2021-06-06,Romania,Est Europa,TerraAgro SC,GranCampo,Mais,3.0,39895.09,119685.27,Dealer,RON,4.825722,192522.61,577567.84
+100609,11-13-2025,Argentina,Sud America,AgroCampo Srl,GranCampo,Mais,4.0,35783.94,143135.76,Dealer,ARS,1003.082886,35894257.81,143577031.23
+100144,20-Sep-2024,Polonia,Centro Europa,GrainAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),2.0,28546.21,57092.42,Vendita diretta,PLN,4.478006,127830.1,255660.2
+100752,25/06/2023,Messico,Nord America,CerealCereal LLC,FienoFacile,Foraggio,4.0,30265.47,121061.88,Dealer,MXN,17.878052,541087.65,2164350.59
+100982,2021-06-18,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,3.0,31905.75,95717.25,Dealer,HUF,414.50908,13225223.08,39675669.24
+100198,2025-04-28,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,5.0,21897.56,109487.8,Dealer,KZT,450.690204,9869015.78,49345078.92
+100884,27-Nov-2025,Spagna,Sud Europa,TerraAgri GmbH,FienoFacile,Foraggio,5.0,33034.0,165170.0,Dealer,EUR,1.0,33034.0,165170.0
+100280,2022-05-14,USA,Nord America,AgroCampo S.L.,GranCampo,Mais,6.0,39835.86,239015.16,Vendita diretta,USD,1.127759,44925.25,269551.5
+100294,01-20-2025,Ucraina,Est Europa,CerealFarm Kft.,AltaResa,Mais,2.0,41710.88,83421.76,Vendita diretta,UAH,43.309418,1806473.94,3612947.87
+101158,2025-06-10,Messico,,CerealCereal LLC,FienoFacile,Foraggio,4.0,32885.24,131540.96,Dealer,MXN,17.622111,579507.35,2318029.4
+100401,2022-05-25,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,4.0,39878.26,159513.04,Dealer,BGN,1.955214,77970.53,311882.13
+100123,22-May-2025,Polonia,Centro Europa,CampoTerra Srl,GranCampo,Mais,3.0,38714.21,116142.63,Dealer,PLN,4.169908,161434.69,484304.08
+100203,17/02/2021,Polonia,Centro Europa,AgroTerra SC,GranCampo,Mais,1.0,39098.65,39098.65,Vendita diretta,PLN,4.217655,164904.62,164904.62
+100836,15/04/2024,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,2.0,41135.21,82270.42,Dealer,MXN,16.941821,696905.36,1393810.73
+100247,2025-04-05,Argentina,Sud America,AgroCampo Srl,SolePieno,Girasole,3.0,23919.84,71759.52,Dealer,ARS,1150.885104,27528987.55,82586962.64
+101212,01/11/2025,Brasile,Sud America,HarvestFarm Kft.,GranCampo,Mais,2.0,33373.92,66747.84,Dealer,BRL,5.130024,171209.01,342418.02
+101200,02-15-2022,Brasile,Sud America,GrainAgro Ltd,SolePieno,Girasole,2.0,26258.45,52516.9,Dealer,BRL,5.679344,149130.77,298261.54
+100385,2024-02-11,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,TaglioFlex,Cereali (grano/orzo),2.0,27107.93,54215.86,Dealer,TRY,34.68293,940182.44,1880364.88
+100855,2025-02-10,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,3.0,30505.48,91516.44,Dealer,USD,1.107671,33790.04,101370.11
+100220,2023-10-14,Sud Africa,Africa,AgriFarm SA,GranCampo,Mais,4.0,39103.11,156412.44,Dealer,ZAR,20.09866,785920.11,3143680.45
+100642,06-05-2025,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,5.0,22165.55,110827.75,Vendita diretta,RUB,101.48977,2249576.57,11247882.86
+100002,2021-06-02,Francia,Sud Europa,AgriFarm Kft.,FienoFacile,Foraggio,2.0,33192.82,66385.64,Dealer,EUR,1.0,33192.82,66385.64
+100113,2025-04-13,Messico,Nord America,CerealTerra Kft.,PrimaRaccolta,Mais,2.0,19618.38,39236.76,Vendita diretta,MXN,18.453617,362030.07,724060.14
+100699,18-Dec-2025,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),5.0,23398.66,116993.3,Dealer,RUB,98.220838,2298235.99,11491179.97
+101219,05/05/2023,Francia,Sud Europa,AgriFarm Kft.,PrimaRaccolta,Mais,4.0,21664.53,86658.12,Vendita diretta,EUR,1.0,21664.53,86658.12
+100952,01-03-2022,Messico,Nord America,CerealTerra Kft.,AltaResa,Mais,3.0,38618.49,115855.47,Dealer,MXN,18.756511,724348.13,2173044.4
+101148,2022-12-07,Bulgaria,Est Europa,TerraAgro Ltd,PrimaRaccolta,Mais,5.0,20851.05,104255.25,Dealer,BGN,1.795945,37447.34,187236.69
+100442,17/05/2023,Italia,Sud Europa,AgroAgro SC,GranCampo,Mais,3.0,37947.7,113843.1,Dealer,EUR,1.0,37947.7,113843.1
+100664,2022-06-05,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,1.0,38093.49,38093.49,Vendita diretta,EUR,1.0,38093.49,38093.49
+101165,2022-10-20,Turchia,Medio Oriente,HarvestGrain Kft.,TaglioFlex,Cereali (grano/orzo),2.0,29326.47,58652.94,Dealer,TRY,34.333886,1006891.68,2013783.36
+100318,09/05/2022,Serbia,Est Europa,GrainHarvest S.L.,GranCampo,Mais,2.0,36102.13,72204.26,Vendita diretta,RSD,117.408032,4238680.03,8477360.07
+100649,2022-06-12,Argentina,Sud America,FarmFarm Srl,SolePieno,Girasole,1.0,24210.61,24210.61,Dealer,ARS,1081.785125,26190677.77,26190677.77
+100710,08/02/2023,Australia,Oceania,GrainFarm LLC,PrimaRaccolta,Mais,2.0,20311.4,40622.8,Dealer,AUD,1.554714,31578.42,63156.84
+100973,16-Sep-2024,Messico,Nord America,CerealCereal LLC,FienoFacile,Foraggio,4.0,34172.97,136691.88,Dealer,MXN,18.83199,643545.03,2574180.12
+100628,2021-03-06,Russia,,AgroCereal GmbH,AltaResa,Mais,4.0,41457.32,165829.28,Dealer,RUB,95.263074,3949351.74,15797406.97
+100633,2021-04-16,Canada,Nord America,AgriFarm SC,TaglioFlex,Cereali (grano/orzo),5.0,28754.18,143770.9,Dealer,CAD,1.403104,40345.1,201725.52
+101244,01/06/2024,Bulgaria,,CampoFarm LLC,FienoFacile,Foraggio,2.0,32206.57,64413.14,Dealer,BGN,1.913643,61631.88,123263.75
+101176,2021-12-08,Romania,Est Europa,CampoCampo Ltd,TaglioFlex,Cereali (grano/orzo),1.0,,24252.09,Dealer,RON,4.758433,115401.95,115401.95
+100796,2022-11-28,Francia,Sud Europa,AgriFarm Kft.,GranCampo,Mais,4.0,34100.14,136400.56,Dealer,EUR,1.0,34100.14,136400.56
+100646,2022-11-18,Australia,Oceania,FarmCereal SC,AltaResa,Mais,3.0,41022.05,123066.15,Dealer,AUD,1.662049,68180.66,204541.97
+101013,2024-11-06,USA,Nord America,AgroCampo S.L.,FienoFacile,Foraggio,5.0,27435.66,137178.3,Dealer,USD,0.976667,26795.5,133977.52
+100557,2024-11-24,Francia,Sud Europa,AgriFarm Kft.,PrimaRaccolta,Mais,1.0,17239.2,17239.2,Dealer,EUR,1.0,17239.2,17239.2
+100682,2024-04-24,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,4.0,24229.86,96919.44,Vendita diretta,UAH,45.928638,1112844.47,4451377.87
+100578,16/06/2022,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,3.0,20074.98,60224.94,Dealer,KZT,509.447572,10227149.82,30681449.46
+101110,20-Feb-2022,Messico,Nord America,CerealCereal LLC,TaglioFlex,Cereali (grano/orzo),3.0,30275.74,90827.22,Vendita diretta,MXN,18.120843,548621.93,1645865.79
+100525,2025-05-28,USA,Nord America,CampoGrain Srl,FienoFacile,Foraggio,1.0,28265.44,28265.44,Vendita diretta,USD,1.053373,29774.05,29774.05
+101060,16/02/2023,Ungheria,Est Europa,FarmAgro Sp. z o.o.,SolePieno,Girasole,4.0,19803.26,79213.04,Vendita diretta,HUF,389.456579,7712509.89,30850039.57
+100541,09/05/2023,Italia,Sud Europa,HarvestAgri Srl,FienoFacile,Foraggio,3.0,28286.62,84859.86,Dealer,EUR,1.0,28286.62,84859.86
+100749,2022-09-12,Bulgaria,Est Europa,TerraAgro Ltd,TaglioFlex,Cereali (grano/orzo),2.0,29146.94,58293.88,Vendita diretta,BGN,2.089319,60897.26,121794.51
+101179,2024-12-28,USA,Nord America,CampoGrain Srl,TaglioFlex,Cereali (grano/orzo),2.0,29286.87,58573.74,Vendita diretta,USD,1.091571,31968.7,63937.4
+100485,19/02/2022,Ungheria,,FarmAgro Sp. z o.o.,PrimaRaccolta,Mais,3.0,20212.65,60637.95,Vendita diretta,HUF,408.53455,8257565.87,24772697.62
+100096,2024-01-24,Spagna,Sud Europa,TerraAgri GmbH,SolePieno,Girasole,3.0,20431.86,61295.58,Dealer,EUR,1.0,20431.86,61295.58
+101021,2023-03-12,Polonia,Centro Europa,GrainAgro Sp. z o.o.,PrimaRaccolta,Mais,5.0,20865.19,104325.95,Dealer,PLN,4.147304,86534.29,432671.43
+100564,2025-09-09,Ucraina,Est Europa,HarvestCampo Ltd,TaglioFlex,Cereali (grano/orzo),1.0,27702.72,27702.72,Dealer,UAH,44.118774,1222210.04,1222210.04
+100743,2023-04-26,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,4.0,43088.28,172353.12,Vendita diretta,MXN,19.073615,821849.26,3287397.05
+100864,2025-04-04,Francia,Sud Europa,FarmFarm Kft.,TaglioFlex,Cereali (grano/orzo),6.0,28147.08,168882.48,Dealer,EUR,1.0,28147.08,168882.48
+100892,04-Jul-2023,Francia,Sud Europa,AgriFarm Kft.,AltaResa,Mais,3.0,39565.1,118695.3,Vendita diretta,EUR,1.0,39565.1,118695.3
+101039,2021-12-07,Argentina,Sud America,FarmFarm Srl,AltaResa,Mais,3.0,,140148.09,Dealer,ARS,980.234497,45792664.17,137377992.51
+100207,2023-05-26,Canada,Nord America,AgroAgro LLC,GranCampo,Mais,5.0,36148.26,180741.3,Vendita diretta,CAD,1.516667,54824.87,274124.37
+100393,2024-04-20,Sud Africa,Africa,AgriFarm SA,AltaResa,Mais,4.0,43260.72,173042.88,Vendita diretta,ZAR,21.068347,911431.86,3645727.44
+100795,2022-06-25,Serbia,Est Europa,CerealFarm GmbH,GranCampo,Mais,5.0,31795.36,158976.8,Dealer,RSD,113.173092,3598379.2,17991896.01
+100871,15/10/2025,Ucraina,,CerealFarm Kft.,SolePieno,Girasole,4.0,22936.97,91747.88,Dealer,UAH,43.725059,1002920.37,4011681.47
+100398,2023-02-01,Canada,Nord America,AgroAgro LLC,SolePieno,Girasole,2.0,24095.78,48191.56,Dealer,CAD,1.433045,34530.34,69060.67
+100767,2021-10-12,Spagna,Sud Europa,HarvestCampo S.L.,TaglioFlex,Cereali (grano/orzo),2.0,25845.46,51690.92,Dealer,EUR,1.0,25845.46,51690.92
+101169,2023-11-14,Brasile,Sud America,HarvestFarm Kft.,AltaResa,Mais,2.0,40429.33,80858.66,Dealer,BRL,5.432597,219636.26,439272.51
+101029,2025-08-17,Turchia,Medio Oriente,TerraAgri SA,  GranCampo ,Mais,3.0,39000.43,117001.29,Dealer,TRY,34.80533,1357422.84,4072268.51
+100643,2022-01-26,USA,Nord America,CerealAgri SC,GranCampo,Mais,-1.0,40109.53,160438.12,Dealer,USD,1.039031,41675.05,166700.18
+100613,24/02/2022,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31906.35,63812.7,Dealer,HUF,408.382554,13029996.7,26059993.4
+100961,2021-06-08,Italia,Sud Europa,HarvestAgri Srl,TaglioFlex,Cereali (grano/orzo),3.0,28409.81,85229.43,Dealer,EUR,1.0,28409.81,85229.43
+100726,04/03/2021,Spagna,Sud Europa,FarmGrain SC,GranCampo,Mais,2.0,38849.0,77698.0,Vendita diretta,EUR,1.0,38849.0,77698.0
+100684,2021-05-06,Russia,Est Europa,AgroCereal GmbH,SolePieno,Girasole,3.0,26625.65,79876.95,Vendita diretta,RUB,96.925947,2580716.34,7742149.02
+100099,2024-12-21,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,3.0,34941.97,104825.91,Vendita diretta,BGN,2.103586,73503.44,220510.32
+100805,01-May-2022,Ucraina,Est Europa,TerraHarvest SC,PrimaRaccolta,Mais,3.0,20449.95,61349.85,Dealer,UAH,42.732427,873876.0,2621627.99
+100407,2021-08-19,Polonia,Centro Europa,GrainAgro Sp. z o.o.,GranCampo,Mais,3.0,37110.14,111330.42,Dealer,PLN,4.654754,172738.57,518215.72
+100503,27-May-2025,Germania,Centro Europa,AgroHarvest SA,AltaResa,Mais,5.0,39591.38,197956.9,Dealer,EUR,1.0,39591.38,197956.9
+101072,16-Feb-2025,Russia,Est Europa,AgroCereal GmbH,PrimaRaccolta,Mais,1.0,21973.22,21973.22,Dealer,RUB,100.928526,2217724.71,2217724.71
+101057,02/04/2021,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,29563.46,59126.92,Dealer,RUB,97.509316,2882712.76,5765425.53
+100930,2021-06-15,USA,Nord America,CampoGrain Srl,GranCampo,Mais,1.0,35639.81,35639.81,Dealer,USD,1.078036,38421.0,38421.0
+100780,19/03/2023,Turchia,Medio Oriente,HarvestGrain Kft.,GranCampo,Mais,2.0,36217.74,72435.48,Dealer,TRY,36.749466,1330982.6,2661965.21
+100201,17-Oct-2024,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,2.0,38821.69,77643.38,Dealer,BRL,5.627481,218468.32,436936.65
+100135,27-Aug-2023,Argentina,Sud America,AgroCampo Srl,PrimaRaccolta,Mais,3.0,21411.24,64233.72,Dealer,ARS,934.879897,20016937.85,60050813.54
+101052,27/03/2021,Polonia,Centro Europa,CampoTerra Srl,AltaResa,Mais,,40811.18,81622.36,Dealer,PLN,4.325084,176511.78,353023.56
+100041,2022-01-22,Australia,Oceania,GrainFarm LLC,PrimaRaccolta,Mais,1.0,22245.68,22245.68,Dealer,AUD,1.649108,36685.53,36685.53
+101018,2025-07-16,Spagna,Sud Europa,HarvestCampo S.L.,SolePieno,Girasole,4.0,24042.35,96169.4,Dealer,EUR,1.0,24042.35,96169.4
+100231,2024-12-23,Kazakhstan,Asia Centrale,AgriTerra Kft.,PrimaRaccolta,Mais,2.0,22418.57,44837.14,Dealer,KZT,487.048364,10918927.84,21837855.68
+100379,2022-06-21,Serbia,Est Europa,CerealFarm GmbH,FienoFacile,Foraggio,3.0,33241.53,99724.59,Dealer,RSD,116.087656,3858931.3,11576793.9
+100289,05-04-2024,Francia,Sud Europa,FarmFarm Kft.,AltaResa,Mais,2.0,38599.17,77198.34,Dealer,EUR,1.0,38599.17,77198.34
+100419,2023-10-03,Ucraina,Est Europa,HarvestCampo Ltd,GranCampo,Mais,999.0,37802.25,113406.75,Dealer,UAH,45.36649,1714955.4,5144866.19
+100392,20/12/2023,MESSICO,Nord America,CerealTerra Kft.,SolePieno,Girasole,4.0,22765.89,91063.56,Dealer,MXN,17.900413,407518.83,1630075.33
+100593,2022-04-07,USA,Nord America,FarmCereal SRL,AltaResa,Mais,5.0,39458.69,197293.45,Vendita diretta,USD,1.073912,42375.16,211875.8
+101163,2023-09-20,Brasile,Sud America,GrainAgro Ltd,GranCampo,Mais,5.0,39791.88,198959.4,Dealer,BRL,5.262515,209405.37,1047026.83
+101087,25-Aug-2025,Brasile,Sud America,CampoGrain Kft.,AltaResa,Mais,2.0,43118.1,86236.2,Dealer,BRL,5.276159,227497.95,454995.9
+100648,2025-05-07,Sud Africa,Africa,AgriFarm SA,SolePieno,Girasole,8.0,25956.64,207653.12,Dealer,ZAR,19.920019,517056.76,4136454.1
+101153,2021-12-07,ITALIA,Sud Europa,HarvestAgri Srl,FienoFacile,Foraggio,2.0,31817.03,63634.06,Dealer,EUR,1.0,31817.03,63634.06
+100521,2024-04-09,Russia,Est Europa,AgroCereal GmbH,FienoFacile,Foraggio,3.0,,94072.59,Dealer,RUB,98.19948,3079293.14,9237879.42
+100065,2022-12-03,Kazakhstan,Asia Centrale,CerealAgro S.L.,TaglioFlex,Cereali (grano/orzo),2.0,29938.8,59877.6,Dealer,KZT,466.412746,13963837.92,27927675.84
+100015,2023-02-03,Brasile,Sud America,FarmTerra Sp. z o.o.,PrimaRaccolta,Mais,5.0,19766.35,98831.75,Dealer,BRL,5.33321,105418.1,527090.48
+101181,25/05/2024,Kazakhstan,Asia Centrale,HarvestCereal LLC,GranCampo,Mais,3.0,33484.5,100453.5,Dealer,KZT,500.40302,16755744.92,50267234.77
+101065,2022-03-01,Spagna,Sud Europa,HarvestCampo S.L.,PrimaRaccolta,Mais,2.0,21456.96,42913.92,Dealer,EUR,1.0,21456.96,42913.92
+100493,2023-06-15,SPAGNA,Sud Europa,FarmGrain SC,FienoFacile,Foraggio,1.0,,27511.6,Dealer,EUR,1.0,27511.6,27511.6
+100380,2024-12-04,Kazakhstan,Asia Centrale,HarvestCereal LLC,PrimaRaccolta,Mais,3.0,19280.22,57840.66,Dealer,KZT,424.852566,8191250.94,24573752.82
+100188,06-21-2025,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,1.0,21590.27,21590.27,Vendita diretta,ZAR,20.976438,452886.96,452886.96
+100764,2022-03-04,Francia,Sud Europa,FarmFarm Kft.,GranCampo,Mais,2.0,42080.69,84161.38,Dealer,EUR,1.0,42080.69,84161.38
+100217,18-Apr-2022,Italia,Sud Europa,,PrimaRaccolta,Mais,1.0,21420.22,21420.22,Dealer,EUR,1.0,21420.22,21420.22
+100792,2025-06-03,USA,Nord America,FarmCereal SRL,PrimaRaccolta,Mais,4.0,21197.42,84789.68,Dealer,USD,0.987017,20922.21,83688.86
+101077,2021-11-17,Australia,Oceania,FarmCereal SC,TaglioFlex,Cereali (grano/orzo),3.0,25200.54,75601.62,Dealer,AUD,1.648634,41546.47,124639.4
+100879,06-17-2022,Ucraina,Est Europa,CerealFarm Kft.,PrimaRaccolta,Mais,2.0,22513.3,45026.6,Dealer,UAH,44.500382,1001850.45,2003700.9
+100338,2025-04-27,Romania,Est Europa,GrainCampo GmbH,PrimaRaccolta,Mais,1.0,17191.17,17191.17,Dealer,RON,5.141584,88389.84,88389.84
+100720,16/04/2025,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,3.0,22190.54,66571.62,Dealer,UAH,42.788941,949509.71,2848529.12
+100296,26/04/2022,Polonia,Centro Europa,CampoTerra Srl,SolePieno,Girasole,2.0,23622.62,47245.24,Dealer,PLN,4.318125,102005.43,204010.85
+101017,2021-06-04,Messico,Nord America,CerealTerra Kft.,FienoFacile,Foraggio,3.0,34153.61,102460.83,Dealer,MXN,18.442109,629864.6,1889593.8
+100456,2023-05-04,Italia,Sud Europa,FarmFarm GmbH,FienoFacile,Foraggio,5.0,34993.27,174966.35,Dealer,EUR,1.0,34993.27,174966.35
+100816,2022-09-22,Australia,Oceania,FarmTerra LLC,GranCampo,Mais,3.0,36366.34,109099.02,Dealer,AUD,1.625177,59101.74,177305.22
+100270,04/09/2022,Australia,Oceania,HarvestFarm SA,FienoFacile,Foraggio,3.0,,94654.68,Dealer,AUD,1.72785,54516.36,163549.09
+100996,2022-12-06,Ucraina,Est Europa,CerealFarm Kft.,GranCampo,Mais,1.0,41902.41,41902.41,Dealer,UAH,43.022065,1802728.21,1802728.21
+100202,2023-11-25,Ucraina,Est Europa,TerraHarvest SC,GranCampo,Mais,7.0,34713.09,242991.63,Dealer,UAH,43.861777,1522577.81,10658044.69
+100162,03-12-2023,Russia,Est Europa,GrainAgro Srl,TaglioFlex,Cereali (grano/orzo),2.0,26853.61,53707.22,Dealer,RUB,104.542564,2807345.24,5614690.48
+100730,09-28-2024,Turchia,Medio Oriente,TerraAgri SA,PrimaRaccolta,Mais,3.0,19748.49,59245.47,Dealer,TRY,36.680366,724381.84,2173145.52
+100402,2025-05-04,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,4.0,22763.76,91055.04,Dealer,MXN,19.268408,438621.42,1754485.66
+100703,2022-04-27,Serbia,Est Europa,GrainHarvest S.L.,PrimaRaccolta,Mais,2.0,20338.48,40676.96,Vendita diretta,RSD,122.883458,2499262.75,4998525.51
+101130,2021-03-27,Germania,Centro Europa,AgroHarvest SA,TaglioFlex,Cereali (grano/orzo),4.0,29346.92,117387.68,Dealer,EUR,1.0,29346.92,117387.68
+100566,07/08/2024,Ucraina,Est Europa,HarvestCampo Ltd,AltaResa,Mais,6.0,51143.16,306858.96,Dealer,UAH,43.395722,2219394.35,13316366.12
+101022,2025-04-21,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,AltaResa,Mais,3.0,39793.94,119381.82,Dealer,TRY,33.25523,1323356.63,3970069.88
+101026,2025-04-08,Ungheria,Est Europa,FarmAgro Srl,AltaResa,Mais,2.0,41799.72,83599.44,Dealer,HUF,400.750736,16751268.55,33502537.11
+101105,2021-03-18,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,1.0,24351.91,24351.91,Dealer,KZT,461.096946,11228591.33,11228591.33
+100206,2024-07-20,Turchia,Medio Oriente,TerraAgri SA,FienoFacile,Foraggio,6.0,35988.61,215931.66,Dealer,TRY,34.492026,1241320.07,7447920.43
+100035,11-Nov-2025,Spagna,Sud Europa,HarvestCampo S.L.,FienoFacile,Foraggio,1.0,27635.06,27635.06,Vendita diretta,EUR,1.0,27635.06,27635.06
+100776,15-Mar-2024,Argentina,Sud America,FarmFarm Srl,FienoFacile,Foraggio,3.0,31979.16,95937.48,Dealer,ARS,1118.177054,35758362.92,107275088.75
+100509,2025-06-14,Germania,Centro Europa,FarmCampo SA,AltaResa,Mais,2.0,38411.11,76822.22,Dealer,EUR,1.0,38411.11,76822.22
+100241,2025-04-04,Messico,Nord America,CerealTerra Kft.,SolePieno,Girasole,2.0,24629.96,49259.92,Dealer,MXN,17.939524,441849.76,883699.52
+100092,2025-08-22,Serbia,Est Europa,GrainHarvest S.L.,PrimaRaccolta,Mais,4.0,21102.39,84409.56,Dealer,RSD,121.6028,2566109.71,10264438.84
+100898,2024-07-17,Australia,Oceania,HarvestFarm SA,TaglioFlex,Cereali (grano/orzo),3.0,29691.45,89074.35,Dealer,AUD,1.631826,48451.28,145353.84
+100565,2021-10-17,Polonia,Centro Europa,AgroTerra SC,TaglioFlex,Cereali (grano/orzo),4.0,24606.57,98426.28,Dealer,PLN,4.643255,114254.58,457018.32
+100777,2025-06-05,Francia,Sud Europa,AgriFarm Kft.,PrimaRaccolta,Mais,3.0,22348.45,67045.35,Dealer,EUR,1.0,22348.45,67045.35
+100242,2023-12-23,Canada,Nord America,AgroAgro LLC,GranCampo,Mais,2.0,36503.46,73006.92,Dealer,CAD,1.46916,53629.42,107258.85
+100014,2025-05-04,Spagna,Sud Europa,FarmGrain SC,AltaResa,Mais,1.0,43798.33,43798.33,Dealer,EUR,1.0,43798.33,43798.33
+100316,2024-12-17,Germania,Centro Europa,FarmCampo SA,GranCampo,Mais,4.0,37078.47,148313.88,Dealer,EUR,1.0,37078.47,148313.88
+100601,2025-11-28,Brasile,Sud America,CampoGrain Kft.,PrimaRaccolta,Mais,3.0,22004.49,66013.47,Dealer,BRL,5.354788,117829.38,353488.14
+100388,2022-09-21,Serbia,Est Europa,FarmAgri SRL,TaglioFlex,Cereali (grano/orzo),1.0,22833.34,22833.34,Dealer,RSD,121.137332,2765969.89,2765969.89
+100167,2023-09-28,Messico,Nord America,CerealTerra Kft.,GranCampo,Mais,1.0,36391.04,36391.04,Dealer,MXN,18.998968,691392.2,691392.2
+100841,24-Feb-2024,Sud Africa,Africa,AgriCampo SA,SolePieno,Girasole,3.0,21641.28,64923.84,Vendita diretta,ZAR,22.66893,490584.66,1471753.98
+100021,2022-12-24,Polonia,Centro Europa,GrainAgro Sp. z o.o.,FienoFacile,Foraggio,3.0,30539.61,91618.83,Dealer,PLN,4.226579,129078.07,387234.22
+100647,2021-02-28,Spagna,Sud Europa,HarvestCampo S.L.,FienoFacile,Foraggio,2.0,28319.3,56638.6,Dealer,EUR,1.0,28319.3,56638.6
+101155,2021-05-04,Canada,Nord America,AgriFarm SC,GranCampo,Mais,3.0,37542.95,112628.85,Vendita diretta,CAD,1.494392,56103.88,168311.65
+100832,2023-07-19,Kazakhstan,Asia Centrale,CerealAgro S.L.,AltaResa,Mais,1.0,46985.43,46985.43,Vendita diretta,KZT,516.427943,24264588.97,24264588.97
+100563,2022-09-23,Bulgaria,Est Europa,HarvestGrain GmbH,TaglioFlex,Cereali (grano/orzo),2.0,28237.47,56474.94,Dealer,BGN,2.004569,56603.96,113207.91
+101243,2021-09-23,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,3.0,36026.05,108078.15,Dealer,BGN,2.095724,75500.66,226501.97
+100687,2023-06-23,Kazakhstan,Asia Centrale,CerealAgro S.L.,SolePieno,Girasole,2.0,25451.17,50902.34,Dealer,KZT,455.202708,11585441.51,23170883.01
+100958,2024-09-16,Polonia,Centro Europa,CampoTerra Srl,FienoFacile,Foraggio,5.0,30935.46,154677.3,Dealer,PLN,4.206069,130116.68,650583.4
+100190,2021-04-10,Sud Africa,Africa,,AltaResa,Mais,3.0,,130351.05,Dealer,ZAR,20.651566,897317.77,2691953.31
+100976,2024-09-15,Sud Africa,Africa,AgriFarm SA,FienoFacile,Foraggio,2.0,30645.8,61291.6,Vendita diretta,ZAR,21.828256,668944.37,1337888.74
+100700,2024-04-22,Bulgaria,Est Europa,HarvestGrain GmbH,GranCampo,Mais,3.0,37119.77,111359.31,Vendita diretta,BGN,1.956432,72622.31,217866.92
+100511,2024-03-28,Serbia,Est Europa,CerealFarm GmbH,TaglioFlex,Cereali (grano/orzo),3.0,24509.01,73527.03,Dealer,RSD,120.827724,2961367.9,8884103.69
+101083,2023-08-22,Italia,Sud Europa,FarmFarm GmbH,PrimaRaccolta,Mais,999.0,22276.71,44553.42,Dealer,EUR,1.0,22276.71,44553.42
+100475,2022-02-21,Bulgaria,Est Europa,HarvestGrain GmbH,TaglioFlex,Cereali (grano/orzo),3.0,27296.05,81888.15,Dealer,BGN,1.980845,54069.24,162207.73
+100857,2023-09-13,Polonia,,AgroTerra SC,PrimaRaccolta,Mais,1.0,22253.32,22253.32,Dealer,PLN,4.664738,103805.91,103805.91
+100748,2021-03-24,Ucraina,Est Europa,HarvestCampo Ltd,PrimaRaccolta,Mais,5.0,19982.54,99912.7,Dealer,UAH,41.784145,834953.35,4174766.74
+100253,2025-04-09,Spagna,Sud Europa,FarmGrain SC,PrimaRaccolta,Mais,2.0,23663.61,47327.22,Dealer,EUR,1.0,23663.61,47327.22
+100022,2021-01-23,USA,Nord America,CerealAgri SC,SolePieno,Girasole,3.0,25537.88,76613.64,Dealer,USD,1.094202,27943.6,83830.8
+100460,26/04/2023,Polonia,Centro Europa,GrainAgro Sp. z o.o.,GranCampo,Mais,2.0,35227.03,70454.06,Dealer,PLN,4.134122,145632.84,291265.68
+101185,2023-09-26,Australia,Oceania,HarvestFarm SA,SolePieno,Girasole,2.0,23759.33,47518.66,Dealer,AUD,1.701495,40426.38,80852.76
+100277,2025-04-19,Italia,Sud Europa,FarmFarm GmbH,SolePieno,Girasole,1.0,25861.75,25861.75,Dealer,EUR,1.0,25861.75,25861.75
+100956,2025-03-04,Serbia,Est Europa,FarmCampo Srl,GranCampo,Mais,1.0,43683.69,43683.69,Vendita diretta,RSD,113.374802,4952629.7,4952629.7
+101216,2023-04-03,Italia,Sud Europa,AgroAgri S.L.,  SolePieno ,Girasole,1.0,24228.35,24228.35,Vendita diretta,EUR,1.0,24228.35,24228.35
+100386,2021-09-22,Germania,Centro Europa,FarmCampo SA,AltaResa,Mais,3.0,43080.05,129240.15,Vendita diretta,EUR,1.0,43080.05,129240.15
+100806,2025-04-09,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,FienoFacile,Foraggio,4.0,34094.19,136376.76,Dealer,TRY,34.189337,1165657.75,4662631.01
+100344,01-May-2024,Italia,Sud Europa,AgroAgri S.L.,AltaResa,Mais,6.0,38497.61,230985.66,Dealer,EUR,1.0,38497.61,230985.66
+100770,2022-04-17,Serbia,Est Europa,GrainHarvest S.L.,SolePieno,Girasole,2.0,24877.2,49754.4,Dealer,RSD,113.348668,2819797.48,5639594.97
+100131,08-Jun-2023,Ucraina,Est Europa,HarvestCampo Ltd,GranCampo,Mais,2.0,31755.06,63510.12,Dealer,UAH,44.177585,1402861.86,2805723.72
+100872,02-Feb-2024,Messico,Nord America,CerealCereal LLC,FienoFacile,Foraggio,4.0,31579.0,126316.0,Dealer,MXN,18.13227,572598.95,2290395.82
+101124,2024-07-04,Bulgaria,Est Europa,CampoFarm LLC,GranCampo,Mais,6.0,40471.66,242829.96,Dealer,BGN,1.867953,75599.16,453594.95
+100088,06-24-2025,Ucraina,Est Europa,CerealFarm Kft.,SolePieno,Girasole,5.0,24522.32,122611.6,Vendita diretta,UAH,45.537613,1116687.92,5583439.59
+100331,07-07-2025,Romania,Est Europa,CampoCampo Ltd,SolePieno,Girasole,1.0,23053.07,23053.07,Dealer,RON,4.888307,112690.48,112690.48
+101239,2024-03-12,Ucraina,Est Europa,CerealFarm Kft.,FienoFacile,Foraggio,4.0,31672.47,126689.88,Dealer,UAH,40.809433,1292535.54,5170142.17
+100467,2021-09-15,Argentina,Sud America,AgroCampo Srl,FienoFacile,Foraggio,3.0,34469.06,103407.18,Vendita diretta,ARS,1046.075769,36057248.45,108171745.34
+100122,10-Apr-2021,Italia,Sud Europa,AgroAgro SC,AltaResa,Mais,4.0,39141.53,156566.12,Dealer,EUR,1.0,39141.53,156566.12
+101045,22-Sep-2024,USA,Nord America,CampoGrain Srl,GranCampo,Mais,2.0,40067.89,80135.78,Dealer,USD,1.124718,45065.08,90130.15
+101096,2022-04-15,Serbia,Est Europa,FarmCampo Srl,PrimaRaccolta,Mais,2.0,21858.94,43717.88,Vendita diretta,RSD,118.921374,2599495.18,5198990.36
+101131,2024-10-15,Spagna,Sud Europa,HarvestCampo S.L.,TaglioFlex,Cereali (grano/orzo),5.0,26328.92,131644.6,Vendita diretta,EUR,1.0,26328.92,131644.6
+100861,2021-07-15,Turchia,Medio Oriente,HarvestAgro Sp. z o.o.,AltaResa,Mais,4.0,37621.91,150487.64,Dealer,TRY,35.131774,1321724.44,5286897.76
+101127,2023-05-19,Ungheria,Est Europa,FarmAgro Sp. z o.o.,FienoFacile,Foraggio,2.0,31527.51,63055.02,Dealer,HUF,410.030639,12927245.07,25854490.14

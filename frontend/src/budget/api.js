@@ -1,6 +1,10 @@
 import { getActiveUserId } from "../currentUser.js";
 
-const BASE = "/api";
+// In sviluppo locale "/api" viene inoltrato al back end dal proxy di Vite
+// (vedi vite.config.js). In produzione (es. GitHub Pages, hosting statico)
+// non esiste un proxy: va indicato l'URL completo del back end pubblicato,
+// impostando VITE_API_BASE_URL in fase di build.
+const BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function request(path, options = {}) {
   const userId = getActiveUserId();

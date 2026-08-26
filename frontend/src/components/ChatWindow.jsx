@@ -4,6 +4,10 @@ import MessageBubble from "./MessageBubble.jsx";
 import TypingIndicator from "./TypingIndicator.jsx";
 import { getActiveUserId } from "../currentUser.js";
 
+// Stesso meccanismo di budget/api.js: "/api" in sviluppo (proxy Vite),
+// URL completo del back end pubblicato in produzione via VITE_API_BASE_URL.
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api";
+
 const WELCOME_MESSAGE = {
   role: "assistant",
   content:
@@ -32,7 +36,7 @@ export default function ChatWindow() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch(`${API_BASE}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +70,7 @@ export default function ChatWindow() {
   async function handleNewConversation() {
     if (isLoading) return;
     try {
-      await fetch("/api/chat/reset", {
+      await fetch(`${API_BASE}/chat/reset`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ sessionId: sessionIdRef.current }),

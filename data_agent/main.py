@@ -2,10 +2,16 @@
 Microservizio FastAPI del data_agent.
 Espone POST /analyze, chiamato dal back end Node.js quando l'utente pone una
 domanda che richiede analisi numeriche sul dataset di vendite.
-Serve inoltre i grafici generati come file statici su /charts/<file>.png
+Serve inoltre i grafici generati come file statici su /charts/<file>.png.
+
+All'avvio precarica e pulisce il dataset (cache calda, vedi pandas_agent.py)
+e avvia un task in background che rimuove periodicamente i grafici più
+vecchi di qualche ora, per evitare che si accumulino su disco.
 """
 
+import asyncio
 import os
+from contextlib import asynccontextmanager
 
 from dotenv import load_dotenv
 from fastapi import FastAPI
@@ -13,11 +19,30 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from pandas_agent import analyze_question, CHARTS_DIR
+from pandas_agent import analyze_question, get_data, cleanup_old_charts, CHARTS_DIR
 
 load_dotenv()  # legge OPENAI_API_KEY dal file .env nella root del progetto o locale
 
-app = FastAPI(title="TBR Data Agent")
+CHART_CLEANUP_INTERVAL_SECONDS = 30 * 60  # ogni 30 minuti
+
+
+async def _periodic_chart_cleanup():
+    while True:
+        await asyncio.sleep(CHART_CLEANUP_INTERVAL_SECONDS)
+        removed = cleanup_old_charts()
+        if removed:
+            print(f"[cleanup] rimossi {removed} grafici obsoleti da {CHARTS_DIR}")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    get_data()  # precarica e pulisce il dataset una volta all'avvio (cache calda)
+    cleanup_task = asyncio.create_task(_periodic_chart_cleanup())
+    yield
+    cleanup_task.cancel()
+
+
+app = FastAPI(title="TBR Data Agent", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,9 +1,9 @@
 const DATA_AGENT_URL = process.env.DATA_AGENT_URL || "http://localhost:8000";
 
 /**
- * Inoltra la domanda numerica/analitica dell'utente al microservizio Python
- * (agente pandas), che pulisce i dati, calcola la risposta ed eventualmente
- * genera un grafico.
+ * Inoltra la domanda numerica/analitica dell'utente al microservizio Python,
+ * che interroga (via SQL/DuckDB) il consuntivo vendite già pulito e
+ * calcola la risposta, generando eventualmente un grafico.
  * @param {string} question
  * @returns {Promise<{summary: string, chartUrl: string|null}>}
  */

@@ -18,7 +18,7 @@ tbr-budget-agent/
 ├── knowledge_base/          # documento markdown usato come knowledge base RAG
 ├── frontend/                # interfaccia chat in React (Vite)
 ├── backend/                 # orchestratore Node.js/Express (function calling, RAG, session state)
-├── data_agent/              # microservizio Python (FastAPI) con l'agente pandas
+├── data_agent/              # microservizio Python (FastAPI): dati puliti una volta, query via DuckDB
 ├── .env.example             # variabili d'ambiente necessarie
 └── README.md
 ```
@@ -101,6 +101,18 @@ source .venv/bin/activate      # su Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python main.py                 # avvia su http://localhost:8000
 ```
+
+**Architettura interna** (aggiornata a seguito della revisione della parte
+dati): il CSV viene letto e ripulito **una sola volta** all'avvio (data
+mancanti, duplicati, formati data misti, testo normalizzato), con cache in
+memoria invalidata solo se il file cambia (confronto sul mtime) — non più
+rilettura ad ogni domanda. I dati puliti sono registrati come vista
+**DuckDB**: l'LLM risponde alle domande scrivendo query SQL su quella vista
+invece di generare ed eseguire codice Python pandas ad ogni richiesta —
+più veloce, più economico in token, e senza eseguire codice arbitrario
+generato dinamicamente. Le risposte a domande identiche/ripetute sono
+cachate in memoria per 15 minuti; i grafici generati vengono ripuliti
+automaticamente da un task in background oltre le 2 ore di vita.
 
 ## 6. Front end React
 
@@ -259,5 +271,11 @@ vedi `.gitignore`).
   "Configura" per il ruolo Visualizzatore (oggi il permesso è comunque
   applicato ed enforced dal back end, ma l'interfaccia in quelle due pagine
   non nasconde ancora proattivamente i pulsanti non permessi)
-- Cache delle risposte RAG più frequenti
+- Cache delle risposte RAG più frequenti (già implementata per il data
+  agent — vedi sezione 5 — non ancora per le query RAG)
+- Cache condivisa (Redis) al posto della cache in memoria del data agent,
+  necessaria solo se il servizio venisse scalato su più repliche
+- Persistenza su disco del dataset già pulito (es. tabella DuckDB su file
+  invece che `:memory:`), utile se il CSV crescesse a centinaia di
+  migliaia di righe
 - Dockerizzazione dei tre servizi con `docker-compose`

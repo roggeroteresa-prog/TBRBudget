@@ -1,9 +1,11 @@
 /**
- * Legge e pulisce (una tantum, con cache in memoria) il CSV di consuntivo
- * vendite. Usato da: dimensionsService (opzioni dei dropdown derivate dai
- * dati reali), la configurazione valuta del budget (analisi del periodo
- * consuntivo) e la generazione della base budget (riponderazione
- * proporzionale del consuntivo sul nuovo target).
+ * Legge e pulisce il CSV di consuntivo vendite, con cache in memoria
+ * invalidata solo se il file cambia (confronto sulla data di modifica, così
+ * da evitare di rileggerlo e ripulirlo ad ogni chiamata pur restando
+ * corretti se il dataset viene aggiornato). Usato da: dimensionsService
+ * (opzioni dei dropdown derivate dai dati reali), la configurazione valuta
+ * del budget (analisi del periodo consuntivo) e la generazione della base
+ * budget (riponderazione proporzionale del consuntivo sul nuovo target).
  */
 import fs from "fs";
 import path from "path";
@@ -13,6 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CSV_PATH = path.join(__dirname, "..", "..", "..", "data", "tbr_sales.csv");
 
 let cachedRows = null;
+let cachedMtimeMs = null;
 
 function parseCsvLine(line) {
   // Il dataset non contiene virgole/virgolette nei campi di testo, quindi
@@ -74,7 +77,8 @@ function normalizeCountry(raw) {
  * spazi/maiuscole nei campi testuali.
  */
 function loadRows() {
-  if (cachedRows) return cachedRows;
+  const mtimeMs = fs.statSync(CSV_PATH).mtimeMs;
+  if (cachedRows && cachedMtimeMs === mtimeMs) return cachedRows;
 
   const raw = fs.readFileSync(CSV_PATH, "utf-8").trim().split("\n");
   const header = parseCsvLine(raw[0]);
@@ -123,6 +127,7 @@ function loadRows() {
   }
 
   cachedRows = rows;
+  cachedMtimeMs = mtimeMs;
   return rows;
 }
 

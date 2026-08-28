@@ -21,8 +21,8 @@ data_agent/charts/*.png
 # si rigenerano da soli vuoti al primo avvio, non hanno senso nel repository.
 # users-store.json invece resta tracciato: contiene solo l'utente admin di
 # seed, necessario perché l'app abbia un utente predefinito al primo avvio.
-backend/src/data/budgets-store.json
-backend/src/data/history-log.json
+# backend/src/data/budgets-store.json
+# backend/src/data/history-log.json
 
 # OS
 .DS_Store

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "573db301-258d-403a-89ff-317f43ebc11f",
+    "timestamp": "2026-08-11T07:29:22.881Z",
+    "actionType": "CONFIG",
+    "entity": "Importo iniziale",
+    "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+    "budgetName": "Budget_Rev01",
+    "user": "Utente Demo",
+    "detail": "Target impostato: 24149464 / 784 qtà"
+  },
+  {
+    "id": "a9f8f6dc-2d46-4ee1-9550-d2baf8c634a1",
+    "timestamp": "2026-08-11T07:29:22.878Z",
+    "actionType": "WRITEBACK",
+    "entity": "Base budget",
+    "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+    "budgetName": "Budget_Rev01",
+    "user": "Utente Demo",
+    "detail": "Generata base budget: 239 righe"
+  },
+  {
+    "id": "8198480a-43fe-47e5-bf2a-b2461a80e4aa",
+    "timestamp": "2026-08-11T07:29:12.001Z",
+    "actionType": "CONFIG",
+    "entity": "Currency",
+    "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+    "budgetName": "Budget_Rev01",
+    "user": "Utente Demo",
+    "detail": "Tassi di cambio configurati (16 valute)"
+  },
+  {
+    "id": "f549a7ba-030e-4db2-a3b4-feb0c4b30874",
+    "timestamp": "2026-08-11T07:29:02.716Z",
+    "actionType": "CONFIG",
+    "entity": "Dimensioni",
+    "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+    "budgetName": "Budget_Rev01",
+    "user": "Utente Demo",
+    "detail": "Dimensioni impostate: macroarea, country, customer, category, product"
+  },
+  {
+    "id": "f2f6a68c-3aa4-4724-bc32-ea529a832d13",
+    "timestamp": "2026-08-11T07:28:54.778Z",
+    "actionType": "CREATE",
+    "entity": "Budget",
+    "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+    "budgetName": "Budget_Rev01",
+    "user": "Utente Demo",
+    "detail": "Creato budget \"Budget_Rev01\" (anno 2028, USD)"
+  },
+  {
+    "id": "3f3d0a8f-0764-46c0-a442-24d482d6c3c2",
+    "timestamp": "2026-08-11T07:28:29.834Z",
+    "actionType": "STATUS",
+    "entity": "Budget",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Stato cambiato in \"Confermato\""
+  },
+  {
+    "id": "291608f6-2618-414a-a75c-0ef9970f3e5a",
+    "timestamp": "2026-08-08T17:38:21.885Z",
+    "actionType": "CONFIG",
+    "entity": "Importo iniziale",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Target impostato: 24149464 / 747 qtà"
+  },
+  {
+    "id": "b7d436e1-e4ea-4b92-a2ab-3defe111072f",
+    "timestamp": "2026-08-08T17:38:21.883Z",
+    "actionType": "WRITEBACK",
+    "entity": "Base budget",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Generata base budget: 239 righe"
+  },
+  {
+    "id": "cad9184a-7595-41a9-b737-aec2a670d6a6",
+    "timestamp": "2026-08-08T17:38:08.058Z",
+    "actionType": "CONFIG",
+    "entity": "Currency",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Tassi di cambio configurati (16 valute)"
+  },
+  {
+    "id": "953b14ee-1e0f-49e3-b2b0-922dfa620a9f",
+    "timestamp": "2026-08-08T17:37:45.654Z",
+    "actionType": "CONFIG",
+    "entity": "Dimensioni",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Dimensioni impostate: macroarea, country, customer, category, product"
+  },
+  {
+    "id": "61150823-ee4d-421f-9ee8-f82320ad28af",
+    "timestamp": "2026-08-08T17:37:38.442Z",
+    "actionType": "CREATE",
+    "entity": "Budget",
+    "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+    "budgetName": "Test",
+    "user": "Utente Demo",
+    "detail": "Creato budget \"Test\" (anno 2028, USD)"
+  }
+]

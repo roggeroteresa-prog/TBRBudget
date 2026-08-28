@@ -1,0 +1,6792 @@
+{
+  "budgets": [
+    {
+      "id": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "company": "TBR Budget Group",
+      "budgetName": "Test",
+      "budgetYear": 2028,
+      "currencyCode": "USD",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31",
+      "fixedFactor": "PREZZO",
+      "status": "Confermato",
+      "createdAt": "2026-08-08T17:37:38.441Z",
+      "createdBy": "Utente Demo",
+      "dimensions": [
+        "macroarea",
+        "country",
+        "customer",
+        "category",
+        "product"
+      ],
+      "exchangeRates": {
+        "EUR": 0.86693,
+        "BRL": 5.0998,
+        "ZAR": 16.2233,
+        "AUD": 1.4204,
+        "KZT": 478.8637,
+        "UAH": 44.3153,
+        "RSD": 117.2165,
+        "RUB": 98.8196,
+        "MXN": 17.1551,
+        "BGN": 1.9498,
+        "TRY": 47.706,
+        "CAD": 1.401,
+        "ARS": 1054.4368,
+        "RON": 4.5535,
+        "PLN": 3.7263,
+        "HUF": 315.99
+      },
+      "initialTargets": {
+        "totalAmount": 24149463.83850001,
+        "totalQuantity": 747
+      },
+      "configStatus": {
+        "dimensions": true,
+        "currency": true,
+        "amounts": true
+      }
+    },
+    {
+      "id": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "company": "TBR Budget Group",
+      "budgetName": "Budget_Rev01",
+      "budgetYear": 2028,
+      "currencyCode": "USD",
+      "startDate": "2025-01-01",
+      "endDate": "2025-12-31",
+      "fixedFactor": "PREZZO",
+      "status": "Bozza",
+      "createdAt": "2026-08-11T07:28:54.777Z",
+      "createdBy": "Utente Demo",
+      "dimensions": [
+        "macroarea",
+        "country",
+        "customer",
+        "category",
+        "product"
+      ],
+      "exchangeRates": {
+        "EUR": 1,
+        "BRL": 5.3978,
+        "ZAR": 20.4243,
+        "AUD": 1.6435,
+        "KZT": 478.8637,
+        "UAH": 44.3153,
+        "RSD": 117.2165,
+        "RUB": 98.8196,
+        "MXN": 18.4856,
+        "BGN": 1.9498,
+        "TRY": 34.7257,
+        "CAD": 1.4762,
+        "ARS": 1054.4368,
+        "RON": 5.105,
+        "PLN": 4.2833,
+        "HUF": 394.822
+      },
+      "initialTargets": {
+        "totalAmount": 24149463.83850001,
+        "totalQuantity": 784.35
+      },
+      "configStatus": {
+        "dimensions": true,
+        "currency": true,
+        "amounts": true
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "8e17b444-49ee-4bea-bf7d-623088f66392",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 198879.5025,
+      "quantity": 5
+    },
+    {
+      "id": "be470f63-a918-4d3b-b68d-caf69b237ecc",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 38094.59850000001,
+      "quantity": 1
+    },
+    {
+      "id": "36e129ee-369b-421a-8a5e-ba73d127dd97",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 86089.31100000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "c4c43c43-152a-4636-8ec6-516e5f41a3cd",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 175850.61900000004,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "9f086023-b4ea-4468-9d58-41d218646b3c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 43387.17600000001,
+      "quantity": 1
+    },
+    {
+      "id": "ef06bef2-1c33-4cbd-96fa-18d0f457e1d0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 271500.62100000004,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "3ad59b6d-57fb-4a05-ba05-8bf9ee1fc359",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 2,
+      "amount": 147224.32200000004,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "934b4cdf-2948-4955-af9e-c459dc01e774",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 205911.97200000004,
+      "quantity": 8
+    },
+    {
+      "id": "ee2b1ad1-216a-4137-9dcd-2bd0be78ddc3",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 77101.60500000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "ff3e5cbe-d100-4238-b4da-69c00b765855",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 47331.83700000001,
+      "quantity": 2
+    },
+    {
+      "id": "9a835e19-6495-4b2c-9752-9e97d7a0fdc2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 94835.664,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "567cbe78-0de7-4026-a06f-f00716a17ef8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 41198.598000000005,
+      "quantity": 2
+    },
+    {
+      "id": "84d907a9-f11d-4e5e-88af-d8e5930ef89e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 132817.25100000002,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "43c1991e-89e1-4277-936a-c149557149cf",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 90321.02100000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "032519b8-36a6-4bd0-99b1-ce9ca0297cc7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 80319.26699999999,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2ad6d340-866c-4eb1-8170-ed68f4495c35",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 7,
+      "amount": 59565.975000000006,
+      "quantity": 2
+    },
+    {
+      "id": "6742aca2-4672-4bce-bc3e-f7814d517fbd",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 125978.74800000002,
+      "quantity": 4
+    },
+    {
+      "id": "926ab2cd-56d1-4825-94e6-eb67e7d8f803",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 35119.938,
+      "quantity": 1
+    },
+    {
+      "id": "dc595159-c623-4301-9a5e-9505bfc56c65",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 127353.24000000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "971f727e-920a-4be0-8e6b-308372f1bfc9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 295556.80350000004,
+      "quantity": 7
+    },
+    {
+      "id": "1146f707-efdd-4548-b833-b1205acbbfe7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraAgri SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 8,
+      "amount": 122851.35450000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "81acc6db-fb61-4c08-9208-e45cbf35d74f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 42217.602,
+      "quantity": 2
+    },
+    {
+      "id": "4dd26866-d2d4-41d9-9a38-d1b221895051",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 9,
+      "amount": 63615.82500000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "ebca6acb-2a91-45f2-9a35-da2db1e38d63",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 142946.74800000002,
+      "quantity": 4
+    },
+    {
+      "id": "a9fffbd5-0752-4b43-a240-496b73951d0b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 173428.50000000003,
+      "quantity": 5
+    },
+    {
+      "id": "17b056eb-168f-41a6-9432-b3a421cfcee2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 6,
+      "amount": 118498.87350000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "880ed780-8bb4-4e0b-9008-aee407005ba3",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 51722.916000000005,
+      "quantity": 2
+    },
+    {
+      "id": "ec1acabb-9272-4a17-80ca-adad3b1fc4d3",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 95607.79200000002,
+      "quantity": 4
+    },
+    {
+      "id": "38e06973-f107-46cc-8db5-e588c44a555d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 49500.444,
+      "quantity": 2
+    },
+    {
+      "id": "d50c0410-7507-421c-8de1-16b080b4c2ee",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 67982.73300000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "996aba73-6a19-4c64-824c-9c09abe135d8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 89674.53600000002,
+      "quantity": 4
+    },
+    {
+      "id": "c07359ff-458f-4c27-9922-0eb5060ae9c5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 188006.86800000002,
+      "quantity": 4
+    },
+    {
+      "id": "8fc00c13-eb89-450b-853e-496d621aaf82",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 18050.7285,
+      "quantity": 1
+    },
+    {
+      "id": "51b3502f-fa06-49b4-a667-83b9b2cc29d5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 104036.57250000001,
+      "quantity": 5
+    },
+    {
+      "id": "48fec5d4-d7f5-4d1a-aea3-71e9d452c78e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 125180.52750000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "35ec0ad5-250a-458b-aa0a-e892d3239849",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 35622.636000000006,
+      "quantity": 1
+    },
+    {
+      "id": "85850618-0022-41e2-b13e-d773b00fff46",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 115963.57500000001,
+      "quantity": 5
+    },
+    {
+      "id": "12fb7720-9207-45ea-9885-b3ccb29dc5e2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 69864.2595,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "890b93a0-a1d3-4866-b6b3-e776989fa95f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 8,
+      "amount": 88630.038,
+      "quantity": 4
+    },
+    {
+      "id": "00272333-a9fb-4d4f-88e7-9f39b9545d97",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 96993.3825,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "9d2e1ac1-f4f7-4165-a07b-8e292839afea",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 159896.52000000002,
+      "quantity": 5
+    },
+    {
+      "id": "ec9e2df4-4e95-4740-a4c0-f9d04f26ed6d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 45660.174000000006,
+      "quantity": 2
+    },
+    {
+      "id": "78c3400e-3a65-4727-b151-81469afaa0f8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 27318.690000000002,
+      "quantity": 1
+    },
+    {
+      "id": "4b2f0882-b0f2-4140-896d-35e56f194cc7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 84757.5855,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "f551170f-ef5c-48ea-ac9d-70909d81bb2d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 25852.018500000006,
+      "quantity": 1
+    },
+    {
+      "id": "172186c0-0249-4ead-b362-c826121460f0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 98673.918,
+      "quantity": 4
+    },
+    {
+      "id": "802321ef-c318-4bf3-8c50-335d5a81db5c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 125350.91100000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "11864bb4-5111-46fd-8f6b-6b5847f4a046",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 91023.24000000002,
+      "quantity": 2
+    },
+    {
+      "id": "8264d45b-5ef2-4a78-b800-28daa358597f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 9,
+      "amount": 37697.8035,
+      "quantity": 1
+    },
+    {
+      "id": "091cbf66-9299-4090-92a0-fbaefd5de92a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 176804.58600000004,
+      "quantity": 4
+    },
+    {
+      "id": "bba086e1-ee3d-491e-8b12-75cc08c4f30d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 91996.2855,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "31222c9e-e07f-4273-b9e3-17ba6009b87d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 25574.545500000004,
+      "quantity": 1
+    },
+    {
+      "id": "86feb310-5431-422e-ab89-23216cf708f1",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 45071.491500000004,
+      "quantity": 1
+    },
+    {
+      "id": "35aabb31-b0b3-4fab-bf4d-2345d6e5b4a5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 120632.65200000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "4559664a-7ceb-43d0-84b9-abca6eff08bf",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 6,
+      "amount": 107965.05300000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "747c6a34-6970-4a4e-a0cb-0173f30661c0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 98414.19000000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2dcf1c4b-faa9-40a9-b72d-aa19ab43b6ce",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 153634.00500000003,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "6651e2c5-1761-40c3-922e-3b5f774a7b46",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "AgroTerra SC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 83001.492,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "3ade7592-6481-4c63-91f3-53a2ee9f30e0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 64268.043000000005,
+      "quantity": 2
+    },
+    {
+      "id": "a3e80be1-36fb-47a8-b7b1-4c512283a06d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 97495.49250000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "fd6cc462-ebc7-4745-9098-48cdfc25e376",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "CerealFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 61314.51900000001,
+      "quantity": 2
+    },
+    {
+      "id": "470ff244-a641-4f7d-acab-d54c5cba9603",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "CerealFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 186984.81900000002,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "73dc2b74-0379-4aff-9926-d3a45508d843",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 163177.09800000003,
+      "quantity": 4
+    },
+    {
+      "id": "cfbd1359-c0b5-4837-b3ca-f78c69e029d4",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "FarmFarm Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 145090.44900000002,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "d3574388-378a-41cf-9c44-209c8421824a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 174483.8025,
+      "quantity": 5
+    },
+    {
+      "id": "2e7eabc6-08b4-4518-91eb-9d02adc8faa6",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmTerra SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 238876.1025,
+      "quantity": 5
+    },
+    {
+      "id": "d923a337-71b6-48cb-9244-bf8eae957e60",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 10,
+      "amount": 43346.520000000004,
+      "quantity": 1
+    },
+    {
+      "id": "6b4cf195-3b6a-49ab-a5cb-8af4094d70f6",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 64162.308000000005,
+      "quantity": 2
+    },
+    {
+      "id": "747b841b-d0e3-4a3e-a0d3-e9ea65fe52d5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 140971.74000000002,
+      "quantity": 4
+    },
+    {
+      "id": "756269f5-a3a5-437c-9bf9-6c76ad6633b8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "HarvestFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 3,
+      "amount": 170926.01400000002,
+      "quantity": 7
+    },
+    {
+      "id": "5f2539af-5be8-4427-8a90-a4aedf05f834",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 161349.80400000003,
+      "quantity": 4
+    },
+    {
+      "id": "0c8624a8-14dd-4e13-8632-f3894d8647d0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 81703.86,
+      "quantity": 2
+    },
+    {
+      "id": "d7525634-0c5f-4bcd-9831-9d51b8f16abd",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 10,
+      "amount": 79836.876,
+      "quantity": 2
+    },
+    {
+      "id": "6e0f34f4-16e5-454d-b538-ed12d35ef0f0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 234800.265,
+      "quantity": 5
+    },
+    {
+      "id": "b242e2f2-c8a7-44e7-abfa-0acbe1c05df0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 91453.06800000001,
+      "quantity": 2
+    },
+    {
+      "id": "11dcb3a1-db9b-4fff-8055-7c1bb1c49fd9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "AgroAgri S.L.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 84953.98800000001,
+      "quantity": 2
+    },
+    {
+      "id": "95241041-e40f-4726-a6d6-4f7d3d5dcda5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 25562.8275,
+      "quantity": 1
+    },
+    {
+      "id": "7f8b99c3-0d6d-47ec-aac2-01c4739c227a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 3,
+      "amount": 105884.00550000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "e099036e-5a65-44f3-92d9-b4c54a62c30b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 181674.48600000003,
+      "quantity": 4
+    },
+    {
+      "id": "6fcf0593-c733-4589-bf5b-b32e7623e60a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 60671.86650000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "e06685c8-604f-4fa4-99b7-61734f71a61b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 124482.96000000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "39a1d8d5-0e3d-421e-8932-0664500a15a5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 23817.433500000003,
+      "quantity": 1
+    },
+    {
+      "id": "7ac611fb-4a3c-4f43-8741-e445cc772433",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 116991.882,
+      "quantity": 4
+    },
+    {
+      "id": "d927a8c1-ad42-4de2-8b70-98594c1ca358",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 98702.98200000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "fe2f063d-7efa-48d3-bb36-625c7ff2b579",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 96584.35500000003,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "772249a6-1243-4ca6-9388-ec583fa9e7e4",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 3,
+      "amount": 133330.5225,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "92aa8dd6-981a-46cd-b0fb-5fbacb990672",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 121032.51300000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2c08f2ee-c8da-43d7-822e-40ddc5acb8a1",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 245182.98,
+      "quantity": 5
+    },
+    {
+      "id": "7e049bb2-88ef-4071-b9b3-64cf7dc1bdbc",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 90548.01000000001,
+      "quantity": 2
+    },
+    {
+      "id": "61eb89f0-ec16-4b25-9bd6-767d12e31e19",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 2,
+      "amount": 170956.128,
+      "quantity": 4
+    },
+    {
+      "id": "fe9ca0f9-706f-4fd1-a446-ef984591631b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 101783.22000000002,
+      "quantity": 4
+    },
+    {
+      "id": "b9fe38d9-2c43-488f-8829-332c40fbc470",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 398791.2285000001,
+      "quantity": 9
+    },
+    {
+      "id": "f315fced-3a40-4cf0-a61e-276e63822863",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 132215.5485,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "3c49b516-8324-4332-905f-c2868991a2f0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 107599.87350000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "9d91b04e-136d-46fa-9d21-bdbdfa47dca0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 9,
+      "amount": 95820.03899999999,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "a7dcae95-22be-41ec-953e-2f770ff0a76d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 12,
+      "amount": 122842.96500000001,
+      "quantity": 5
+    },
+    {
+      "id": "5b7ad161-7aee-4b9d-932a-72979963784e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 74884.2255,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "1d94923d-afab-44d7-9a7d-f1731453c106",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 45412.96200000001,
+      "quantity": 2
+    },
+    {
+      "id": "e2dd65e0-620d-4815-9348-8f69e49467de",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 69793.185,
+      "quantity": 2
+    },
+    {
+      "id": "51da08ad-72a7-4164-bba5-c8d20577a993",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 93158.16300000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "925100a6-efce-47ac-a755-462b843cd08c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 45759.672000000006,
+      "quantity": 2
+    },
+    {
+      "id": "7d3188e5-fe87-4f74-b480-bd612ce01d95",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 114962.19000000002,
+      "quantity": 5
+    },
+    {
+      "id": "796981df-d978-4d2f-8491-4a4d9fea1f91",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 87067.638,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "d1205fbf-adc5-49a5-be6f-5ef50a26c07e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 118368.39000000001,
+      "quantity": 4
+    },
+    {
+      "id": "dde48cfe-8d65-4a89-ab8a-e953f49b76af",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 23235.754500000006,
+      "quantity": 1
+    },
+    {
+      "id": "28b034fd-27dc-480c-a5ec-1a779e9399f5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 98883.20400000001,
+      "quantity": 4
+    },
+    {
+      "id": "7177ccbc-0c63-42d0-802e-bb1437ba2346",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 98052.66450000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "ab16d0df-cfd2-4590-8c7d-ce5c928994d5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 11,
+      "amount": 21697.158000000003,
+      "quantity": 1
+    },
+    {
+      "id": "7288af27-8e85-40f8-bf7b-4aae5c1368a7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 12,
+      "amount": 63865.36800000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "b05661a8-dff8-41b1-a1c3-4bee29df678e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 2,
+      "amount": 23071.881000000005,
+      "quantity": 1
+    },
+    {
+      "id": "38f639e6-f627-4567-8674-9bc283a6e067",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 161839.49250000002,
+      "quantity": 7
+    },
+    {
+      "id": "4f64a5c2-c7cc-43d2-9857-b1fc399bd695",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 135796.81500000003,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "0e1d7423-5402-4394-8d65-727d2369706e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 116369.13750000001,
+      "quantity": 5
+    },
+    {
+      "id": "ed18b5b2-ebec-4e73-91b2-04bc6e92930e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 67468.716,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "04409355-2155-4ea5-b7ac-9aa12fca74b6",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 38281.65600000001,
+      "quantity": 2
+    },
+    {
+      "id": "9d23ce85-8ae4-4e96-981f-5bc359f6af97",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 1,
+      "amount": 82999.28700000001,
+      "quantity": 2
+    },
+    {
+      "id": "022fe98c-8866-469d-a9c8-88e6d28d5a04",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 155232.546,
+      "quantity": 4
+    },
+    {
+      "id": "57420dde-015b-4ae5-8a1a-426af9627c6c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 58198.41300000001,
+      "quantity": 2
+    },
+    {
+      "id": "14ad0f2e-c52e-4a8c-ac2d-8f60c2abcef4",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 89577.57900000001,
+      "quantity": 2
+    },
+    {
+      "id": "26b04cfb-6333-442f-a04c-a11cff21ebe8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 77837.72850000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "897479c6-f0c5-4dab-a165-5e526bbe9d2d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 102073.81800000001,
+      "quantity": 4
+    },
+    {
+      "id": "055a436e-7770-4ac7-a0a1-df2d466b29b2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 11,
+      "amount": 73403.28450000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "bef78877-2772-463d-bcc0-892b1e2f4ff7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 159808.36200000002,
+      "quantity": 4
+    },
+    {
+      "id": "a0eb9173-f931-4e17-b842-cfa4064d4a4c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 126624.4875,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "0c4262c3-0769-4de2-8b85-8ac035192ae0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "TerraAgro SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 55907.96400000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "7048b84e-70af-421a-a0bd-fb57c8003296",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 49022.232,
+      "quantity": 2
+    },
+    {
+      "id": "c187b4d5-7120-4eb3-b92f-e1437f64c88e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 88638.18600000002,
+      "quantity": 4
+    },
+    {
+      "id": "6545e68e-b61f-4ac2-b518-9d853950591d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 3,
+      "amount": 201169.521,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "48985b02-3c9d-4829-879e-aaa0896079bb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 122492.25450000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "d5a2d629-324c-4c06-9967-92272c3e4cb6",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 168002.646,
+      "quantity": 4
+    },
+    {
+      "id": "d82073cf-4683-44f5-a7b6-39d41a10c1fb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 130277.38500000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "d2305212-d132-4eb2-9a5f-4e5b51dc8746",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 245799.75000000003,
+      "quantity": 5
+    },
+    {
+      "id": "981db192-0f5c-4e28-8583-5dc3b7fdf8fb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 11,
+      "amount": 93870.54600000002,
+      "quantity": 2
+    },
+    {
+      "id": "5f686e00-e61c-4459-826b-6fca56f14394",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 60969.468000000015,
+      "quantity": 2
+    },
+    {
+      "id": "a5772fd5-9821-4ef0-bb6a-1d61e7abeb84",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 78065.94600000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "f06e2656-62ab-40c6-a91e-c527d4b4ddf3",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 75106.98300000001,
+      "quantity": 2
+    },
+    {
+      "id": "3111189e-bd15-4949-add5-40be64d7860f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 121949.76150000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "d8ad349e-8134-49b9-9d22-96930d0d2d05",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 47455.107,
+      "quantity": 2
+    },
+    {
+      "id": "b9122dd5-76df-4809-9dd5-c186471323ca",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 105065.478,
+      "quantity": 4
+    },
+    {
+      "id": "0eb8ae26-40bb-4929-a58b-39092f36c918",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 23492.122500000005,
+      "quantity": 1
+    },
+    {
+      "id": "65356334-d0bf-4f58-9b18-cd985d98d62a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 118735.23900000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "226f3e4b-9eaa-49a2-9acb-9e8248c1b204",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 74991.042,
+      "quantity": 2
+    },
+    {
+      "id": "e254136b-910e-4f70-aa8a-b9237ee3d007",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 179240.16600000006,
+      "quantity": 4
+    },
+    {
+      "id": "59ce72b0-7faf-431f-b5d9-ff8f5ffd8155",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 22911.787500000002,
+      "quantity": 1
+    },
+    {
+      "id": "d0700e0f-e248-4328-af69-9af1c0e7f7c4",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 45080.952000000005,
+      "quantity": 2
+    },
+    {
+      "id": "be8a930c-ff72-4b7f-96b4-ce65e8a5036c",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 66603.0015,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "16b95d2d-fdd6-4e2e-8501-113501c8e33d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 42606.12300000001,
+      "quantity": 2
+    },
+    {
+      "id": "52c88633-d666-4b20-aece-86327f7d85c9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 66107.00250000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "1b540db4-46da-4b9a-a04a-977e4bd0ddb7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "FarmFarm Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 12,
+      "amount": 61148.49300000001,
+      "quantity": 2
+    },
+    {
+      "id": "6af1c4af-7545-4aa8-a11f-4414e32accbb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 134450.00100000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "4bfd4e4e-ffe4-4b0d-9f1b-28a3bc7c38f8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 138405.87600000002,
+      "quantity": 4
+    },
+    {
+      "id": "2cbef853-873a-4703-b972-62124b2a2d28",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 43441.10400000001,
+      "quantity": 1
+    },
+    {
+      "id": "00e2aabc-321a-464f-ada0-b2817e29f07b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "TerraAgro SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 9,
+      "amount": 91344.89700000001,
+      "quantity": 2
+    },
+    {
+      "id": "8e70ebeb-5117-4fa8-9e09-e867606344c7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 68115.15900000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "0607a65b-b16f-4d3b-8303-6cc12780585e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 121850.27400000003,
+      "quantity": 4
+    },
+    {
+      "id": "4f0f06a4-5152-4cd9-80d1-b75c839e5882",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 80733.114,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "7173ad23-fe3b-4b1d-8bc5-5766985d30f7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 89661.06450000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "b14852f2-212e-4010-bc27-5de7b0401b79",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 87592.848,
+      "quantity": 2
+    },
+    {
+      "id": "0893f00c-9c8e-4e87-8948-43930cb5d6bb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 205984.69500000004,
+      "quantity": 5
+    },
+    {
+      "id": "f4938b8f-a81e-459e-8db1-ea78beb16ecb",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 89340.40500000001,
+      "quantity": 2
+    },
+    {
+      "id": "68289f2f-d6ce-4eb7-a099-263a3584916e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 80730.12150000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "3dea15db-b48e-4bde-a040-6bfde6b57e7e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 2,
+      "amount": 106928.48250000001,
+      "quantity": 5
+    },
+    {
+      "id": "624b3ab3-1022-4d1e-bfc1-931587017df1",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 61998.111000000004,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2bb77c47-4671-4707-b7f4-342aaba6f912",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 126904.092,
+      "quantity": 4
+    },
+    {
+      "id": "0e50f978-87d8-4e02-8506-4b8c19ab129b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 120572.63400000002,
+      "quantity": 4
+    },
+    {
+      "id": "2c4aad60-a8b0-420d-9587-44b16ef3f42e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 65215.689000000006,
+      "quantity": 2
+    },
+    {
+      "id": "1cd51300-5d05-407e-aea9-28219d59d255",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 79424.50950000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "627fdfa8-f660-4193-a112-cafcbd0b3e2d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 7,
+      "amount": 129448.83000000002,
+      "quantity": 5
+    },
+    {
+      "id": "741e5598-74fc-4c2c-9fe1-5838da0ab9de",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 128829.70800000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "b20dcccf-defa-4852-9143-afb9f5915b83",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 96092.26200000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "d63133d7-ee45-43ef-af1d-e1cd0ceead8a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 29678.712000000003,
+      "quantity": 1
+    },
+    {
+      "id": "9d52c9ac-d9f6-4eb2-a004-869cfe2e1a19",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 86827.38750000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "5c66fb05-cf51-469c-834e-cba898c76a26",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 95637.65400000001,
+      "quantity": 2
+    },
+    {
+      "id": "d7a19c3d-ad02-484b-9918-ce45f19abb94",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 79246.2825,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "3c5b9ebc-1253-4fdc-8b16-459adaaa7f88",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 207854.74500000002,
+      "quantity": 5
+    },
+    {
+      "id": "bd9cac21-68ce-41d2-8b85-7791c4a49f3f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 123958.8945,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "ea31f9d2-40be-43f4-9bc9-425112d5deb2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 25201.932000000004,
+      "quantity": 1
+    },
+    {
+      "id": "bcdf5b60-af8d-4392-846c-bf09a6451bf0",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 70230.32100000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "e4d86696-0d1d-43ff-8ff2-7da24a001c79",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 31222.086,
+      "quantity": 1
+    },
+    {
+      "id": "4513e45d-0113-4b0e-8d90-2c2b9819376f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 1,
+      "amount": 169365.00000000003,
+      "quantity": 4
+    },
+    {
+      "id": "505d5ef7-2703-41ff-a0c5-35084ed87971",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 143824.884,
+      "quantity": 4
+    },
+    {
+      "id": "4e85b063-9428-4852-be95-4f602dfc048b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 218035.776,
+      "quantity": 8
+    },
+    {
+      "id": "bb382bfa-bc01-4290-b16e-e66a0fd5a20a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 116917.08000000002,
+      "quantity": 5
+    },
+    {
+      "id": "25689766-1b15-4f31-812f-db3571a1d407",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 108313.75800000003,
+      "quantity": 4
+    },
+    {
+      "id": "0e299200-59da-4337-a434-8553204e0796",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 10,
+      "amount": 136120.82400000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "cb41342b-305a-4557-b9ec-f7ae0e7d9708",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmTerra SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 95611.32000000002,
+      "quantity": 4
+    },
+    {
+      "id": "a32cf08a-43c1-44d4-bcca-0485c071f00b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 44113.5975,
+      "quantity": 1
+    },
+    {
+      "id": "1e43a41b-00ac-4af2-b21e-663cfe8e765a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 333127.66200000007,
+      "quantity": 8
+    },
+    {
+      "id": "57dd32c1-e55b-48aa-afe3-79ca479b9c24",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 26739.163500000006,
+      "quantity": 1
+    },
+    {
+      "id": "5dcd85dd-f766-4b72-aa9b-d07a56c00e6a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 12,
+      "amount": 61052.06100000001,
+      "quantity": 2
+    },
+    {
+      "id": "d31658c4-e498-4a2b-966c-8332682b6543",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 106942.96200000003,
+      "quantity": 4
+    },
+    {
+      "id": "120f0298-be2e-487b-bd21-126bde7b09ba",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 171343.2525,
+      "quantity": 5
+    },
+    {
+      "id": "bca896e4-0018-4699-bcf9-feaeb7262fbe",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "AgroTerra SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 67828.69800000002,
+      "quantity": 2
+    },
+    {
+      "id": "f3030b53-fba4-4ecf-9a28-74394aa98a49",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 130999.995,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "1b21764e-7819-4a99-ac9e-e773926d6da4",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 23863.14,
+      "quantity": 1
+    },
+    {
+      "id": "e50a7519-edb0-4299-96bc-d47f625e7a2e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "HarvestAgri Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 71059.65300000002,
+      "quantity": 2
+    },
+    {
+      "id": "905f39eb-652a-452c-a16b-13264d7f4e9a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 135474.885,
+      "quantity": 5
+    },
+    {
+      "id": "428e6c06-2737-48eb-be16-5ba9b5e1b0ed",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 22669.783500000005,
+      "quantity": 1
+    },
+    {
+      "id": "0d3b9237-9182-47a0-868e-37c9f6eefd73",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 178365.30600000004,
+      "quantity": 4
+    },
+    {
+      "id": "b7454f79-e1c2-4550-8694-d4b0c72d54c9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 12,
+      "amount": 130250.95650000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "40940239-0ab0-44d7-abb5-5fadbb5f712b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 106636.614,
+      "quantity": 4
+    },
+    {
+      "id": "05105165-2102-4fea-b363-8e7ab18df067",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 110768.952,
+      "quantity": 4
+    },
+    {
+      "id": "17e5b727-4e13-4c7b-901d-b1813e42b174",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 135042.95700000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "234c01a6-e3eb-4ad6-ae13-89839659d2ce",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 81461.77200000001,
+      "quantity": 4
+    },
+    {
+      "id": "be8c35a8-fa9d-4b21-bf83-26a15efd32ad",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 54643.89000000001,
+      "quantity": 2
+    },
+    {
+      "id": "7742909e-5129-4c7d-9e5a-8fe3b4cba891",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 75347.49600000001,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "a9e4ae32-bd68-4fee-b0b6-ffd185f70e22",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 108980.592,
+      "quantity": 4
+    },
+    {
+      "id": "fcacb415-be8a-4d44-b169-47450ac5349e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 116810.6625,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2dbfb441-6731-40a3-bbae-0f207787c82b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 100666.566,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "550428e8-8a84-482d-8a97-6e2a5fdc228f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 147493.41600000003,
+      "quantity": 4
+    },
+    {
+      "id": "033f9bc8-3fb7-489e-b812-c66d8e1c60fd",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 44731.449,
+      "quantity": 1
+    },
+    {
+      "id": "96aad9a1-711f-4ece-abe6-5f2176c78486",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 94091.4765,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "9fd0f029-d530-4295-b124-1155a8afc0a9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 137866.6275,
+      "quantity": 5
+    },
+    {
+      "id": "500d0742-053b-4c6d-af38-4e77e56fe08f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 25804.359000000004,
+      "quantity": 1
+    },
+    {
+      "id": "53192de5-700f-46fe-b9eb-d3bc1043e685",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 57905.96700000001,
+      "quantity": 2
+    },
+    {
+      "id": "761204b1-7709-4a91-ba4b-7e8c9b5ac4ec",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 94894.78950000003,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "b070ca85-fbf5-4338-8802-9b5e563d631b",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 19974.843,
+      "quantity": 1
+    },
+    {
+      "id": "13e6b79e-b233-4dac-835e-305945823894",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "HarvestFarm SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 198486.01500000004,
+      "quantity": 5
+    },
+    {
+      "id": "6417d0d2-f8a1-4fd2-b84d-9aaa219d0671",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 130585.56000000001,
+      "quantity": 5
+    },
+    {
+      "id": "679b21b0-6026-4c80-b23b-724186c8c4bd",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 99739.878,
+      "quantity": 4
+    },
+    {
+      "id": "84e5b285-97c2-4466-b683-e9f0ea3b722e",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 87779.41200000001,
+      "quantity": 2
+    },
+    {
+      "id": "f7661752-820f-46aa-97ea-3413be77b5de",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 11,
+      "amount": 42695.97150000001,
+      "quantity": 1
+    },
+    {
+      "id": "5cafcb29-73af-42f1-83b3-d02202100468",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 24220.1925,
+      "quantity": 1
+    },
+    {
+      "id": "b5a27fbd-469d-4340-b540-d6f9e182e45d",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 70085.232,
+      "quantity": 2
+    },
+    {
+      "id": "279f71bf-e47f-4c9c-a176-8b24e52370ee",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 9,
+      "amount": 29087.856000000007,
+      "quantity": 1
+    },
+    {
+      "id": "8a33f1b2-4aaa-4d0d-946a-550e3ae351e8",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 177326.60400000005,
+      "quantity": 5.999999999999999
+    },
+    {
+      "id": "34ecad31-7258-4f57-8e3a-0d3011ac0684",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 100977.87000000001,
+      "quantity": 4
+    },
+    {
+      "id": "0a910be3-1aea-45de-ad81-f82eeae52180",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 89029.164,
+      "quantity": 4
+    },
+    {
+      "id": "1a11f14f-b149-48e0-a392-0dfe518b4d0f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 69900.201,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "2948208e-56f9-452e-a519-b4817daf1519",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 80663.331,
+      "quantity": 2
+    },
+    {
+      "id": "5277be28-0867-4a18-81f2-19e944d0c2a7",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 70397.61750000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "9dadf775-ac61-496f-89df-7b6fa71e3636",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 45988.24650000001,
+      "quantity": 1
+    },
+    {
+      "id": "d15d1a9b-efe0-439e-8423-78e5f312694a",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 11,
+      "amount": 69314.14350000002,
+      "quantity": 2.9999999999999996
+    },
+    {
+      "id": "9c3a5061-2d3c-4f63-907a-749ef574ddb9",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 49693.581000000006,
+      "quantity": 2
+    },
+    {
+      "id": "0356a2dd-efd9-48eb-afd8-948287f3e6f2",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 27154.837500000005,
+      "quantity": 1
+    },
+    {
+      "id": "f826eda0-8653-4fb6-82cd-d0d4118bb71f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 45867.874500000005,
+      "quantity": 1
+    },
+    {
+      "id": "eb62c10e-2557-4a26-9a2e-e39306b1947f",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 143195.59800000003,
+      "quantity": 4
+    },
+    {
+      "id": "44fe0e50-0c93-476b-a86c-14cb7f2fefc5",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 128742.18000000002,
+      "quantity": 5
+    },
+    {
+      "id": "46467934-9141-49e8-90cb-d4d8f4c170e6",
+      "budgetId": "c0c7c8a2-6972-4754-8935-7867e6befb5e",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 24205.723500000004,
+      "quantity": 1
+    },
+    {
+      "id": "50cf19cc-37e3-41de-800b-8f915ad04e7f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 198879.5025,
+      "quantity": 5.25
+    },
+    {
+      "id": "2d1bc94b-c87a-4a62-a49d-03b740687e32",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 38094.59850000001,
+      "quantity": 1.05
+    },
+    {
+      "id": "6666b755-3134-4370-abd8-ef949abb6719",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 86089.31100000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "5f7b598c-735c-428c-aba1-53201e0dca94",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 175850.61900000004,
+      "quantity": 6.3
+    },
+    {
+      "id": "e1789b28-8fb6-4498-88a1-cdda741178ec",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 43387.17600000001,
+      "quantity": 1.05
+    },
+    {
+      "id": "2ab7d80b-b2b1-4acf-aa3e-d807860fe9c0",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 271500.62100000004,
+      "quantity": 6.3
+    },
+    {
+      "id": "090edcc0-e550-4d87-a66d-b836de3bc4b1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 2,
+      "amount": 147224.32200000004,
+      "quantity": 6.3
+    },
+    {
+      "id": "73e80d76-6915-4e2f-91ef-a3ebb18f01b2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 205911.97200000004,
+      "quantity": 8.4
+    },
+    {
+      "id": "25bc433c-0046-49a1-ba63-93db4eedbf1e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 77101.60500000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "83111023-bea8-4234-af7d-3a8505bccc1f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 47331.83700000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "bab7cd5e-a3e7-46e3-b9e2-79c016e3dc61",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 94835.664,
+      "quantity": 3.15
+    },
+    {
+      "id": "35851b74-248b-4ed1-815e-75771a098de1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 41198.598000000005,
+      "quantity": 2.1
+    },
+    {
+      "id": "1d2cbc80-d2b5-4158-aae5-73f48e4354ec",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 132817.25100000002,
+      "quantity": 6.3
+    },
+    {
+      "id": "936ac1e4-19e2-4b2a-b606-4e2d017de8a1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 90321.02100000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "48241375-0ee0-424c-8b86-4bd47da8b847",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 80319.26699999999,
+      "quantity": 3.15
+    },
+    {
+      "id": "185f8557-1ddb-4e2e-98e2-d7044e93622c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 7,
+      "amount": 59565.975000000006,
+      "quantity": 2.1
+    },
+    {
+      "id": "312d4c08-aed6-4981-ab8a-913ee0e56b38",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 125978.74800000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "d877f164-79b7-4d21-a846-514148e1430a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "GrainAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 35119.938,
+      "quantity": 1.05
+    },
+    {
+      "id": "44711424-0419-43df-961e-59e466b59692",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 127353.24000000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "d0bb277b-cb96-4726-b526-78e62d6a6f89",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 295556.80350000004,
+      "quantity": 7.3500000000000005
+    },
+    {
+      "id": "2efde807-f7be-4d73-97d2-904737fb43e9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraAgri SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 8,
+      "amount": 122851.35450000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "91f176ef-3c10-4986-a958-dff84eccd727",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 42217.602,
+      "quantity": 2.1
+    },
+    {
+      "id": "181aec0c-764f-4a19-ade1-c1ee052d2d0f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 9,
+      "amount": 63615.82500000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "5283e36b-a5c2-4b0e-9c08-857e31d1bb3f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 142946.74800000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "751b0445-457e-43c2-93e0-60aaa5204629",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 173428.50000000003,
+      "quantity": 5.25
+    },
+    {
+      "id": "72b50020-578c-47bf-bf47-6eb161d72fc1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 6,
+      "amount": 118498.87350000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "f24f739c-7eb6-44df-ac1c-d7a499834762",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 51722.916000000005,
+      "quantity": 2.1
+    },
+    {
+      "id": "c5c13a00-e63f-4352-9f9d-c17ca88be22b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 95607.79200000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "92e344eb-5f37-41b8-b08b-3314a1cf618c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 49500.444,
+      "quantity": 2.1
+    },
+    {
+      "id": "61ec2534-9c5c-4b21-91f8-a81734d51ee8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 67982.73300000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "49b14e18-8fde-4e32-98d1-131d6e993b45",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 89674.53600000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "2815adef-4664-490d-9d4a-b7664e426617",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 188006.86800000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "e3544cfa-aa6e-484d-86af-710cd3b3128d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 18050.7285,
+      "quantity": 1.05
+    },
+    {
+      "id": "2280e8b6-8f0b-4b03-a540-9fb4ca5f67b5",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 104036.57250000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "8829c550-a155-4237-9ef6-23df5eebb958",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 125180.52750000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "085d3427-1ad0-4bef-a564-e9b9e8cd70f2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 35622.636000000006,
+      "quantity": 1.05
+    },
+    {
+      "id": "a1cf5e31-a2d7-4511-aa32-e951256784bb",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 115963.57500000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "019b7415-b4c2-4aae-ac75-706e5046b825",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 69864.2595,
+      "quantity": 3.15
+    },
+    {
+      "id": "564c7fe6-7ae1-4c7a-a0b0-7b3e2eef9e8a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 8,
+      "amount": 88630.038,
+      "quantity": 4.2
+    },
+    {
+      "id": "a646d4c7-1a9b-42d8-aad4-01509a153307",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 96993.3825,
+      "quantity": 3.15
+    },
+    {
+      "id": "ffedd089-d765-441a-aee6-cfc6b4dc52df",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 159896.52000000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "c0b90fc3-9ffe-4252-91cd-c49ada9985f9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 45660.174000000006,
+      "quantity": 2.1
+    },
+    {
+      "id": "7dad44da-c65e-4513-a078-19d68272a22c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 27318.690000000002,
+      "quantity": 1.05
+    },
+    {
+      "id": "08f9138d-4c26-4476-b6a8-aecb656c128b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 84757.5855,
+      "quantity": 3.15
+    },
+    {
+      "id": "4fb2dc6f-f59e-4ea7-bc6a-5ad83c5da66c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 25852.018500000006,
+      "quantity": 1.05
+    },
+    {
+      "id": "46a57188-640e-4070-97b4-a16c7bc5ddc0",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 98673.918,
+      "quantity": 4.2
+    },
+    {
+      "id": "99af4e0e-863b-45ca-9fbf-a79cbd340149",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 125350.91100000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "e6bb74df-56e0-4153-baf2-3f2d31ca4e87",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 91023.24000000002,
+      "quantity": 2.1
+    },
+    {
+      "id": "ecba8acf-4c62-4c26-94ad-932f4dd0e357",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 9,
+      "amount": 37697.8035,
+      "quantity": 1.05
+    },
+    {
+      "id": "ab2f7ffc-179f-456a-98c9-dedc67810f7f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 176804.58600000004,
+      "quantity": 4.2
+    },
+    {
+      "id": "cc7476eb-bfe0-407b-ada5-9bc55274d3e6",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 91996.2855,
+      "quantity": 3.15
+    },
+    {
+      "id": "45d061bf-b0ef-44d6-a9c7-8f3c0fb525a8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 25574.545500000004,
+      "quantity": 1.05
+    },
+    {
+      "id": "36f0b481-728b-427e-bec9-4cdf7baca9fa",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 45071.491500000004,
+      "quantity": 1.05
+    },
+    {
+      "id": "79140de3-25df-420e-8c05-e0cdc5a7a38e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 120632.65200000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "c7102b25-48dd-4ec9-9b71-3fc8193cbf2b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 6,
+      "amount": 107965.05300000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "9f0695fc-7817-4a6c-8b95-11c85cbca624",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 98414.19000000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "0d2adbb2-1e80-42ca-811e-617b80ffe914",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 153634.00500000003,
+      "quantity": 3.15
+    },
+    {
+      "id": "0dae3c9f-e068-46d1-967f-a534cd832e7b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "AgroTerra SC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 83001.492,
+      "quantity": 3.15
+    },
+    {
+      "id": "a2cd2a70-06cd-4199-a885-487a8e424fb3",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 64268.043000000005,
+      "quantity": 2.1
+    },
+    {
+      "id": "785945f0-46af-49ad-8363-948f62d5cb07",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 97495.49250000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "e1bf560b-2013-4289-b030-c2d9f9243658",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "CerealFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 61314.51900000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "f69912bb-3155-4b07-9039-82aa184df47e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "CerealFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 186984.81900000002,
+      "quantity": 6.3
+    },
+    {
+      "id": "4dbdb929-2070-4ec1-b1fa-57f97192ca3d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 163177.09800000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "d5995ed6-64c3-489e-9428-1d82947f4d48",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "FarmFarm Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 145090.44900000002,
+      "quantity": 6.3
+    },
+    {
+      "id": "4bafa480-3391-453c-9e9f-fc78375974ba",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 174483.8025,
+      "quantity": 5.25
+    },
+    {
+      "id": "b1ee3d66-b8f1-40d8-9c52-b2d060dc4711",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmTerra SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 238876.1025,
+      "quantity": 5.25
+    },
+    {
+      "id": "bacb3907-f99c-4a9c-b8ca-262a7e6d9d60",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 10,
+      "amount": 43346.520000000004,
+      "quantity": 1.05
+    },
+    {
+      "id": "254f8eae-55b2-4992-84ef-521bb1a68c32",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 64162.308000000005,
+      "quantity": 2.1
+    },
+    {
+      "id": "1e33c17f-4a8a-4c6c-a651-e71575a9f71f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 140971.74000000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "ec27b58a-cf11-49ed-b004-9676dd3ab0a5",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "HarvestFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 3,
+      "amount": 170926.01400000002,
+      "quantity": 7.3500000000000005
+    },
+    {
+      "id": "14022bcd-3e0a-452c-9bd2-19ec6fa27faa",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 161349.80400000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "d34e8ee7-90ac-451f-8649-203bf4ee04e1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 81703.86,
+      "quantity": 2.1
+    },
+    {
+      "id": "4d4f0a60-0b65-4a82-b8c6-7f10a1cadb79",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 10,
+      "amount": 79836.876,
+      "quantity": 2.1
+    },
+    {
+      "id": "ea4a97b5-f593-4672-a526-d1f5dc530761",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 234800.265,
+      "quantity": 5.25
+    },
+    {
+      "id": "0b92488c-5a3f-4f86-865d-260952f56f46",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 91453.06800000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "4b550fc3-a13c-478c-8bc8-a829cab999b3",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "AgroAgri S.L.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 84953.98800000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "edcdc37e-fcec-4d0a-9641-5102aaa2819d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 25562.8275,
+      "quantity": 1.05
+    },
+    {
+      "id": "1dd3607a-309c-46de-9bc9-e703f696de04",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 3,
+      "amount": 105884.00550000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "ed42f1a7-eb6f-4b14-838a-345261099298",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 181674.48600000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "b1e7b31a-aad1-490d-be3e-e5ef56eff74f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 60671.86650000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "e533207e-ecda-44d3-a806-6b7ec507a5f4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "GrainHarvest S.L.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 124482.96000000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "04b73390-06f7-40ee-8735-c393e1c49f78",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 23817.433500000003,
+      "quantity": 1.05
+    },
+    {
+      "id": "7fd80f33-6f2d-4134-84a4-be0f100bffef",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CerealAgri SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 116991.882,
+      "quantity": 4.2
+    },
+    {
+      "id": "6bdf6923-8ab1-4448-94c0-e110660de53b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 98702.98200000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "2dd2eb6a-f517-420f-b09a-cb18900fc99d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 96584.35500000003,
+      "quantity": 3.15
+    },
+    {
+      "id": "db461734-9323-4766-88c1-257aeec0401f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 3,
+      "amount": 133330.5225,
+      "quantity": 3.15
+    },
+    {
+      "id": "28635ba9-7923-4f9e-b8a3-26bb5ae04e53",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 121032.51300000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "00beac4c-90a0-4c23-863b-bd2a2c5f4aac",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 245182.98,
+      "quantity": 5.25
+    },
+    {
+      "id": "65aac989-0350-400b-b15c-8170ad773bca",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 90548.01000000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "06eebe73-1676-45ff-ba0c-262a47c10672",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 2,
+      "amount": 170956.128,
+      "quantity": 4.2
+    },
+    {
+      "id": "a63e0b11-ed35-42a8-b473-81eb248ca262",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 101783.22000000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "e3e8be60-d353-493c-9305-e69baa04761c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 398791.2285000001,
+      "quantity": 9.450000000000001
+    },
+    {
+      "id": "8118efdb-192a-41fb-81ee-6172be42452d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 132215.5485,
+      "quantity": 3.15
+    },
+    {
+      "id": "6adb3098-b8cb-40ad-a7f6-929fb7f19d10",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 107599.87350000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "2b7d9513-0b1e-4e51-b350-aa27b4f15b2b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 9,
+      "amount": 95820.03899999999,
+      "quantity": 3.15
+    },
+    {
+      "id": "84d2a072-cf90-4961-9f7f-ef42644e4215",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 12,
+      "amount": 122842.96500000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "a458c7fc-d34f-4d74-8c23-86c69552d342",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 74884.2255,
+      "quantity": 3.15
+    },
+    {
+      "id": "90be33ce-5e85-41d7-9a46-a81ded8827c4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 45412.96200000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "04687c65-c731-4032-b970-cdc0ca30ae00",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 69793.185,
+      "quantity": 2.1
+    },
+    {
+      "id": "a815ef0f-ca4d-4930-9caa-8fa5dd3b2728",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 93158.16300000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "aeb9f43b-4197-4df7-ae93-78c5bcd3723e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 45759.672000000006,
+      "quantity": 2.1
+    },
+    {
+      "id": "14ac9dd3-16e3-49f6-a461-289ee9b4d307",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 114962.19000000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "acd3075b-9834-4ad2-8f4f-3ea50289e4cc",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 87067.638,
+      "quantity": 3.15
+    },
+    {
+      "id": "9d8aebb4-05d2-4e88-b84d-c033e91f7e57",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 118368.39000000001,
+      "quantity": 4.2
+    },
+    {
+      "id": "39dab5d4-eff6-427f-9181-3afcb52ffa4e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 23235.754500000006,
+      "quantity": 1.05
+    },
+    {
+      "id": "d4957f21-4972-4387-9955-4e3808c981b3",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 98883.20400000001,
+      "quantity": 4.2
+    },
+    {
+      "id": "16cba610-d423-4919-8b33-cc4c49962851",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 98052.66450000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "44006041-9a27-4632-8f80-d1e67ecab6bc",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 11,
+      "amount": 21697.158000000003,
+      "quantity": 1.05
+    },
+    {
+      "id": "8e5c56e9-0e76-4ba7-b4e5-c4f87780afdd",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 12,
+      "amount": 63865.36800000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "b25652a6-4c52-45c4-bd95-b2aeee9fbac9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 2,
+      "amount": 23071.881000000005,
+      "quantity": 1.05
+    },
+    {
+      "id": "a8c188f9-45cc-4ca6-bac5-92061d2b0bb5",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 161839.49250000002,
+      "quantity": 7.3500000000000005
+    },
+    {
+      "id": "13e61062-c6b3-4c76-9de4-993f390ea76f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 135796.81500000003,
+      "quantity": 3.15
+    },
+    {
+      "id": "55a09377-9aa4-4e09-a474-e75c027a876c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 116369.13750000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "fbbc8f61-e535-44c3-87fa-2aabcf43014b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 67468.716,
+      "quantity": 3.15
+    },
+    {
+      "id": "a53e5604-5a91-4686-8e6f-bb97106de4d8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 38281.65600000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "6e3dd761-b761-4dfd-abd0-cbaaed3142c7",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 1,
+      "amount": 82999.28700000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "0ccc7041-e433-4efc-80a4-dd1c0d329aa2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 155232.546,
+      "quantity": 4.2
+    },
+    {
+      "id": "ade30cbc-a1d9-45de-9b8c-fe2e6facb402",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 58198.41300000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "9170523d-1066-4f33-b9b6-1f47fc0b83a1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 89577.57900000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "e6d8c3e4-8c7c-468c-933b-2fec2b4bd9be",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 77837.72850000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "205a4da1-96d3-4575-adfb-c49347b767d4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 102073.81800000001,
+      "quantity": 4.2
+    },
+    {
+      "id": "c7308626-927c-44e0-a892-bb4fe807bef6",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 11,
+      "amount": 73403.28450000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "b021e4cc-36e9-48ec-9dfb-3e3a6c794de4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 159808.36200000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "4dcfc359-5411-4615-92fa-825c7f2bdc30",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 126624.4875,
+      "quantity": 3.15
+    },
+    {
+      "id": "1d65a2b9-d7cc-4f35-b361-8900af998c0e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "TerraAgro SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 55907.96400000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "992f42ba-f964-4719-982d-8d45e64b8bca",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 49022.232,
+      "quantity": 2.1
+    },
+    {
+      "id": "7e38454b-01ad-49bc-a59e-1d3fc26b4013",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 88638.18600000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "8705e3cd-ca0c-4939-a6f8-2de12dde3526",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 3,
+      "amount": 201169.521,
+      "quantity": 6.3
+    },
+    {
+      "id": "91fd2f26-2afb-4fc8-bba2-5279c41d159b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 122492.25450000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "71ff651e-2f71-454d-9fcf-f0bddedcb473",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 168002.646,
+      "quantity": 4.2
+    },
+    {
+      "id": "9523a094-df95-457e-aa48-bde5fe5b13f2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 130277.38500000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "278934b7-c3ea-4244-a427-68cb5fc54f6e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 245799.75000000003,
+      "quantity": 5.25
+    },
+    {
+      "id": "dd1e0609-ca53-460f-bbdb-5fd3ad4c1809",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 11,
+      "amount": 93870.54600000002,
+      "quantity": 2.1
+    },
+    {
+      "id": "bd14c5b4-1758-4439-84ee-be8dbd7a3b0e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 3,
+      "amount": 60969.468000000015,
+      "quantity": 2.1
+    },
+    {
+      "id": "96f5c33e-8b4c-4f80-8ce2-0352adde7a1f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmCereal SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 78065.94600000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "fffa3dca-9008-4112-b05b-ff372ac2a8e4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 75106.98300000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "8525cfec-32d5-4c5b-9545-7977691e541a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "CampoTerra Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 121949.76150000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "b3825ebc-8f14-43ed-9c76-e1f7836cae20",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 1,
+      "amount": 47455.107,
+      "quantity": 2.1
+    },
+    {
+      "id": "7c002e6f-56a8-48e9-bd21-56688fd8dec1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 105065.478,
+      "quantity": 4.2
+    },
+    {
+      "id": "33ba392b-9165-4b9e-9c94-bb7d9ae115e4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "TerraCampo SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 23492.122500000005,
+      "quantity": 1.05
+    },
+    {
+      "id": "52f8b7b1-8df2-4e16-88fb-aea815a51dc8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 118735.23900000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "158da3d7-4400-46e2-b876-837c5e126daf",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 74991.042,
+      "quantity": 2.1
+    },
+    {
+      "id": "f2b07e2e-93cf-4ca8-a3ea-ac01a91de7b8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "HarvestCereal LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 179240.16600000006,
+      "quantity": 4.2
+    },
+    {
+      "id": "a7e984df-aeca-420f-8e78-771f661f96a8",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 22911.787500000002,
+      "quantity": 1.05
+    },
+    {
+      "id": "ecd053da-9a12-498f-897c-44fdba86b603",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 45080.952000000005,
+      "quantity": 2.1
+    },
+    {
+      "id": "7c5c5067-994a-4604-b649-2b2c95afefa2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 1,
+      "amount": 66603.0015,
+      "quantity": 3.15
+    },
+    {
+      "id": "3d7e1d15-3b2f-4639-8597-75a97ed12a0d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 42606.12300000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "294c3f95-3218-492f-90f9-593b2fdc3f5d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 3,
+      "amount": 66107.00250000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "4937f20f-4374-4578-8d66-f4bbbb307fbc",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "FarmFarm Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 12,
+      "amount": 61148.49300000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "7fc578fe-f27a-4569-86ec-4ec1124d2608",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 8,
+      "amount": 134450.00100000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "aeddc5d0-b0e7-47b3-807f-ba04653cbeb1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 138405.87600000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "7364b101-91e9-4e10-b713-e12cf53048a4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 43441.10400000001,
+      "quantity": 1.05
+    },
+    {
+      "id": "0340408a-79d9-4087-ad00-6930f4c78c8d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "TerraAgro SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 9,
+      "amount": 91344.89700000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "492d7632-35fd-46f3-97ca-b925a943b74c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 68115.15900000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "a0c53a61-e9dd-444b-8e7a-a2cd079dad23",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 121850.27400000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "c3528ab5-1152-4888-9d25-652cda442392",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 1,
+      "amount": 80733.114,
+      "quantity": 3.15
+    },
+    {
+      "id": "e2ce1573-c075-4c9c-9bfe-0c1a2486bec0",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 89661.06450000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "caa3c9b8-a7dc-4bed-96ea-0ccd574c20ec",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 1,
+      "amount": 87592.848,
+      "quantity": 2.1
+    },
+    {
+      "id": "4e1ef1b6-abe9-4f38-9d3d-9a4bc0c5f50d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 205984.69500000004,
+      "quantity": 5.25
+    },
+    {
+      "id": "1537818e-85ed-4a66-bd21-e92a19e53e43",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 89340.40500000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "d2b881d4-9883-44d2-95c5-9c1bace3712c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 80730.12150000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "34999a94-a8e1-4fca-ae69-902597d76be3",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "FarmTerra Sp. z o.o.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 2,
+      "amount": 106928.48250000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "e166d656-7419-42ab-a755-e0d523fad3a4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 61998.111000000004,
+      "quantity": 3.15
+    },
+    {
+      "id": "4546096f-b02c-4433-949d-f87d545d6148",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "TerraAgro Ltd",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 11,
+      "amount": 126904.092,
+      "quantity": 4.2
+    },
+    {
+      "id": "f5c93809-6779-4422-ba9c-16d049920ac4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 120572.63400000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "5575da7d-63ed-41e9-80a5-65631afb7a12",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "AgroCampo S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 7,
+      "amount": 65215.689000000006,
+      "quantity": 2.1
+    },
+    {
+      "id": "fc3561fb-1b8a-4946-ade4-9e2e605f2f3b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 11,
+      "amount": 79424.50950000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "210ecc46-6bae-467b-94f3-625e4ebf82b5",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 7,
+      "amount": 129448.83000000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "151584fe-e252-49fa-ac50-c44b2cfcd00f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 128829.70800000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "07e76afa-9953-4c9f-894d-6ec30933af46",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 2,
+      "amount": 96092.26200000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "d611f9c7-2ddc-4fa9-b01b-b0f0d08db36a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 29678.712000000003,
+      "quantity": 1.05
+    },
+    {
+      "id": "dd2a6b44-ebf9-4664-8ef8-9c7ce07b6c6d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "CampoGrain Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 86827.38750000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "281c1290-a693-461a-a8a5-4f9e174c7a43",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 95637.65400000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "b007ea98-f30e-45b8-8c4b-f047ef84589d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 79246.2825,
+      "quantity": 3.15
+    },
+    {
+      "id": "53904adc-cc9a-4a5f-ae72-c35bee056ca2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 207854.74500000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "0847a582-c761-4d5d-ab35-b564e4abe349",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "AgroHarvest SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 123958.8945,
+      "quantity": 3.15
+    },
+    {
+      "id": "8e7fa8fc-bcd1-4305-82d0-d3dd2037fed5",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 5,
+      "amount": 25201.932000000004,
+      "quantity": 1.05
+    },
+    {
+      "id": "15dc9e9e-8575-445d-bccb-8a2e9efeb85a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 70230.32100000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "cba5aa18-9632-4e3a-8c58-64c639dcee41",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 31222.086,
+      "quantity": 1.05
+    },
+    {
+      "id": "deada914-beca-49dc-8321-4a3b9b2bff01",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 1,
+      "amount": 169365.00000000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "69ece6b8-f0cc-46a2-9fd5-c451048c6626",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "GrainAgro Srl",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 143824.884,
+      "quantity": 4.2
+    },
+    {
+      "id": "7469e788-99d0-4820-a7a6-192c7fc5bb03",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 218035.776,
+      "quantity": 8.4
+    },
+    {
+      "id": "12ee3343-2fa5-461e-b1a1-01ad84dc2d47",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriFarm SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 116917.08000000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "9cd54f0c-6dda-4fb1-93df-f48c7cb1f8ed",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestGrain Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 108313.75800000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "4617062f-b717-4768-b63c-66a960a51835",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "GrainAgro Ltd",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 10,
+      "amount": 136120.82400000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "69c4ad2d-a670-4154-86c9-282dae3d80ff",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmTerra SA",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 95611.32000000002,
+      "quantity": 4.2
+    },
+    {
+      "id": "1668e9b3-0330-464e-b491-09960e256985",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 7,
+      "amount": 44113.5975,
+      "quantity": 1.05
+    },
+    {
+      "id": "99eb1805-faf8-4157-a9ff-0c181512dd65",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 333127.66200000007,
+      "quantity": 8.4
+    },
+    {
+      "id": "6772bf97-20d9-45a8-9158-7dede53eaeba",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 8,
+      "amount": 26739.163500000006,
+      "quantity": 1.05
+    },
+    {
+      "id": "f0c96a25-2203-4e69-ab61-b291bd3becc9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 12,
+      "amount": 61052.06100000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "c10deaf8-1301-4ad9-bfbe-947d1cbb6b01",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealCereal LLC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 10,
+      "amount": 106942.96200000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "ddffc187-3ed7-4076-a35b-6d87209f8512",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Messico",
+        "customer": "CerealTerra Kft.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 171343.2525,
+      "quantity": 5.25
+    },
+    {
+      "id": "e9f839df-c41f-4b71-994b-4c8113ce1d60",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Polonia",
+        "customer": "AgroTerra SC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 5,
+      "amount": 67828.69800000002,
+      "quantity": 2.1
+    },
+    {
+      "id": "6f75f1ca-b748-48c0-9b8b-65daba5f750a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "AgriTerra Kft.",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 130999.995,
+      "quantity": 3.15
+    },
+    {
+      "id": "b8c21ec3-db73-4774-a824-bc358b7df169",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "GrainCampo GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 23863.14,
+      "quantity": 1.05
+    },
+    {
+      "id": "20e7c3ba-e41c-4a21-98c2-f7e45d0dbd35",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "HarvestAgri Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 71059.65300000002,
+      "quantity": 2.1
+    },
+    {
+      "id": "446f9576-629b-45ba-956b-1e667b81cc0c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 5,
+      "amount": 135474.885,
+      "quantity": 5.25
+    },
+    {
+      "id": "4f551fe2-3e89-4fa7-9569-d08d074ceff7",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Africa",
+        "country": "Sud Africa",
+        "customer": "AgriCampo SA",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 22669.783500000005,
+      "quantity": 1.05
+    },
+    {
+      "id": "ebf3fd8f-0cc1-403c-92bd-2ba613256a09",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 7,
+      "amount": 178365.30600000004,
+      "quantity": 4.2
+    },
+    {
+      "id": "92602a5d-2853-4113-a35d-dd736a38948a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Russia",
+        "customer": "AgroCereal GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 12,
+      "amount": 130250.95650000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "056f9803-2574-470c-a3ab-ca57e41a7e8f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 9,
+      "amount": 106636.614,
+      "quantity": 4.2
+    },
+    {
+      "id": "d04a4a46-de7f-4146-82a8-849bb118d5aa",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "FarmTerra LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 110768.952,
+      "quantity": 4.2
+    },
+    {
+      "id": "ba3142e4-f1bd-4767-ae0f-7bc7eea478b6",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "TerraAgri GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 135042.95700000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "73fc0ba1-ad5d-4f87-87e8-60e2a13eb391",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 7,
+      "amount": 81461.77200000001,
+      "quantity": 4.2
+    },
+    {
+      "id": "c866a285-d48a-46f5-804d-b18113417a5e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgriFarm SC",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 2,
+      "amount": 54643.89000000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "32c8f3fd-6894-44b5-8966-e65632774a3c",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 75347.49600000001,
+      "quantity": 3.15
+    },
+    {
+      "id": "db021e45-26d8-4bc3-8a86-405802b8089b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Argentina",
+        "customer": "AgroCampo Srl",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 10,
+      "amount": 108980.592,
+      "quantity": 4.2
+    },
+    {
+      "id": "869cb8d4-00ed-4512-935a-bdce054fdba9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 4,
+      "amount": 116810.6625,
+      "quantity": 3.15
+    },
+    {
+      "id": "e2dd8aa4-825c-4288-bd1d-39352e8bd21f",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmAgri SRL",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 6,
+      "amount": 100666.566,
+      "quantity": 3.15
+    },
+    {
+      "id": "43ea7ab1-08f1-4b62-8627-7eca92a9edba",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "HarvestGrain GmbH",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 5,
+      "amount": 147493.41600000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "55d095ee-c345-4e25-9449-92e4a116fba2",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 2,
+      "amount": 44731.449,
+      "quantity": 1.05
+    },
+    {
+      "id": "087bb6ac-72e6-4daa-83a8-a0923194dacd",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "GrainFarm LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 8,
+      "amount": 94091.4765,
+      "quantity": 3.15
+    },
+    {
+      "id": "ef9f2872-87e9-4b5f-93d3-0a6c0d919ecb",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Bulgaria",
+        "customer": "CampoFarm LLC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 137866.6275,
+      "quantity": 5.25
+    },
+    {
+      "id": "8092b376-d222-4d56-8b15-4ca5cfd288fa",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 6,
+      "amount": 25804.359000000004,
+      "quantity": 1.05
+    },
+    {
+      "id": "3944ed7a-9e68-4bb9-a1fb-59e5ad9ccf89",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "Canada",
+        "customer": "AgroAgro LLC",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 9,
+      "amount": 57905.96700000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "d79311fd-87df-4cb8-bed3-5d0247289212",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 94894.78950000003,
+      "quantity": 3.15
+    },
+    {
+      "id": "873d8ff3-a623-4ea5-99cd-0cf8d85a127b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 19974.843,
+      "quantity": 1.05
+    },
+    {
+      "id": "057b5dcd-f2e8-4451-b620-ca37502abc3e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Oceania",
+        "country": "Australia",
+        "customer": "HarvestFarm SA",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 198486.01500000004,
+      "quantity": 5.25
+    },
+    {
+      "id": "8e4ce847-5e18-4bef-98ae-2033bb31cc93",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "TerraHarvest SC",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 130585.56000000001,
+      "quantity": 5.25
+    },
+    {
+      "id": "b8785612-3537-4e1d-98f5-8f6948f5ee7b",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Asia Centrale",
+        "country": "Kazakhstan",
+        "customer": "CerealAgro S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 99739.878,
+      "quantity": 4.2
+    },
+    {
+      "id": "ff948136-42df-40ad-b04b-1f0815dbb4f0",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 4,
+      "amount": 87779.41200000001,
+      "quantity": 2.1
+    },
+    {
+      "id": "8e76b331-48c5-4b42-acd7-2102159576e4",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ungheria",
+        "customer": "FarmAgro Srl",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 11,
+      "amount": 42695.97150000001,
+      "quantity": 1.05
+    },
+    {
+      "id": "a1db96c9-bf05-4a2f-b736-9b301f3fd172",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 24220.1925,
+      "quantity": 1.05
+    },
+    {
+      "id": "0ec33f2b-5f0a-44e0-b695-a5def76017d0",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "HarvestFarm Kft.",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 11,
+      "amount": 70085.232,
+      "quantity": 2.1
+    },
+    {
+      "id": "808dfc3d-6ff7-4192-ad9d-8a30109e88eb",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 9,
+      "amount": 29087.856000000007,
+      "quantity": 1.05
+    },
+    {
+      "id": "2a8c1411-5aaa-48d3-aaae-53ec3d2fb540",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "FarmFarm Kft.",
+        "category": "Cereali (grano/orzo)",
+        "product": "TaglioFlex"
+      },
+      "month": 4,
+      "amount": 177326.60400000005,
+      "quantity": 6.3
+    },
+    {
+      "id": "1c7b4f0a-8b75-419e-9a3c-8fb913764d9d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "HarvestCampo S.L.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 100977.87000000001,
+      "quantity": 4.2
+    },
+    {
+      "id": "a98e1482-77bf-4a4a-8ca3-7d6f4f8dae7d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Nord America",
+        "country": "USA",
+        "customer": "FarmCereal SRL",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 89029.164,
+      "quantity": 4.2
+    },
+    {
+      "id": "a6f0e0f8-4563-4cee-8dad-c596901ad039",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "HarvestCampo Ltd",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 69900.201,
+      "quantity": 3.15
+    },
+    {
+      "id": "6b94c881-67cb-480f-8e18-16f026e3db3d",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Centro Europa",
+        "country": "Germania",
+        "customer": "FarmCampo SA",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 6,
+      "amount": 80663.331,
+      "quantity": 2.1
+    },
+    {
+      "id": "04c11a6a-ef40-44c0-97dd-282c9cb3b2a9",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Francia",
+        "customer": "AgriFarm Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 6,
+      "amount": 70397.61750000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "b48b708a-019a-474a-94ec-68965de90a8e",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Mais",
+        "product": "AltaResa"
+      },
+      "month": 5,
+      "amount": 45988.24650000001,
+      "quantity": 1.05
+    },
+    {
+      "id": "e49deba4-48d4-40fb-bacf-8053070d7f90",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud America",
+        "country": "Brasile",
+        "customer": "CampoGrain Kft.",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 11,
+      "amount": 69314.14350000002,
+      "quantity": 3.15
+    },
+    {
+      "id": "58242a08-c2ce-45ab-8dec-a1fa58f51fe1",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Spagna",
+        "customer": "FarmGrain SC",
+        "category": "Mais",
+        "product": "PrimaRaccolta"
+      },
+      "month": 4,
+      "amount": 49693.581000000006,
+      "quantity": 2.1
+    },
+    {
+      "id": "6b8ae63a-ff06-457e-89bc-580f3e9ea1fd",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Sud Europa",
+        "country": "Italia",
+        "customer": "FarmFarm GmbH",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 4,
+      "amount": 27154.837500000005,
+      "quantity": 1.05
+    },
+    {
+      "id": "d08271e6-3d34-460f-bcb4-7c5c013ab396",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Serbia",
+        "customer": "FarmCampo Srl",
+        "category": "Mais",
+        "product": "GranCampo"
+      },
+      "month": 3,
+      "amount": 45867.874500000005,
+      "quantity": 1.05
+    },
+    {
+      "id": "edb49e52-1d92-462d-a9be-9beae7c7f5fd",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Medio Oriente",
+        "country": "Turchia",
+        "customer": "HarvestAgro Sp. z o.o.",
+        "category": "Foraggio",
+        "product": "FienoFacile"
+      },
+      "month": 4,
+      "amount": 143195.59800000003,
+      "quantity": 4.2
+    },
+    {
+      "id": "0c81b92c-d5fc-41e9-8713-5f1258db5914",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Ucraina",
+        "customer": "CerealFarm Kft.",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 6,
+      "amount": 128742.18000000002,
+      "quantity": 5.25
+    },
+    {
+      "id": "536ea6fa-5b21-4fc5-85b7-1d7b197e045a",
+      "budgetId": "35dd91d8-3b46-4adb-a57a-734986c11bc7",
+      "dims": {
+        "macroarea": "Est Europa",
+        "country": "Romania",
+        "customer": "CampoCampo Ltd",
+        "category": "Girasole",
+        "product": "SolePieno"
+      },
+      "month": 7,
+      "amount": 24205.723500000004,
+      "quantity": 1.05
+    }
+  ]
+}

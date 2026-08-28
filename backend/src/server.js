@@ -5,6 +5,7 @@ import chatRouter from "./routes/chat.js";
 import budgetsRouter from "./routes/budgets.js";
 import usersRouter from "./routes/users.js";
 import historyRouter from "./routes/history.js";
+import { ensureCollectionPopulated } from "./services/ragService.js";
 
 const app = express();
 
@@ -19,6 +20,9 @@ app.use("/api", historyRouter);
 app.get("/health", (_req, res) => res.json({ status: "ok" }));
 
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Back end TBR Budget Agent in ascolto su http://localhost:${PORT}`);
+  // Controlla subito la knowledge base e la re-indicizza se risulta vuota
+  // (es. ChromaDB ripartito senza disco persistente sul piano Free di Render).
+  await ensureCollectionPopulated({ force: true });
 });

@@ -23,9 +23,13 @@ jobs:
           cache: "npm"
           cache-dependency-path: backend/package-lock.json
 
-      - run: npm ci
+      - name: Installa build tools
+        run: sudo apt-get install -y python3 make g++
 
-
+      - name: Install dependencies (build from source)
+        run: npm ci
+        env:
+          npm_config_build_from_source: true
 
       - name: Diagnostica SQLite (temporanea, per isolare il crash)
         run: |
@@ -63,9 +67,6 @@ jobs:
       - name: Test
         run: npm test
         env:
-          # I test toccano solo funzioni pure o letture in sola lettura del
-          # consuntivo: nessuna chiave/segreto reale necessario, ma alcuni
-          # moduli li richiedono per essere importati senza errori.
           OPENAI_API_KEY: sk-ci-placeholder-not-a-real-key
           JWT_SECRET: ci-placeholder-secret-not-used-in-production
 

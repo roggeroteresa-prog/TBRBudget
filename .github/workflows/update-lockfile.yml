@@ -12,8 +12,9 @@ jobs:
       - name: Rigenera package-lock.json
         working-directory: backend
         run: |
-          rm package-lock.json
-          npm install
+          rm -f package-lock.json
+          rm -rf node_modules
+          npm install --package-lock-only
       - name: Commit
         run: |
           git config user.name "github-actions"

@@ -25,8 +25,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Rebuild moduli nativi (better-sqlite3)
-        run: npm rebuild better-sqlite3
+      - name: Rebuild better-sqlite3 da sorgente (bypassa il binario precompilato)
+        run: npm rebuild better-sqlite3 --build-from-source
 
       - name: Diagnostica SQLite (temporanea, per isolare il crash)
         run: |

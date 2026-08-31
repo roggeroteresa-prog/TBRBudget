@@ -2,35 +2,39 @@
  * Gestione utenti: ruoli e visibilità per budget, ispirata al modello
  * accessSettings/rowLevelSecuritySettings di PWB. Le password sono
  * hashate (bcrypt) e mai esposte al front end — vedi authService.js per
- * l'emissione dei token JWT dopo il login.
+ * l'emissione dei token JWT dopo il login. Persistito su SQLite (db.js).
  *
  * Ruoli:
  *  - admin:  accesso completo, incluse le Impostazioni, vede tutti i budget
  *  - editor:  può vedere/modificare solo i budget a cui è stato assegnato
- *  - viewer:  può solo vedere (sola lettura) i budget a cui è assegnato
+ *  - viewer:  può solo vedere i budget a cui è assegnato
  */
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
 import { randomUUID } from "crypto";
+import { db } from "./db.js";
 import { hashPassword, verifyPassword } from "./authService.js";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const STORE_PATH = path.join(__dirname, "..", "data", "users-store.json");
 
 export const ROLES = ["admin", "editor", "viewer"];
 
-function readStore() {
-  if (!fs.existsSync(STORE_PATH)) return { users: [] };
-  try {
-    return JSON.parse(fs.readFileSync(STORE_PATH, "utf-8"));
-  } catch {
-    return { users: [] };
-  }
-}
+const stmtListUsers = db.prepare("SELECT * FROM users ORDER BY name");
+const stmtGetUser = db.prepare("SELECT * FROM users WHERE id = ?");
+const stmtGetUserByEmail = db.prepare("SELECT * FROM users WHERE LOWER(email) = LOWER(?)");
+const stmtInsertUser = db.prepare(`
+  INSERT INTO users (id, name, email, passwordHash, role, allowedBudgetIds)
+  VALUES (@id,@name,@email,@passwordHash,@role,@allowedBudgetIds)
+`);
+const stmtUpdateUser = db.prepare(`
+  UPDATE users SET name=@name, email=@email, passwordHash=@passwordHash, role=@role, allowedBudgetIds=@allowedBudgetIds
+  WHERE id=@id
+`);
+const stmtDeleteUser = db.prepare("DELETE FROM users WHERE id = ?");
+const stmtCountAdmins = db.prepare("SELECT COUNT(*) AS n FROM users WHERE role = 'admin'");
 
-function writeStore(store) {
-  fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
+function rowToUser(row) {
+  if (!row) return null;
+  return {
+    ...row,
+    allowedBudgetIds: row.allowedBudgetIds == null ? null : JSON.parse(row.allowedBudgetIds),
+  };
 }
 
 /** Non restituire mai l'hash della password al front end. */
@@ -41,17 +45,16 @@ function toPublicUser(user) {
 }
 
 export function listUsers() {
-  return readStore().users.map(toPublicUser);
+  return stmtListUsers.all().map(rowToUser).map(toPublicUser);
 }
 
 export function getUser(id) {
-  const user = readStore().users.find((u) => u.id === id) || null;
-  return toPublicUser(user);
+  return toPublicUser(rowToUser(stmtGetUser.get(id)));
 }
 
 /** Versione interna, CON l'hash — usata solo per verificare le credenziali al login. */
 function getUserByEmailInternal(email) {
-  return readStore().users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
+  return rowToUser(stmtGetUserByEmail.get(email));
 }
 
 /** Utente "di sistema" usato quando la richiesta non specifica un utente attivo. */
@@ -67,10 +70,10 @@ export async function createUser({ name, email, password, role, allowedBudgetIds
   if (password.length < 8) {
     throw new Error("La password deve essere di almeno 8 caratteri.");
   }
-  const store = readStore();
-  if (store.users.some((u) => u.email.toLowerCase() === email.toLowerCase())) {
+  if (getUserByEmailInternal(email)) {
     throw new Error("Esiste già un utente con questa email.");
   }
+
   const passwordHash = await hashPassword(password);
   const user = {
     id: randomUUID(),
@@ -80,37 +83,45 @@ export async function createUser({ name, email, password, role, allowedBudgetIds
     role,
     allowedBudgetIds: role === "admin" ? null : allowedBudgetIds || [],
   };
-  store.users.push(user);
-  writeStore(store);
+
+  stmtInsertUser.run({
+    ...user,
+    allowedBudgetIds: user.allowedBudgetIds == null ? null : JSON.stringify(user.allowedBudgetIds),
+  });
+
   return toPublicUser(user);
 }
 
 export async function updateUser(id, patch) {
-  const store = readStore();
-  const idx = store.users.findIndex((u) => u.id === id);
-  if (idx === -1) return null;
+  const current = rowToUser(stmtGetUser.get(id));
+  if (!current) return null;
 
   const { password, ...rest } = patch;
-  const next = { ...store.users[idx], ...rest };
+  const next = { ...current, ...rest };
   if (password) {
     if (password.length < 8) throw new Error("La password deve essere di almeno 8 caratteri.");
     next.passwordHash = await hashPassword(password);
   }
   if (next.role === "admin") next.allowedBudgetIds = null;
 
-  store.users[idx] = next;
-  writeStore(store);
+  stmtUpdateUser.run({
+    id: next.id,
+    name: next.name,
+    email: next.email,
+    passwordHash: next.passwordHash,
+    role: next.role,
+    allowedBudgetIds: next.allowedBudgetIds == null ? null : JSON.stringify(next.allowedBudgetIds),
+  });
+
   return toPublicUser(next);
 }
 
 export function deleteUser(id) {
-  const store = readStore();
-  const target = store.users.find((u) => u.id === id);
-  if (target?.role === "admin" && store.users.filter((u) => u.role === "admin").length <= 1) {
+  const target = rowToUser(stmtGetUser.get(id));
+  if (target?.role === "admin" && stmtCountAdmins.get().n <= 1) {
     throw new Error("Non puoi eliminare l'ultimo amministratore.");
   }
-  store.users = store.users.filter((u) => u.id !== id);
-  writeStore(store);
+  stmtDeleteUser.run(id);
 }
 
 /**

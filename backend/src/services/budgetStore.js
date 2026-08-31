@@ -1,47 +1,26 @@
 /**
- * Store dei budget su file JSON (nessun database: coerente con la natura
- * "leggera" del progetto di tesi). Gestisce Budget e BudgetLine con
- * operazioni CRUD sincrone (dataset piccolo, uso locale/dimostrativo).
+ * Store dei budget su SQLite (vedi db.js). Gestisce Budget e BudgetLine con
+ * operazioni CRUD — ogni scrittura è una transazione atomica su righe
+ * specifiche, non più una riscrittura dell'intero file JSON: elimina la
+ * race condition per cui due scritture concorrenti (interfaccia + assistente
+ * in chat) potevano sovrascriversi a vicenda.
  *
  * Le righe di budget (BudgetLine) usano un oggetto generico `dims` le cui
  * chiavi dipendono dalle dimensioni attive scelte in fase di configurazione
  * del budget (macroarea, country, customer, category, product), anziché
  * campi fissi: questo permette di supportare qualunque sottoinsieme di
- * dimensioni scelto dall'utente.
+ * dimensioni scelto dall'utente. `dims` è salvato come testo JSON in una
+ * colonna, con una colonna `dimsKey` calcolata e indicizzata per i
+ * confronti di uguaglianza (lineExists, upsert).
  *
  * Ogni funzione che modifica dati registra un evento nello storico
  * (historyService), attribuito all'utente indicato in `actingUser` — sia
  * che la richiesta arrivi dalla UI sia dall'assistente in chat, essendo
  * questo l'unico punto di scrittura condiviso.
  */
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
 import { randomUUID } from "crypto";
+import { db, dimsKeyOf } from "./db.js";
 import { logEvent, ACTION_TYPES } from "./historyService.js";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const STORE_PATH = path.join(__dirname, "..", "data", "budgets-store.json");
-
-function readStore() {
-  if (!fs.existsSync(STORE_PATH)) {
-    return { budgets: [], lines: [] };
-  }
-  const raw = fs.readFileSync(STORE_PATH, "utf-8");
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return { budgets: [], lines: [] };
-  }
-}
-
-function writeStore(store) {
-  fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2), "utf-8");
-}
-
-function dimsKeyOf(dims) {
-  return JSON.stringify(dims, Object.keys(dims).sort());
-}
 
 function log(actionType, entity, budget, user, detail) {
   logEvent({
@@ -67,18 +46,66 @@ function assertBudgetEditable(budget) {
   }
 }
 
+function rowToBudget(row) {
+  if (!row) return null;
+  return {
+    ...row,
+    budgetYear: Number(row.budgetYear),
+    dimensions: JSON.parse(row.dimensions),
+    exchangeRates: JSON.parse(row.exchangeRates),
+    initialTargets: JSON.parse(row.initialTargets),
+    configStatus: JSON.parse(row.configStatus),
+  };
+}
+
+function rowToLine(row) {
+  return {
+    id: row.id,
+    budgetId: row.budgetId,
+    dims: JSON.parse(row.dims),
+    month: row.month,
+    amount: row.amount,
+    quantity: row.quantity,
+  };
+}
+
+// ─── Statement precompilati (preparati una sola volta, riusati ad ogni chiamata) ───
+const stmtListBudgets = db.prepare("SELECT * FROM budgets ORDER BY createdAt DESC");
+const stmtGetBudget = db.prepare("SELECT * FROM budgets WHERE id = ?");
+const stmtInsertBudget = db.prepare(`
+  INSERT INTO budgets (id, company, budgetName, budgetYear, currencyCode, startDate, endDate, fixedFactor, status, createdAt, createdBy, dimensions, exchangeRates, initialTargets, configStatus)
+  VALUES (@id,@company,@budgetName,@budgetYear,@currencyCode,@startDate,@endDate,@fixedFactor,@status,@createdAt,@createdBy,@dimensions,@exchangeRates,@initialTargets,@configStatus)
+`);
+const stmtUpdateBudget = db.prepare(`
+  UPDATE budgets SET
+    budgetYear=@budgetYear, currencyCode=@currencyCode, startDate=@startDate, endDate=@endDate,
+    fixedFactor=@fixedFactor, status=@status, dimensions=@dimensions, exchangeRates=@exchangeRates,
+    initialTargets=@initialTargets, configStatus=@configStatus
+  WHERE id=@id
+`);
+const stmtDeleteBudget = db.prepare("DELETE FROM budgets WHERE id = ?");
+
+const stmtListLines = db.prepare("SELECT * FROM budget_lines WHERE budgetId = ?");
+const stmtInsertLine = db.prepare(`
+  INSERT INTO budget_lines (id, budgetId, dims, dimsKey, month, amount, quantity)
+  VALUES (@id,@budgetId,@dims,@dimsKey,@month,@amount,@quantity)
+`);
+const stmtDeleteLinesByDimsKey = db.prepare("DELETE FROM budget_lines WHERE budgetId = ? AND dimsKey = ?");
+const stmtDeleteAllLines = db.prepare("DELETE FROM budget_lines WHERE budgetId = ?");
+const stmtDeleteLine = db.prepare("DELETE FROM budget_lines WHERE budgetId = ? AND id = ?");
+const stmtLineExists = db.prepare("SELECT 1 FROM budget_lines WHERE budgetId = ? AND dimsKey = ? LIMIT 1");
+
 // ─── Budget ────────────────────────────────────────────────────────────
 
 export function listBudgets() {
-  return readStore().budgets;
+  return stmtListBudgets.all().map(rowToBudget);
 }
 
 export function getBudget(id) {
-  return readStore().budgets.find((b) => b.id === id) || null;
+  return rowToBudget(stmtGetBudget.get(id));
 }
 
 export function createBudget(data, actingUser) {
-  const store = readStore();
   const budget = {
     id: randomUUID(),
     company: "TBR Budget Group",
@@ -97,20 +124,25 @@ export function createBudget(data, actingUser) {
     initialTargets: { totalAmount: 0, totalQuantity: 0 },
     configStatus: { dimensions: false, currency: false, amounts: false },
   };
-  store.budgets.push(budget);
-  writeStore(store);
+
+  stmtInsertBudget.run({
+    ...budget,
+    dimensions: JSON.stringify(budget.dimensions),
+    exchangeRates: JSON.stringify(budget.exchangeRates),
+    initialTargets: JSON.stringify(budget.initialTargets),
+    configStatus: JSON.stringify(budget.configStatus),
+  });
+
   log(ACTION_TYPES.CREATE, "Budget", budget, actingUser, `Creato budget "${budget.budgetName}" (anno ${budget.budgetYear}, ${budget.currencyCode})`);
   return budget;
 }
 
 export function updateBudget(id, patch, actingUser) {
-  const store = readStore();
-  const idx = store.budgets.findIndex((b) => b.id === id);
-  if (idx === -1) return null;
+  const current = getBudget(id);
+  if (!current) return null;
   // Company e budgetName non modificabili dopo la creazione (come in PWB)
   const { company, budgetName, ...editable } = patch;
 
-  const current = store.budgets[idx];
   const isStatusOnlyPatch = Object.keys(editable).length === 1 && "status" in editable;
   if (!isStatusOnlyPatch) assertBudgetEditable(current);
 
@@ -120,8 +152,20 @@ export function updateBudget(id, patch, actingUser) {
   if (Object.prototype.hasOwnProperty.call(editable, "initialTargets")) nextConfigStatus.amounts = true;
 
   const updated = { ...current, ...editable, configStatus: nextConfigStatus };
-  store.budgets[idx] = updated;
-  writeStore(store);
+
+  stmtUpdateBudget.run({
+    id: updated.id,
+    budgetYear: Number(updated.budgetYear),
+    currencyCode: updated.currencyCode,
+    startDate: updated.startDate,
+    endDate: updated.endDate,
+    fixedFactor: updated.fixedFactor,
+    status: updated.status,
+    dimensions: JSON.stringify(updated.dimensions),
+    exchangeRates: JSON.stringify(updated.exchangeRates),
+    initialTargets: JSON.stringify(updated.initialTargets),
+    configStatus: JSON.stringify(updated.configStatus),
+  });
 
   if (isStatusOnlyPatch) {
     log(ACTION_TYPES.STATUS, "Budget", updated, actingUser, `Stato cambiato in "${editable.status}"`);
@@ -143,28 +187,27 @@ export function setBudgetStatus(id, status, actingUser) {
 }
 
 export function deleteBudget(id, actingUser) {
-  const store = readStore();
-  const budget = store.budgets.find((b) => b.id === id);
-  store.budgets = store.budgets.filter((b) => b.id !== id);
-  store.lines = store.lines.filter((l) => l.budgetId !== id);
-  writeStore(store);
+  const budget = getBudget(id);
+  // ON DELETE CASCADE nello schema elimina automaticamente anche le righe del budget.
+  stmtDeleteBudget.run(id);
   if (budget) log(ACTION_TYPES.DELETE, "Budget", budget, actingUser, `Eliminato budget "${budget.budgetName}" e tutte le sue righe`);
 }
 
 // ─── Righe di budget ─────────────────────────────────────────────────
 
 export function listLines(budgetId) {
-  return readStore().lines.filter((l) => l.budgetId === budgetId);
+  return stmtListLines.all(budgetId).map(rowToLine);
 }
 
 /**
  * Aggiunge un blocco di righe (tipicamente una per mese) per una
- * combinazione di dimensioni.
+ * combinazione di dimensioni. L'inserimento di tutte le righe avviene in
+ * un'unica transazione: o vengono scritte tutte, o nessuna.
  */
 export function addLines(budgetId, newLines, actingUser, options = {}) {
-  const store = readStore();
-  const budget = store.budgets.find((b) => b.id === budgetId);
+  const budget = getBudget(budgetId);
   assertBudgetEditable(budget);
+
   const created = newLines.map((l) => ({
     id: randomUUID(),
     budgetId,
@@ -173,8 +216,14 @@ export function addLines(budgetId, newLines, actingUser, options = {}) {
     amount: Number(l.amount) || 0,
     quantity: Number(l.quantity) || 0,
   }));
-  store.lines.push(...created);
-  writeStore(store);
+
+  const insertAll = db.transaction((lines) => {
+    for (const l of lines) {
+      stmtInsertLine.run({ ...l, dims: JSON.stringify(l.dims), dimsKey: dimsKeyOf(l.dims) });
+    }
+  });
+  insertAll(created);
+
   if (!options.silent) {
     const dimsLabel = newLines[0] ? Object.entries(newLines[0].dims).map(([k, v]) => `${k}=${v}`).join(", ") : "";
     log(ACTION_TYPES.WRITEBACK, "Riga budget", budget, actingUser, `Scritte ${created.length} righe mensili (${dimsLabel})`);
@@ -186,45 +235,49 @@ export function addLines(budgetId, newLines, actingUser, options = {}) {
  * Sostituisce tutte le righe mensili esistenti per una combinazione di
  * dimensioni con un nuovo set (usato dalla tabella editabile in "Budget dei
  * Ricavi": modifica in blocco invece di dover passare dal modale).
+ * Cancellazione + inserimento in un'unica transazione: uno stato intermedio
+ * "senza righe" non è mai osservabile da un'altra richiesta concorrente.
  */
 export function upsertLines(budgetId, dims, newLines, actingUser) {
-  const store = readStore();
-  const budget = store.budgets.find((b) => b.id === budgetId);
+  const budget = getBudget(budgetId);
   assertBudgetEditable(budget);
   const key = dimsKeyOf(dims);
-  store.lines = store.lines.filter((l) => !(l.budgetId === budgetId && dimsKeyOf(l.dims) === key));
-  writeStore(store);
-  return addLines(budgetId, newLines, actingUser);
+
+  const replace = db.transaction((lines) => {
+    stmtDeleteLinesByDimsKey.run(budgetId, key);
+    return addLines(budgetId, lines, actingUser);
+  });
+  return replace(newLines);
 }
 
 /**
  * Sostituisce TUTTE le righe di un budget (usato dalla generazione della
  * base budget: riponderazione proporzionale del consuntivo sul target).
+ * Stessa garanzia di atomicità di upsertLines.
  */
 export function replaceAllLines(budgetId, newLines, actingUser) {
-  const store = readStore();
-  const budget = store.budgets.find((b) => b.id === budgetId);
+  const budget = getBudget(budgetId);
   assertBudgetEditable(budget);
-  store.lines = store.lines.filter((l) => l.budgetId !== budgetId);
-  writeStore(store);
-  const created = addLines(budgetId, newLines, actingUser, { silent: true });
+
+  const replace = db.transaction((lines) => {
+    stmtDeleteAllLines.run(budgetId);
+    return addLines(budgetId, lines, actingUser, { silent: true });
+  });
+  const created = replace(newLines);
+
   log(ACTION_TYPES.WRITEBACK, "Base budget", budget, actingUser, `Generata base budget: ${created.length} righe`);
   return created;
 }
 
 export function deleteLine(budgetId, lineId, actingUser) {
-  const store = readStore();
-  const budget = store.budgets.find((b) => b.id === budgetId);
+  const budget = getBudget(budgetId);
   assertBudgetEditable(budget);
-  store.lines = store.lines.filter((l) => !(l.budgetId === budgetId && l.id === lineId));
-  writeStore(store);
+  stmtDeleteLine.run(budgetId, lineId);
   log(ACTION_TYPES.DELETE, "Riga budget", budget, actingUser, `Eliminata riga ${lineId}`);
 }
 
 export function lineExists(budgetId, dims) {
-  const store = readStore();
-  const key = dimsKeyOf(dims);
-  return store.lines.some((l) => l.budgetId === budgetId && dimsKeyOf(l.dims) === key);
+  return !!stmtLineExists.get(budgetId, dimsKeyOf(dims));
 }
 
 /**

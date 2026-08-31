@@ -3,15 +3,10 @@
  * righe, cambio stato, eliminazione), con chi le ha compiute. Scritto da
  * budgetStore.js ad ogni mutazione, quindi copre automaticamente sia le
  * azioni da UI sia quelle eseguite dall'assistente in chat (stesso store
- * condiviso, nessuna logica duplicata).
+ * condiviso, nessuna logica duplicata). Persistito su SQLite (vedi db.js).
  */
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
 import { randomUUID } from "crypto";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const LOG_PATH = path.join(__dirname, "..", "data", "history-log.json");
+import { db } from "./db.js";
 
 export const ACTION_TYPES = {
   CREATE: "CREATE",
@@ -22,26 +17,25 @@ export const ACTION_TYPES = {
   CONFIG: "CONFIG",
 };
 
-function readLog() {
-  if (!fs.existsSync(LOG_PATH)) return [];
-  try {
-    return JSON.parse(fs.readFileSync(LOG_PATH, "utf-8"));
-  } catch {
-    return [];
-  }
-}
+const MAX_EVENTS = 2000; // limite di sicurezza per non far crescere la tabella all'infinito in demo lunghe
 
-function writeLog(events) {
-  fs.writeFileSync(LOG_PATH, JSON.stringify(events, null, 2), "utf-8");
-}
+const stmtInsert = db.prepare(`
+  INSERT INTO history_events (id, timestamp, actionType, entity, budgetId, budgetName, user, detail)
+  VALUES (@id,@timestamp,@actionType,@entity,@budgetId,@budgetName,@user,@detail)
+`);
+const stmtPruneOld = db.prepare(`
+  DELETE FROM history_events WHERE id NOT IN (
+    SELECT id FROM history_events ORDER BY timestamp DESC LIMIT ?
+  )
+`);
+const stmtCount = db.prepare("SELECT COUNT(*) AS n FROM history_events");
 
 /**
  * Registra un evento nello storico.
  * @param {{ actionType: string, entity: string, budgetId?: string, budgetName?: string, user: string, detail: string }} event
  */
 export function logEvent(event) {
-  const events = readLog();
-  events.unshift({
+  stmtInsert.run({
     id: randomUUID(),
     timestamp: new Date().toISOString(),
     actionType: event.actionType,
@@ -51,30 +45,38 @@ export function logEvent(event) {
     user: event.user || "Utente Demo",
     detail: event.detail || "",
   });
-  // Limite di sicurezza per non far crescere il file all'infinito in demo lunghe
-  writeLog(events.slice(0, 2000));
+
+  // Pruning solo occasionale (non ad ogni scrittura) per restare economico.
+  if (stmtCount.get().n > MAX_EVENTS) {
+    stmtPruneOld.run(MAX_EVENTS);
+  }
 }
 
 export function listEvents({ search = "", actionType = "", page = 1, pageSize = 50 } = {}) {
-  let events = readLog();
+  const conditions = [];
+  const params = {};
 
   if (actionType) {
-    events = events.filter((e) => e.actionType === actionType);
+    conditions.push("actionType = @actionType");
+    params.actionType = actionType;
   }
   if (search) {
-    const s = search.toLowerCase();
-    events = events.filter(
-      (e) =>
-        (e.budgetName || "").toLowerCase().includes(s) ||
-        (e.user || "").toLowerCase().includes(s) ||
-        (e.entity || "").toLowerCase().includes(s) ||
-        (e.detail || "").toLowerCase().includes(s)
-    );
+    conditions.push(`(
+      LOWER(COALESCE(budgetName, '')) LIKE @search OR
+      LOWER(COALESCE(user, '')) LIKE @search OR
+      LOWER(COALESCE(entity, '')) LIKE @search OR
+      LOWER(COALESCE(detail, '')) LIKE @search
+    )`);
+    params.search = `%${search.toLowerCase()}%`;
   }
+  const whereClause = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
 
-  const total = events.length;
-  const start = (page - 1) * pageSize;
-  const pageRows = events.slice(start, start + pageSize);
+  const total = db.prepare(`SELECT COUNT(*) AS n FROM history_events ${whereClause}`).get(params).n;
 
-  return { events: pageRows, total, page, pageSize, pages: Math.ceil(total / pageSize) };
+  const offset = (page - 1) * pageSize;
+  const events = db
+    .prepare(`SELECT * FROM history_events ${whereClause} ORDER BY timestamp DESC LIMIT @pageSize OFFSET @offset`)
+    .all({ ...params, pageSize, offset });
+
+  return { events, total, page, pageSize, pages: Math.ceil(total / pageSize) };
 }

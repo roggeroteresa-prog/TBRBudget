@@ -25,6 +25,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Rebuild moduli nativi (better-sqlite3)
+        run: npm rebuild better-sqlite3
+
       - name: Lint (controllo sintassi su tutti i file sorgente)
         run: |
           find src -name "*.js" -print0 | xargs -0 -n1 node --check

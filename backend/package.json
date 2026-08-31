@@ -8,7 +8,7 @@
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
     "ingest": "node src/ingest.js",
-    "test": "node --env-file-if-exists=.env --test"
+    "test": "node --env-file-if-exists=.env --test --test-concurrency=1"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

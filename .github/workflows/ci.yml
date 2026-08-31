@@ -28,6 +28,35 @@ jobs:
       - name: Rebuild moduli nativi (better-sqlite3)
         run: npm rebuild better-sqlite3
 
+      - name: Diagnostica SQLite (temporanea, per isolare il crash)
+        run: |
+          echo "--- versione Node ---"
+          node --version
+          echo "--- versione better-sqlite3 installata ---"
+          npm ls better-sqlite3
+          echo "--- 1) solo require del modulo ---"
+          node -e "require('better-sqlite3'); console.log('require OK')"
+          echo "--- 2) database in memoria, nessun file coinvolto ---"
+          node -e "
+            const Database = require('better-sqlite3');
+            const db = new Database(':memory:');
+            db.exec('CREATE TABLE t (x INTEGER)');
+            db.prepare('INSERT INTO t VALUES (?)').run(1);
+            console.log('in-memory OK:', db.prepare('SELECT * FROM t').get());
+          "
+          echo "--- 3) database su file, con pragma WAL (come in db.js) ---"
+          node -e "
+            const Database = require('better-sqlite3');
+            const db = new Database('/tmp/diagnostica.db');
+            db.pragma('journal_mode = WAL');
+            db.exec('CREATE TABLE t (x INTEGER)');
+            db.prepare('INSERT INTO t VALUES (?)').run(1);
+            console.log('file+WAL OK:', db.prepare('SELECT * FROM t').get());
+          "
+          echo "--- 4) require diretto di db.js (schema completo + migrazione dai JSON) ---"
+          rm -f src/data/tbr.db src/data/tbr.db-wal src/data/tbr.db-shm
+          node -e "require('./src/services/db.js'); console.log('db.js OK')"
+
       - name: Lint (controllo sintassi su tutti i file sorgente)
         run: |
           find src -name "*.js" -print0 | xargs -0 -n1 node --check

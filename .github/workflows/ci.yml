@@ -30,7 +30,19 @@ jobs:
         run: npm ci
         env:
           npm_config_build_from_source: true
-
+      - name: Debug binario better-sqlite3
+        run: |
+          node -e "console.log('ABI:', process.versions.modules)"
+          node -e "console.log('Node:', process.version)"
+          uname -a
+          ldd --version | head -1
+          # Trova il .node compilato
+          find node_modules/better-sqlite3 -name "*.node" | head -5
+          # Controlla le dipendenze del binario
+          find node_modules/better-sqlite3 -name "*.node" -exec ldd {} \;
+          # Controlla se è stato compilato da sorgente o è precompilato
+          ls -la node_modules/better-sqlite3/build/Release/ 2>/dev/null || echo "no build/Release"
+          ls -la node_modules/better-sqlite3/prebuilds/ 2>/dev/null || echo "no prebuilds"
       - name: Diagnostica SQLite (temporanea, per isolare il crash)
         run: |
           echo "--- versione Node ---"

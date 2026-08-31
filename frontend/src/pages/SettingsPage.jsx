@@ -9,7 +9,7 @@ const ROLE_OPTIONS = [
   { value: "viewer", label: "Visualizzatore", hint: "Può solo vedere i budget assegnati" },
 ];
 
-const EMPTY_FORM = { name: "", email: "", role: "editor", allowedBudgetIds: [] };
+const EMPTY_FORM = { name: "", email: "", password: "", role: "editor", allowedBudgetIds: [] };
 
 function UserForm({ open, initial, budgets, onClose, onSave }) {
   const [values, setValues] = useState(initial || EMPTY_FORM);
@@ -30,7 +30,11 @@ function UserForm({ open, initial, budgets, onClose, onSave }) {
     });
   }
 
-  const canSave = values.name?.trim() && values.email?.trim() && values.role;
+  const canSave =
+    values.name?.trim() &&
+    values.email?.trim() &&
+    values.role &&
+    (initial ? !values.password || values.password.length >= 8 : (values.password || "").length >= 8);
 
   return (
     <div className="modal-overlay">
@@ -47,6 +51,16 @@ function UserForm({ open, initial, budgets, onClose, onSave }) {
           <div className="form-field">
             <label>Email</label>
             <input value={values.email} onChange={(e) => setValues({ ...values, email: e.target.value })} />
+          </div>
+          <div className="form-field">
+            <label>Password{initial ? " (lascia vuoto per non cambiarla)" : ""}</label>
+            <input
+              type="password"
+              value={values.password}
+              onChange={(e) => setValues({ ...values, password: e.target.value })}
+              placeholder={initial ? "••••••••" : "Almeno 8 caratteri"}
+              autoComplete="new-password"
+            />
           </div>
           <div className="form-field form-field--wide">
             <label>Ruolo</label>

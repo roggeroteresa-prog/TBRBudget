@@ -4,6 +4,7 @@
       "id": "demo-admin",
       "name": "Utente Demo",
       "email": "demo@tbrbudget.it",
+      "passwordHash": "$2b$10$hqVtWlAkdVW462918fY8m.8cYWKA7LSQBTgHsjlnCQPKy9wY3rNwW",
       "role": "admin",
       "allowedBudgetIds": null
     },
@@ -11,6 +12,7 @@
       "id": "e4ba3b05-1b36-4968-a780-e2a693697b43",
       "name": "viewer",
       "email": "viewer@tbrbudget.it",
+      "passwordHash": "$2b$10$VTgjGBZWJVVDWmtBUHEHZO1Hs1UIZh7F9.8M5U54TMiUpcsyQ5UGq",
       "role": "viewer",
       "allowedBudgetIds": [
         "c0c7c8a2-6972-4754-8935-7867e6befb5e"

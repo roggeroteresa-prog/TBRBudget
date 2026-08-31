@@ -1,0 +1,79 @@
+name: CI — Lint & Test
+
+# Si attiva ad ogni push e ad ogni pull request verso main.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend:
+    name: Back end (lint + test)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: backend/package-lock.json
+
+      - run: npm ci
+
+      - name: Lint (controllo sintassi su tutti i file sorgente)
+        run: |
+          find src -name "*.js" -print0 | xargs -0 -n1 node --check
+
+      - name: Test
+        run: npm test
+        env:
+          # I test toccano solo funzioni pure o letture in sola lettura del
+          # consuntivo: nessuna chiave reale necessaria, ma alcuni moduli la
+          # richiedono per essere importati senza errori.
+          OPENAI_API_KEY: sk-ci-placeholder-not-a-real-key
+
+  frontend:
+    name: Front end (lint + build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - run: npm ci
+
+      - name: Lint (controllo sintassi sui file .js semplici)
+        run: |
+          find src -name "*.js" -print0 | xargs -0 -n1 node --check
+
+      - name: Build (valida anche la sintassi JSX)
+        run: npm run build
+
+  data_agent:
+    name: Data agent Python (lint)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: data_agent
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Controllo sintassi
+        run: |
+          python -m py_compile main.py pandas_agent.py

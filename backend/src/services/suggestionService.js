@@ -53,6 +53,7 @@ Se i dati storici non permettono una stima numerica affidabile, usa comunque una
     model: "gpt-4o-mini",
     temperature: 0.2,
     messages: [{ role: "user", content: prompt }],
+    max_tokens: 600, // tetto costo/abuso: la risposta attesa è un piccolo JSON
   });
 
   const raw = completion.choices[0].message.content.trim();

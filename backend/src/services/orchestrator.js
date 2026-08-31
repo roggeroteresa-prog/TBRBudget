@@ -436,6 +436,7 @@ export async function handleChatMessage(sessionId, userMessage, actingUser) {
       messages: history,
       tools,
       tool_choice: "auto",
+      max_tokens: 1200, // tetto costo/abuso per singola risposta del modello
     });
 
     const choice = completion.choices[0];

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar.jsx";
 import ChatWindow from "./components/ChatWindow.jsx";
-import UserSwitcher from "./components/UserSwitcher.jsx";
+import UserMenu from "./components/UserMenu.jsx";
+import LoginPage from "./components/LoginPage.jsx";
 import OverviewPage from "./pages/OverviewPage.jsx";
 import ReportPage from "./pages/ReportPage.jsx";
 import HistoryPage from "./pages/HistoryPage.jsx";
@@ -10,7 +11,7 @@ import BudgetListPage from "./budget/BudgetListPage.jsx";
 import RevenueBudgetPage from "./budget/RevenueBudgetPage.jsx";
 import BudgetConfigPage from "./budget/BudgetConfigPage.jsx";
 import { api } from "./budget/api.js";
-import { getActiveUserId, onActiveUserChanged } from "./currentUser.js";
+import { getToken, clearToken } from "./currentUser.js";
 import "./App.css";
 import "./budget/budget.css";
 
@@ -18,25 +19,39 @@ export default function App() {
   const [activePage, setActivePage] = useState("overview");
   const [selectedBudgetId, setSelectedBudgetId] = useState(null);
   const [configBudgetId, setConfigBudgetId] = useState(null);
-  const [currentUser, setCurrentUser] = useState(null);
 
-  async function refreshCurrentUser() {
-    const id = getActiveUserId();
-    if (!id) return setCurrentUser(null);
-    try {
-      const users = await api.listUsers();
-      setCurrentUser(users.find((u) => u.id === id) || null);
-    } catch {
-      setCurrentUser(null);
-    }
-  }
+  // Sessione autenticata: authChecked evita un flash della schermata di
+  // login mentre si verifica un eventuale token già salvato (refresh pagina).
+  const [currentUser, setCurrentUser] = useState(null);
+  const [authChecked, setAuthChecked] = useState(false);
 
   useEffect(() => {
-    refreshCurrentUser();
-    return onActiveUserChanged(refreshCurrentUser);
+    if (!getToken()) {
+      setAuthChecked(true);
+      return;
+    }
+    api
+      .me()
+      .then(({ user }) => setCurrentUser(user))
+      .catch(() => clearToken())
+      .finally(() => setAuthChecked(true));
   }, []);
 
-  const isAdmin = !currentUser || currentUser.role === "admin";
+  function handleLogout() {
+    clearToken();
+    setCurrentUser(null);
+    setActivePage("overview");
+  }
+
+  if (!authChecked) {
+    return <div className="login-page" />; // schermata neutra durante la verifica del token
+  }
+
+  if (!currentUser) {
+    return <LoginPage onLogin={setCurrentUser} />;
+  }
+
+  const isAdmin = currentUser.role === "admin";
 
   function openBudgetInRicavi(budget) {
     setSelectedBudgetId(budget.id);
@@ -61,7 +76,7 @@ export default function App() {
           <span className="brand-wordmark">TBR</span>
         </div>
         <div className="top-navbar-title">Budget App</div>
-        <UserSwitcher onUserChange={setCurrentUser} />
+        <UserMenu user={currentUser} onLogout={handleLogout} />
       </header>
 
       <div className="shell-body">

@@ -17,12 +17,14 @@ chroma_data/
 # Grafici generati a runtime (tenere solo .gitkeep)
 data_agent/charts/*.png
 
-# Dati runtime generati durante l'uso (budget/righe creati e storico azioni):
-# si rigenerano da soli vuoti al primo avvio, non hanno senso nel repository.
-# users-store.json invece resta tracciato: contiene solo l'utente admin di
-# seed, necessario perché l'app abbia un utente predefinito al primo avvio.
-# backend/src/data/budgets-store.json
-# backend/src/data/history-log.json
+# Dati runtime generati durante l'uso: lo storico azioni si rigenera da solo
+# vuoto al primo avvio, non ha senso nel repository.
+# budgets-store.json e users-store.json invece SONO tracciati di proposito:
+# contengono budget dimostrativi e l'utente admin di seed, così l'app ha
+# sempre qualcosa da mostrare anche dopo un riavvio del servizio su un piano
+# hosting senza disco persistente (i budget creati durante una sessione live
+# restano comunque a rischio, solo i dati di seed committati sono garantiti).
+backend/src/data/history-log.json
 
 # OS
 .DS_Store

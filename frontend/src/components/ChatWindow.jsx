@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import MessageBubble from "./MessageBubble.jsx";
 import TypingIndicator from "./TypingIndicator.jsx";
-import { getActiveUserId } from "../currentUser.js";
+import { getToken } from "../currentUser.js";
 
 // Stesso meccanismo di budget/api.js: "/api" in sviluppo (proxy Vite),
 // URL completo del back end pubblicato in produzione via VITE_API_BASE_URL.
@@ -40,7 +40,7 @@ export default function ChatWindow() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...(getActiveUserId() ? { "x-user-id": getActiveUserId() } : {}),
+          ...(getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),
         },
         body: JSON.stringify({ sessionId: sessionIdRef.current, message: text }),
       });
@@ -72,7 +72,10 @@ export default function ChatWindow() {
     try {
       await fetch(`${API_BASE}/chat/reset`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          ...(getToken() ? { Authorization: `Bearer ${getToken()}` } : {}),
+        },
         body: JSON.stringify({ sessionId: sessionIdRef.current }),
       });
     } catch (err) {

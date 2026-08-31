@@ -243,28 +243,39 @@ CSV di consuntivo (per dimensioni, analisi valuta e generazione base budget)
   budget assegnati) — e assegnazione esplicita di quali budget ciascun
   utente può vedere. Persistenza: `backend/src/data/users-store.json`.
 
-Un selettore utente nella navbar permette di cambiare "utente attivo"
-(nessun vero login/autenticazione: è un meccanismo dimostrativo). L'utente
-selezionato viene inviato ad ogni richiesta tramite l'header `x-user-id`, e
-i permessi sono applicati realmente lato back end (`userStore.js`) sia per
-le richieste dall'interfaccia sia per quelle dell'assistente in chat — non
-è quindi solo un filtro visivo.
+**Autenticazione**: login reale con email e password (hashate con bcrypt).
+Al login il back end emette un token JWT firmato (validità 8 ore), che il
+front end allega ad ogni richiesta come header `Authorization: Bearer
+<token>`. Il back end verifica firma e scadenza del token ad ogni richiesta
+(`middleware/auth.js`) e ricarica l'utente aggiornato dal database — un
+cambio di ruolo da Impostazioni ha effetto immediato, senza dover rifare il
+login. Sostituisce il precedente meccanismo basato sull'header `x-user-id`
+(falsificabile da chiunque lato client).
 
-**Limite noto**: essendo un modello "a client fidato" (nessuna sessione
-autenticata reale), un utente potrebbe in teoria selezionare un altro
-utente dal menu. Adeguato allo scopo dimostrativo del progetto, ma da
-menzionare in sede di discussione.
+**Credenziali demo** (già presenti in `users-store.json`):
+| Ruolo | Email | Password |
+|---|---|---|
+| Amministratore | demo@tbrbudget.it | TbrDemo2026! |
+| Visualizzatore | viewer@tbrbudget.it | TbrViewer2026! |
 
 ## Note su sicurezza
 
-Nessuna API key è hardcodata: sia il back end sia il data_agent leggono
-`OPENAI_API_KEY` da variabili d'ambiente tramite `.env` (escluso da Git,
-vedi `.gitignore`).
+- Nessuna API key è hardcodata: back end e data_agent leggono
+  `OPENAI_API_KEY` da variabili d'ambiente tramite `.env` (escluso da Git,
+  vedi `.gitignore`).
+- Le password utente sono hashate con bcrypt, mai salvate o restituite in
+  chiaro dal back end.
+- I token di sessione sono firmati con `JWT_SECRET`, una variabile
+  d'ambiente separata e obbligatoria — genera un valore lungo e casuale
+  (es. `openssl rand -hex 32`), diverso per ogni ambiente (locale/Render).
+- Rate limiting per IP sulle rotte che chiamano l'LLM (chat, suggerimento AI,
+  login), più un tetto sui token per risposta — vedi `middleware/rateLimit.js`.
+- Le rotte che ricevono dati dall'utente (creazione/modifica budget e righe)
+  sono validate a schema con Zod prima di raggiungere la logica di business
+  — vedi `validation/schemas.js`.
 
 ## Possibili estensioni (non incluse in questa versione)
 
-- Autenticazione utenti reale (login, sessioni server-side) al posto del
-  selettore "utente attivo" dimostrativo
 - Persistenza della cronologia chat su file/DB invece che in memoria
   (si perde ancora al riavvio del back end)
 - Gating dei pulsanti di modifica anche nelle pagine "Gestione Budget" e

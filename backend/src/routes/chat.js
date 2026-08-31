@@ -1,17 +1,12 @@
 import { Router } from "express";
 import { handleChatMessage, resetSession } from "../services/orchestrator.js";
-import * as userStore from "../services/userStore.js";
+import { chatLimiter } from "../middleware/rateLimit.js";
 
 const router = Router();
 
-function getActingUser(req) {
-  const userId = req.header("x-user-id");
-  const user = userId ? userStore.getUser(userId) : null;
-  return user || userStore.getDefaultUser();
-}
-
 // POST /api/chat  { sessionId: string, message: string }
-router.post("/chat", async (req, res) => {
+// req.user è impostato dal middleware requireAuth (token JWT verificato)
+router.post("/chat", chatLimiter, async (req, res) => {
   const { sessionId, message } = req.body || {};
 
   if (!sessionId || !message) {
@@ -19,8 +14,7 @@ router.post("/chat", async (req, res) => {
   }
 
   try {
-    const actingUser = getActingUser(req);
-    const { reply, chartUrl, sources } = await handleChatMessage(sessionId, message, actingUser);
+    const { reply, chartUrl, sources } = await handleChatMessage(sessionId, message, req.user);
     res.json({ reply, chartUrl, sources });
   } catch (err) {
     console.error("Errore in /api/chat:", err);

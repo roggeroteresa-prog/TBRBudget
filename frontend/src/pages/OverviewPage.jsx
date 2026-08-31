@@ -32,7 +32,6 @@ function timeAgo(ts) {
 }
 
 export default function OverviewPage({ onNavigate, isAdmin = true }) {
-  
   const [budgets, setBudgets] = useState([]);
   const [recentEvents, setRecentEvents] = useState([]);
   const [loading, setLoading] = useState(true);

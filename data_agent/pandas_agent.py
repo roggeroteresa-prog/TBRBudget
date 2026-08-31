@@ -1,10 +1,14 @@
 """
 Data agent: carica e pulisce UNA SOLA VOLTA (cache in memoria, invalidata solo
 se il CSV cambia) il consuntivo vendite TBR Budget Group, registrandolo come
-vista DuckDB. Le domande in linguaggio naturale vengono risolte da un ciclo di
-function calling OpenAI in cui l'LLM scrive query SQL (dialetto DuckDB) sulla
-vista già pulita, invece di generare ed eseguire codice Python pandas ad ogni
-domanda. Rispetto all'approccio precedente questo:
+vista DuckDB. La lettura del CSV usa il motore nativo di DuckDB (più veloce
+di pandas.read_csv), e ogni volta che il file cambia la cache delle risposte
+viene svuotata immediatamente — non solo dopo la scadenza del TTL — così le
+domande non ricevono mai risposte basate su dati ormai superati. Le domande
+in linguaggio naturale vengono risolte da un ciclo di function calling OpenAI
+in cui l'LLM scrive query SQL (dialetto DuckDB) sulla vista già pulita,
+invece di generare ed eseguire codice Python pandas ad ogni domanda.
+Rispetto all'approccio precedente questo:
 
 - evita di rileggere il CSV da disco ad ogni chiamata (I/O ripetuto);
 - separa la pulizia dei dati (deterministica, eseguita una volta) dall'analisi
@@ -102,11 +106,20 @@ def get_data():
         if _cache["df"] is not None and _cache["mtime"] == mtime:
             return _cache["df"], _cache["con"]
 
-        raw = pd.read_csv(DATA_PATH)
-        df = _clean_dataframe(raw)
-
         con = duckdb.connect(database=":memory:")
+        # Lettura CSV con il motore nativo di DuckDB (C++, parallelo) invece
+        # di pandas.read_csv: sullo stesso file è sensibilmente più veloce,
+        # specie al crescere delle dimensioni del dataset. Il risultato viene
+        # comunque convertito in DataFrame per riusare la pulizia esistente
+        # (normalizzazione testo/date, gestita più comodamente con pandas).
+        raw = con.read_csv(DATA_PATH).df()
+        df = _clean_dataframe(raw)
         con.register("sales", df)
+
+        # I dati sono cambiati: le risposte in cache potrebbero riferirsi a
+        # numeri ormai superati. Le invalidiamo subito, senza aspettare la
+        # scadenza naturale del TTL.
+        _answer_cache.clear()
 
         _cache.update({"mtime": mtime, "df": df, "con": con})
         return df, con
@@ -298,6 +311,7 @@ def analyze_question(question: str) -> dict:
             tools=TOOLS,
             tool_choice="auto",
             temperature=0,
+            max_tokens=1200,  # tetto costo/abuso per singola risposta del modello
         )
         message = completion.choices[0].message
 

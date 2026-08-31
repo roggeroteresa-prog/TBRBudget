@@ -1,4 +1,4 @@
-import { getActiveUserId } from "../currentUser.js";
+import { getToken, clearToken } from "../currentUser.js";
 
 // In sviluppo locale "/api" viene inoltrato al back end dal proxy di Vite
 // (vedi vite.config.js). In produzione (es. GitHub Pages, hosting statico)
@@ -7,14 +7,21 @@ import { getActiveUserId } from "../currentUser.js";
 const BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
 async function request(path, options = {}) {
-  const userId = getActiveUserId();
+  const token = getToken();
   const res = await fetch(`${BASE}${path}`, {
     headers: {
       "Content-Type": "application/json",
-      ...(userId ? { "x-user-id": userId } : {}),
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
     },
     ...options,
   });
+
+  if (res.status === 401) {
+    // Token mancante/scaduto/non valido: la sessione non è più utilizzabile,
+    // si torna alla schermata di login.
+    clearToken();
+  }
+
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     throw new Error(data.error || `Errore ${res.status}`);
@@ -23,6 +30,11 @@ async function request(path, options = {}) {
 }
 
 export const api = {
+  // ─── Autenticazione ────────────────────────────────────────────────
+  login: (email, password) =>
+    request("/auth/login", { method: "POST", body: JSON.stringify({ email, password }) }),
+  me: () => request("/auth/me"),
+
   getDimensions: () => request("/dimensions"),
 
   listBudgets: () => request("/budgets"),

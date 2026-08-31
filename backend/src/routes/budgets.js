@@ -6,15 +6,19 @@ import { suggestBudgetLine } from "../services/suggestionService.js";
 import { getCurrencyAnalysis } from "../services/salesDataService.js";
 import { generateBaseBudget, getConsolidatoAggregation } from "../services/baseBudgetService.js";
 import { fetchLiveRates } from "../services/currencyRatesService.js";
+import { suggestLimiter } from "../middleware/rateLimit.js";
+import { validateBody } from "../middleware/validate.js";
+import {
+  createBudgetSchema,
+  updateBudgetSchema,
+  statusSchema,
+  generateBaseBudgetSchema,
+  lineBodySchema,
+  consolidatoSchema,
+  suggestSchema,
+} from "../validation/schemas.js";
 
 const router = Router();
-
-// ─── Utente attivo (selezionato dal selettore in navbar, nessun vero login) ──
-function getActingUser(req) {
-  const userId = req.header("x-user-id");
-  const user = userId ? userStore.getUser(userId) : null;
-  return user || userStore.getDefaultUser();
-}
 
 function buildMonthlyLines(dims, { distribution, amount, quantity, monthlyAmounts, monthlyQuantities }) {
   const linesToCreate = [];
@@ -43,7 +47,7 @@ router.get("/dimensions", (_req, res) => {
 
 // ─── Budget ─────────────────────────────────────────────────────────────
 router.get("/budgets", (req, res) => {
-  const user = getActingUser(req);
+  const user = req.user;
   const budgets = store.listBudgets().filter((b) => userStore.canViewBudget(user, b.id));
   res.json(budgets);
 });
@@ -51,27 +55,23 @@ router.get("/budgets", (req, res) => {
 router.get("/budgets/:id", (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canViewBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per vedere questo budget." });
   res.json(budget);
 });
 
-router.post("/budgets", (req, res) => {
-  const user = getActingUser(req);
+router.post("/budgets", validateBody(createBudgetSchema), (req, res) => {
+  const user = req.user;
   if (user && user.role === "viewer") return res.status(403).json({ error: "Il tuo ruolo (Visualizzatore) non permette di creare budget." });
 
-  const { budgetName, budgetYear, startDate, endDate, fixedFactor } = req.body || {};
-  if (!budgetName || !budgetYear || !startDate || !endDate || !fixedFactor) {
-    return res.status(400).json({ error: "Campi obbligatori mancanti." });
-  }
   const budget = store.createBudget(req.body, user?.name);
   res.status(201).json(budget);
 });
 
-router.put("/budgets/:id", (req, res) => {
+router.put("/budgets/:id", validateBody(updateBudgetSchema), (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
 
   try {
@@ -82,24 +82,20 @@ router.put("/budgets/:id", (req, res) => {
   }
 });
 
-router.patch("/budgets/:id/status", (req, res) => {
+router.patch("/budgets/:id/status", validateBody(statusSchema), (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
 
-  const { status } = req.body || {};
-  if (!["Bozza", "Confermato"].includes(status)) {
-    return res.status(400).json({ error: "Stato non valido." });
-  }
-  const updated = store.setBudgetStatus(req.params.id, status, user?.name);
+  const updated = store.setBudgetStatus(req.params.id, req.body.status, user?.name);
   res.json(updated);
 });
 
 router.delete("/budgets/:id", (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per eliminare questo budget." });
 
   store.deleteBudget(req.params.id, user?.name);
@@ -110,7 +106,7 @@ router.delete("/budgets/:id", (req, res) => {
 router.get("/budgets/:id/currency-analysis", async (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canViewBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per vedere questo budget." });
 
   const analysis = getCurrencyAnalysis(budget.startDate, budget.endDate, budget.currencyCode);
@@ -129,21 +125,17 @@ router.get("/budgets/:id/currency-analysis", async (req, res) => {
 });
 
 // ─── Configurazione: generazione base budget (riponderazione proporzionale) ─
-router.post("/budgets/:id/generate-base-budget", (req, res) => {
+router.post("/budgets/:id/generate-base-budget", validateBody(generateBaseBudgetSchema), (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
 
-  const { totalAmount, totalQuantity } = req.body || {};
-  if (!totalAmount && !totalQuantity) {
-    return res.status(400).json({ error: "Indica almeno un importo o una quantità target." });
-  }
-
+  const { totalAmount, totalQuantity } = req.body;
   const { lines, meta } = generateBaseBudget(budget, { totalAmount, totalQuantity });
   try {
     store.replaceAllLines(budget.id, lines, user?.name);
-    store.updateBudget(budget.id, { initialTargets: { totalAmount: Number(totalAmount) || 0, totalQuantity: Number(totalQuantity) || 0 } }, user?.name);
+    store.updateBudget(budget.id, { initialTargets: { totalAmount: totalAmount || 0, totalQuantity: totalQuantity || 0 } }, user?.name);
   } catch (err) {
     return res.status(409).json({ error: err.message });
   }
@@ -155,22 +147,19 @@ router.post("/budgets/:id/generate-base-budget", (req, res) => {
 router.get("/budgets/:id/lines", (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canViewBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per vedere questo budget." });
   res.json(store.listLines(req.params.id));
 });
 
-router.post("/budgets/:id/lines", (req, res) => {
+router.post("/budgets/:id/lines", validateBody(lineBodySchema), (req, res) => {
   const budgetId = req.params.id;
   const budget = store.getBudget(budgetId);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
 
-  const { dims, ...rest } = req.body || {};
-  if (!dims || Object.keys(dims).length === 0) {
-    return res.status(400).json({ error: "Seleziona un valore per ogni dimensione attiva del budget." });
-  }
+  const { dims, ...rest } = req.body;
   if (store.lineExists(budgetId, dims)) {
     return res.status(409).json({
       error: "Questa combinazione di dimensioni esiste già in questo budget. Modificala dalla tabella.",
@@ -192,18 +181,14 @@ router.post("/budgets/:id/lines", (req, res) => {
 
 // Upsert: sostituisce le righe mensili esistenti per una combinazione di
 // dimensioni (usato dalla tabella editabile in "Budget dei Ricavi").
-router.put("/budgets/:id/lines", (req, res) => {
+router.put("/budgets/:id/lines", validateBody(lineBodySchema), (req, res) => {
   const budgetId = req.params.id;
   const budget = store.getBudget(budgetId);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
 
-  const { dims, ...rest } = req.body || {};
-  if (!dims || Object.keys(dims).length === 0) {
-    return res.status(400).json({ error: "Dimensioni mancanti." });
-  }
-
+  const { dims, ...rest } = req.body;
   const linesToCreate = buildMonthlyLines(dims, rest);
   try {
     const updated = store.upsertLines(budgetId, dims, linesToCreate, user?.name);
@@ -216,8 +201,8 @@ router.put("/budgets/:id/lines", (req, res) => {
 router.delete("/budgets/:id/lines/:lineId", (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
-  if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per modificare questo budget." });
+  const user = req.user;
+  if (!userStore.canEditBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per eliminare questo budget." });
 
   try {
     store.deleteLine(req.params.id, req.params.lineId, user?.name);
@@ -231,28 +216,25 @@ router.delete("/budgets/:id/lines/:lineId", (req, res) => {
 router.get("/budgets/:id/pivot", (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canViewBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per vedere questo budget." });
   res.json(store.getPivot(req.params.id));
 });
 
 // ─── Consolidato (storico) filtrato/raggruppato per il drill-down ──────
-router.post("/budgets/:id/consolidato", (req, res) => {
+router.post("/budgets/:id/consolidato", validateBody(consolidatoSchema), (req, res) => {
   const budget = store.getBudget(req.params.id);
   if (!budget) return res.status(404).json({ error: "Budget non trovato." });
-  const user = getActingUser(req);
+  const user = req.user;
   if (!userStore.canViewBudget(user, budget.id)) return res.status(403).json({ error: "Non hai i permessi per vedere questo budget." });
-  const { viewDim, filters } = req.body || {};
+  const { viewDim, filters } = req.body;
   const result = getConsolidatoAggregation(budget, viewDim || null, filters || {});
   res.json(result);
 });
 
 // ─── Suggerimento AI (RAG + data agent combinati, per paese+prodotto) ──
-router.post("/budgets/suggest", async (req, res) => {
-  const { country, product } = req.body || {};
-  if (!country || !product) {
-    return res.status(400).json({ error: "Paese e prodotto sono obbligatori." });
-  }
+router.post("/budgets/suggest", suggestLimiter, validateBody(suggestSchema), async (req, res) => {
+  const { country, product } = req.body;
   try {
     const suggestion = await suggestBudgetLine({ country, product });
     res.json(suggestion);

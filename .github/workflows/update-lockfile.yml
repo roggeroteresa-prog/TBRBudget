@@ -1,0 +1,23 @@
+name: Update lock file
+on: workflow_dispatch
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Rigenera package-lock.json
+        working-directory: backend
+        run: |
+          rm package-lock.json
+          npm install
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add backend/package-lock.json
+          git commit -m "chore: rigenera package-lock.json su Linux per better-sqlite3@13"
+          git push

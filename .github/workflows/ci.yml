@@ -42,7 +42,7 @@ jobs:
           find node_modules/better-sqlite3 -name "*.node" -exec ldd {} \;
           # Controlla se è stato compilato da sorgente o è precompilato
           ls -la node_modules/better-sqlite3/build/Release/ 2>/dev/null || echo "no build/Release"
-          ls -la node_modules/better-sqlite3/prebuilds/ 2>/dev/null || echo "no prebuilds"
+          ls -la node_modules/better-sqlite3/prebuilds/ 2>/dev/null || echo "no prebuilds"g
       - name: Diagnostica SQLite (temporanea, per isolare il crash)
         run: |
           echo "--- versione Node ---"

@@ -17,6 +17,12 @@ chroma_data/
 # Grafici generati a runtime (tenere solo .gitkeep)
 data_agent/charts/*.png
 
+# Database SQLite: si ricostruisce da solo (vedi services/db.js) dai file
+# JSON di seed qui sotto ogni volta che manca — non va committato (binario,
+# specifico dell'ambiente, e diventerebbe stale rispetto al codice).
+backend/src/data/tbr.db
+backend/src/data/tbr.db-*
+
 # Dati runtime generati durante l'uso: lo storico azioni si rigenera da solo
 # vuoto al primo avvio, non ha senso nel repository.
 # budgets-store.json e users-store.json invece SONO tracciati di proposito:
@@ -24,6 +30,8 @@ data_agent/charts/*.png
 # sempre qualcosa da mostrare anche dopo un riavvio del servizio su un piano
 # hosting senza disco persistente (i budget creati durante una sessione live
 # restano comunque a rischio, solo i dati di seed committati sono garantiti).
+# Vengono letti solo per la migrazione iniziale in SQLite (una tantum, a DB
+# assente): dopo il primo avvio l'app legge/scrive solo tbr.db.
 backend/src/data/history-log.json
 
 # OS

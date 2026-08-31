@@ -216,11 +216,11 @@ mensile di righe già esistenti in base al calendario agricolo, mantenendo
 invariati i totali annui, mostrando la proposta prima di applicarla. Vedi
 gli esempi nella sezione precedente.
 
-Persistenza: `backend/src/data/budgets-store.json` (file JSON semplice,
-nessun DB — coerente con la natura dimostrativa del progetto di tesi).
-Le API REST sono in `backend/src/routes/budgets.js`. La lettura/pulizia del
-CSV di consuntivo (per dimensioni, analisi valuta e generazione base budget)
-è in `backend/src/services/salesDataService.js`.
+Persistenza: **SQLite** (`backend/src/data/tbr.db`, via `better-sqlite3`),
+gestita da `backend/src/services/db.js` — vedi la sezione dedicata più sotto
+per i dettagli. Le API REST sono in `backend/src/routes/budgets.js`. La
+lettura/pulizia del CSV di consuntivo (per dimensioni, analisi valuta e
+generazione base budget) è in `backend/src/services/salesDataService.js`.
 
 ## Report, Storico Attività e Impostazioni
 
@@ -236,12 +236,45 @@ CSV di consuntivo (per dimensioni, analisi valuta e generazione base budget)
   utente, data/ora e dettaglio. Scritto direttamente da
   `backend/src/services/budgetStore.js` ad ogni mutazione — copre quindi
   automaticamente sia le azioni da interfaccia sia quelle eseguite
-  dall'assistente in chat. Persistenza: `backend/src/data/history-log.json`.
+  dall'assistente in chat. Persistenza: SQLite, tabella `history_events`
+  (`backend/src/services/historyService.js`).
 - **Impostazioni** (visibile solo agli amministratori): gestione utenti con
   tre ruoli — **Amministratore** (accesso completo), **Collaboratore** (vede
   e modifica solo i budget assegnati), **Visualizzatore** (solo visualizza i
   budget assegnati) — e assegnazione esplicita di quali budget ciascun
-  utente può vedere. Persistenza: `backend/src/data/users-store.json`.
+  utente può vedere. Persistenza: SQLite, tabella `users`
+  (`backend/src/services/userStore.js`).
+
+## Persistenza: SQLite invece di file JSON semplici
+
+Budget, righe di budget, utenti e storico attività sono salvati in un
+singolo database SQLite (`backend/src/data/tbr.db`, libreria
+`better-sqlite3`) invece che in tre file JSON separati letti/scritti per
+intero ad ogni operazione. Motivazione: con i file JSON, due scritture
+concorrenti (es. una modifica dall'interfaccia e una dall'assistente in
+chat nello stesso momento) potevano sovrascriversi a vicenda o corrompere
+il file. Con SQLite ogni scrittura è una **transazione atomica** su righe
+specifiche (`db.transaction(...)` in `budgetStore.js` per le operazioni che
+toccano più righe, es. la sostituzione di tutte le righe di un budget),
+gestita direttamente dal motore del database — non più un'operazione
+"leggi tutto, modifica, riscrivi tutto" a rischio di interferenze.
+
+**Migrazione automatica**: se `tbr.db` non esiste ancora ma sono presenti i
+vecchi file `budgets-store.json` / `users-store.json` / `history-log.json`,
+vengono importati automaticamente una sola volta all'avvio (vedi
+`db.js` → `migrateFromJsonIfPresent()`). Questo è anche il meccanismo che
+garantisce la persistenza dei dati demo tra un riavvio e l'altro su un
+piano di hosting senza disco persistente (es. Render Free): il database
+si ricrea da zero ad ogni riavvio, ma sempre a partire dagli stessi file
+JSON di seed committati nel repository — coerente con l'approccio già
+adottato per la knowledge base RAG (vedi sezione 5).
+
+**Nota bene**: `tbr.db` stesso non è tracciato da Git (è generato, non va
+committato) — sono i tre file JSON di seed a restare la fonte di verità
+per lo stato iniziale/demo. I budget creati durante una sessione live
+restano quindi ancora soggetti a perdita se il servizio si riavvia su un
+piano senza disco persistente — esattamente come prima, ma ora perlomeno
+senza rischio di corruzione durante l'uso normale dell'app.
 
 **Autenticazione**: login reale con email e password (hashate con bcrypt).
 Al login il back end emette un token JWT firmato (validità 8 ore), che il

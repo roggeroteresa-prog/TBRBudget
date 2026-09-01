@@ -11,6 +11,15 @@ import { ensureCollectionPopulated } from "./services/ragService.js";
 
 const app = express();
 
+// Render (come la maggior parte degli hosting) mette l'app dietro un proxy,
+// che passa l'IP reale del client tramite l'header X-Forwarded-For. Senza
+// questa riga, Express non si fida di quell'header per motivi di sicurezza
+// di default, e express-rate-limit non riesce a identificare correttamente
+// l'IP di ogni richiesta per applicare il limite. "1" = fidati di un solo
+// livello di proxy davanti all'app (quello di Render) — non di eventuali
+// altri hop, più sicuro di "true" (fidati di tutta la catena).
+app.set("trust proxy", 1);
+
 app.use(cors());
 app.use(express.json());
 

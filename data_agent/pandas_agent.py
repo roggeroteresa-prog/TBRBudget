@@ -1,8 +1,10 @@
 """
 Data agent: carica e pulisce UNA SOLA VOLTA (cache in memoria, invalidata solo
 se il CSV cambia) il consuntivo vendite TBR Budget Group, registrandolo come
-vista DuckDB. La lettura del CSV usa il motore nativo di DuckDB (più veloce
-di pandas.read_csv), e ogni volta che il file cambia la cache delle risposte
+vista DuckDB. Sia la lettura del CSV sia la pulizia dei dati avvengono
+interamente nel motore nativo di DuckDB (C++, parallelo): i dati non
+transitano mai per pandas, evitando il costo di spostarli avanti e indietro
+tra i due motori. Ogni volta che il file cambia la cache delle risposte
 viene svuotata immediatamente — non solo dopo la scadenza del TTL — così le
 domande non ricevono mai risposte basate su dati ormai superati. Le domande
 in linguaggio naturale vengono risolte da un ciclo di function calling OpenAI
@@ -11,9 +13,9 @@ invece di generare ed eseguire codice Python pandas ad ogni domanda.
 Rispetto all'approccio precedente questo:
 
 - evita di rileggere il CSV da disco ad ogni chiamata (I/O ripetuto);
-- separa la pulizia dei dati (deterministica, eseguita una volta) dall'analisi
-  (dinamica, gestita dall'LLM), riducendo token consumati e rischio di
-  allucinazioni nella fase di pulizia;
+- separa la pulizia dei dati (deterministica, eseguita una volta, in SQL)
+  dall'analisi (dinamica, gestita dall'LLM), riducendo token consumati e
+  rischio di allucinazioni nella fase di pulizia;
 - esegue query SQL sandboxate invece di codice Python arbitrario generato
   dall'LLM, con evidenti vantaggi di sicurezza oltre che di velocità.
 
@@ -34,7 +36,6 @@ import matplotlib
 
 matplotlib.use("Agg")  # niente display, solo salvataggio su file
 import matplotlib.pyplot as plt
-import pandas as pd
 from openai import OpenAI
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -52,77 +53,85 @@ client = OpenAI()
 # Caricamento + pulizia dati — una sola volta, ricaricati solo se il CSV
 # cambia (confronto sulla data di modifica del file, mtime).
 # ─────────────────────────────────────────────────────────────────────────
-_cache = {"mtime": None, "df": None, "con": None}
+_cache = {"mtime": None, "con": None}
 _cache_lock = threading.Lock()
 
-
-def _clean_dataframe(raw: pd.DataFrame) -> pd.DataFrame:
-    """Pulizia deterministica del dataset "sporco" (vedi data/generate_data.py
-    per le anomalie introdotte volutamente): date in formati misti, righe
-    duplicate, spazi/maiuscole incoerenti nei campi testuali, valori mancanti
-    o fuori range. Eseguita una sola volta per caricamento, non ad ogni
-    domanda: l'LLM lavora sempre su dati già puliti.
-    """
-    df = raw.copy()
-
-    # Date in formati misti (ISO, dd/mm/yyyy, mm-dd-yyyy, dd-Mon-yyyy...)
-    df["order_date"] = pd.to_datetime(df["order_date"], errors="coerce", format="mixed")
-
-    # Spazi superflui nei campi testuali
-    text_cols = ["country", "product", "region", "customer", "crop", "sales_channel", "currency"]
-    for col in text_cols:
-        if col in df.columns:
-            df[col] = df[col].astype(str).str.strip()
-
-    # Normalizza la capitalizzazione del paese preservando acronimi noti (USA)
-    if "country" in df.columns:
-        def _norm_country(v):
-            if v.strip().lower() == "usa":
-                return "USA"
-            return v.title() if v else v
-        df["country"] = df["country"].apply(_norm_country)
-
-    # Righe duplicate esatte
-    df = df.drop_duplicates()
-
-    # Colonne numeriche: forza il tipo, poi scarta valori mancanti/fuori range
-    for col in ["quantity", "unit_price_eur", "revenue_eur"]:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce")
-
-    df = df[df["order_date"].notna()]
-    df = df[df["quantity"].between(1, 50, inclusive="both")]
-    df = df[(df["unit_price_eur"] > 0) & (df["revenue_eur"] > 0)]
-
-    return df.reset_index(drop=True)
+# Pulizia deterministica del dataset "sporco" (vedi data/generate_data.py per
+# le anomalie introdotte volutamente): date in formati misti, righe duplicate,
+# spazi/maiuscole incoerenti nei campi testuali, valori mancanti o fuori
+# range. Eseguita interamente in SQL DuckDB (nessun passaggio dei dati grezzi
+# in pandas) e una sola volta per caricamento: l'LLM lavora sempre sulla vista
+# 'sales' già pulita.
+_CLEAN_SALES_SQL = """
+CREATE OR REPLACE VIEW sales AS
+WITH parsed AS (
+    SELECT
+        order_id,
+        COALESCE(
+            TRY_STRPTIME(order_date, '%Y-%m-%d'),
+            TRY_STRPTIME(order_date, '%d/%m/%Y'),
+            TRY_STRPTIME(order_date, '%m-%d-%Y'),
+            TRY_STRPTIME(order_date, '%d-%b-%Y')
+        )::DATE AS order_date,
+        CASE
+            WHEN UPPER(TRIM(country)) = 'USA' THEN 'USA'
+            ELSE array_to_string(
+                list_transform(
+                    string_split(LOWER(TRIM(country)), ' '),
+                    w -> UPPER(SUBSTR(w, 1, 1)) || SUBSTR(w, 2)
+                ),
+                ' '
+            )
+        END AS country,
+        TRIM(region) AS region,
+        TRIM(customer) AS customer,
+        TRIM(product) AS product,
+        TRIM(crop) AS crop,
+        TRY_CAST(quantity AS DOUBLE) AS quantity,
+        TRY_CAST(unit_price_eur AS DOUBLE) AS unit_price_eur,
+        TRY_CAST(revenue_eur AS DOUBLE) AS revenue_eur,
+        TRIM(sales_channel) AS sales_channel,
+        TRIM(currency) AS currency,
+        fx_rate_used,
+        unit_price_local,
+        revenue_local
+    FROM sales_raw
+),
+deduped AS (
+    SELECT DISTINCT * FROM parsed
+)
+SELECT * FROM deduped
+WHERE order_date IS NOT NULL
+  AND quantity BETWEEN 1 AND 50
+  AND unit_price_eur > 0
+  AND revenue_eur > 0
+"""
 
 
 def get_data():
-    """Restituisce (DataFrame pulito, connessione DuckDB con vista 'sales'),
-    da cache se il CSV non è cambiato dall'ultimo caricamento (confronto sul
-    mtime del file: se cresce o cambia, viene ricaricato e ripulito)."""
+    """Restituisce la connessione DuckDB con la vista 'sales' già pulita, da
+    cache se il CSV non è cambiato dall'ultimo caricamento (confronto sul
+    mtime del file: se cambia, la vista viene ricreata da capo)."""
     mtime = os.path.getmtime(DATA_PATH)
     with _cache_lock:
-        if _cache["df"] is not None and _cache["mtime"] == mtime:
-            return _cache["df"], _cache["con"]
+        if _cache["con"] is not None and _cache["mtime"] == mtime:
+            return _cache["con"]
 
         con = duckdb.connect(database=":memory:")
-        # Lettura CSV con il motore nativo di DuckDB (C++, parallelo) invece
-        # di pandas.read_csv: sullo stesso file è sensibilmente più veloce,
-        # specie al crescere delle dimensioni del dataset. Il risultato viene
-        # comunque convertito in DataFrame per riusare la pulizia esistente
-        # (normalizzazione testo/date, gestita più comodamente con pandas).
-        raw = con.read_csv(DATA_PATH).df()
-        df = _clean_dataframe(raw)
-        con.register("sales", df)
+        # Lettura CSV con il motore nativo di DuckDB (C++, parallelo) e
+        # pulizia via SQL, senza mai materializzare i dati grezzi in pandas:
+        # più veloce di pd.read_csv e non vanifica il vantaggio di DuckDB
+        # spostando i dati avanti e indietro tra i due motori.
+        con.read_csv(DATA_PATH).create_view("sales_raw")
+        con.execute(_CLEAN_SALES_SQL)
 
         # I dati sono cambiati: le risposte in cache potrebbero riferirsi a
         # numeri ormai superati. Le invalidiamo subito, senza aspettare la
         # scadenza naturale del TTL.
         _answer_cache.clear()
 
-        _cache.update({"mtime": mtime, "df": df, "con": con})
-        return df, con
+        _cache.update({"mtime": mtime, "con": con})
+        return con
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -296,7 +305,7 @@ def analyze_question(question: str) -> dict:
 
     cleanup_old_charts()  # pulizia "a costo zero" ad ogni domanda, oltre al task periodico
 
-    df, con = get_data()
+    con = get_data()
 
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
